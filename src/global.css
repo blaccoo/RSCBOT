@@ -3,10 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400&display=swap");
-body {
+html, body {
   margin: 0;
   line-height: normal;
+  overflow: hidden; /* Hides both horizontal and vertical scrollbars */
+  overflow-y: auto; /* Allows vertical scrolling while keeping the scrollbar hidden */
+  overflow-x: hidden; /* Hides the horizontal scrollbar but allows horizontal scrolling */
 }
+
+/* For specific browsers (like WebKit-based) */
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for WebKit browsers (e.g., Chrome, Safari) */
+}
+
 :root {
   /* fonts */
   --font-roboto: Roboto;
