@@ -53,50 +53,7 @@ const BottomTabs1 = ({
 
   return (
     <div className="bottom-tabs11" >
-  <div className={`bottom-tabs1 ${className}`} style={bottomTabs1Style}>
-      <div className="trade18">
-        <img className="carbonfriendship-icon" alt="" src="/trade-icon1.svg" />
-        <div className="mine">Trade</div>
-      </div>
-      <div className="wallet52" onClick={onWalletContainerClick}>
-        <img className="carbonfriendship-icon" alt="" src="/wallet-icon1.svg" />
-        <div className="mine">Wallet</div>
-      </div>
-      <div
-        className="wallet54"
-        onClick={onWalletContainerClick}
-        style={wallet1Style}
-      >
-        <img
-          className="carbonfriendship-icon"
-          alt=""
-          src="/hugeiconstap02.svg"
-        />
-        <div className="mine">Mine</div>
-      </div>
-      <div className="home3" onClick={onHomeContainerClick} style={homeStyle}>
-        <img
-          className="material-symbols-lighttask-al-icon"
-          alt=""
-          src={materialSymbolsLighttaskAlt}
-        />
-        <div className="task1">Task</div>
-        <img
-          className="icon-parkdot"
-          alt=""
-          src="/iconparkdot.svg"
-          style={iconParkdotStyle}
-        />
-      </div>
-      <div className="wallet52">
-        <img
-          className="carbonfriendship-icon"
-          alt=""
-          src="/carbonfriendship.svg"
-        />
-        <div className="mine">Friends</div>
-      </div>
-    </div>
+
     </div>
   
   );
