@@ -1,0 +1,183 @@
+.deposit-cash {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+}
+.usernmar-frame6 {
+  align-self: stretch;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs);
+  box-sizing: border-box;
+}
+.how-much-do1 {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+}
+.usernmar-frame7 {
+  align-self: stretch;
+  height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs);
+  box-sizing: border-box;
+}
+.div50,
+.ngn11 {
+  flex: 1;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  font-weight: 600;
+}
+.ngn11 {
+  color: var(--color-darkgray);
+  text-align: right;
+}
+.group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 var(--padding-8xs);
+  gap: var(--gap-8xs);
+}
+.bal1 {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  font-weight: 500;
+}
+.bal-group,
+.frame-parent2 {
+  display: flex;
+  gap: var(--gap-8xs);
+}
+.bal-group {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray);
+}
+.frame-parent2 {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.add-amount-to-deposit-inner {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 69px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-3xs) 0 0;
+  text-align: left;
+  color: var(--color-darkslategray-100);
+}
+.min-amount-n5001 {
+  width: 98px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 23.5px);
+  left: calc(50% - 146px);
+  display: inline-block;
+  z-index: 0;
+}
+.confirm-button7,
+.frame6 {
+  align-self: stretch;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.confirm-button7 {
+  height: 74px;
+  position: relative;
+}
+.frame6 {
+  height: 69px;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-indianred-100);
+  font-family: var(--font-roboto);
+}
+.countinue1 {
+  width: 130px;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  height: 28px;
+  flex-shrink: 0;
+}
+.close4 {
+  width: 200px;
+  border-radius: var(--br-xs);
+  background: linear-gradient(181.41deg, #42275e, #843ad0);
+  height: 54px;
+  justify-content: center;
+}
+.add-amount-to-deposit,
+.close4,
+.confirm-button8,
+.frame7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.confirm-button8 {
+  align-self: stretch;
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+}
+.add-amount-to-deposit,
+.frame7 {
+  box-sizing: border-box;
+}
+.frame7 {
+  align-self: stretch;
+  height: 69px;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+}
+.add-amount-to-deposit {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-darkslateblue-200);
+  height: 502px;
+  justify-content: flex-start;
+  padding: var(--padding-2xl) var(--padding-base);
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

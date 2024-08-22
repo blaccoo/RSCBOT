@@ -1,0 +1,197 @@
+.use-trade-to1 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.mined-balance,
+.title-instruction-frame7,
+.title9 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.title-instruction-frame7 {
+  height: 34px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-3xs) var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.mined-balance,
+.title9 {
+  flex-direction: column;
+}
+.title9 {
+  height: 39px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+}
+.mined-balance {
+  padding: var(--padding-3xs) 0;
+  gap: var(--gap-8xs);
+}
+.httpsrisingcoinxyzrefant17 {
+  width: 215px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 10px);
+  left: calc(50% - 125.5px);
+  display: inline-block;
+  z-index: 0;
+}
+.frame-child36 {
+  width: 11.9px;
+  top: calc(50% - 9px);
+  left: calc(50% - 8px);
+  background-color: var(--color-gainsboro);
+  border: 0.5px solid var(--color-black);
+  height: 13.5px;
+  z-index: 0;
+}
+.frame-child36,
+.frame-child37,
+.rectangle-parent20,
+.referal-link-frame17 {
+  margin: 0 !important;
+  position: absolute;
+  box-sizing: border-box;
+}
+.frame-child37 {
+  width: 11.9px;
+  top: calc(50% - 5.4px);
+  left: calc(50% - 6.1px);
+  background-color: var(--color-gainsboro);
+  border: 0.5px solid var(--color-black);
+  height: 13.5px;
+  z-index: 1;
+}
+.rectangle-parent20,
+.referal-link-frame17 {
+  border-radius: var(--br-xs);
+  height: 48px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.rectangle-parent20 {
+  width: 42px;
+  top: calc(50% - 24px);
+  left: calc(50% + 110.5px);
+  background-color: var(--color-gray-300);
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--padding-mini) var(--padding-mid-1) var(--padding-mini)
+    var(--padding-smi);
+  z-index: 1;
+}
+.referal-link-frame17 {
+  width: 305px;
+  top: 84px;
+  left: 24px;
+  background-color: var(--color-darkslategray-100);
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  gap: var(--gap-3xs);
+  z-index: 0;
+}
+.refer-friends-to17 {
+  width: 298.1px;
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  flex-shrink: 0;
+}
+.referal-frame17,
+.referal-text17 {
+  display: flex;
+  flex-direction: column;
+}
+.referal-text17 {
+  margin: 0 !important;
+  position: absolute;
+  top: 34.5px;
+  left: 18.5px;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 1;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--typography-colors-light-grey);
+}
+.referal-frame17 {
+  width: 353px;
+  border-radius: var(--br-xs);
+  background-color: var(--color-lightseagreen-200);
+  height: 162px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.footer-frame17,
+.home-referral17 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.home-referral17 {
+  align-self: stretch;
+}
+.footer-frame17 {
+  width: 320px;
+}
+.footer-start-frame17,
+.mining-features-frame {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-start-frame17 {
+  height: 193px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.mining-features-frame {
+  background-color: var(--color-gray-500);
+  flex-direction: column;
+  padding: 0 var(--padding-3xs) var(--padding-xl);
+  gap: var(--gap-sm);
+  font-size: var(--font-size-xs);
+  color: var(--color-silver-200);
+}
+.wallet-body-frame27,
+.wallet17 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wallet-body-frame27 {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-4xs);
+}
+.wallet17 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-500);
+  height: 800px;
+  overflow-y: auto;
+  align-items: center;
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-aliceblue);
+  font-family: var(--font-inter);
+}

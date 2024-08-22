@@ -1,0 +1,122 @@
+.make-payment1 {
+  width: 129px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.enter-amount7,
+.price24 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.enter-amount7 {
+  width: 84px;
+  border-radius: var(--br-3xs);
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.price24 {
+  height: 29px;
+  color: var(--color-whitesmoke-200);
+}
+.bank4 {
+  position: relative;
+  font-weight: 600;
+}
+.amounts-of-order23 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.payment-method55 {
+  align-self: stretch;
+  height: 4px;
+}
+.account-number3,
+.div124 {
+  position: relative;
+  font-weight: 600;
+  z-index: 0;
+}
+.div124 {
+  color: var(--color-whitesmoke-200);
+  text-align: right;
+  z-index: 1;
+}
+.solarcopy-outline-icon6 {
+  width: 24px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 11.5px);
+  left: calc(50% + 122px);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.payment-method56 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  position: relative;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-sm);
+}
+.orders-date-and-ref34 {
+  align-self: stretch;
+  height: 17px;
+}
+.amount5,
+.div125 {
+  position: relative;
+  font-weight: 600;
+}
+.amount5 {
+  color: var(--color-whitesmoke-200);
+  text-align: left;
+}
+.div125 {
+  flex: 1;
+}
+.all-orders-frame12,
+.order-frame21,
+.orders-date-and-ref35 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.orders-date-and-ref35 {
+  flex-direction: row;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-8xs);
+  text-align: right;
+  font-size: var(--font-size-sm);
+}
+.all-orders-frame12,
+.order-frame21 {
+  flex-direction: column;
+}
+.order-frame21 {
+  overflow: hidden;
+  padding: var(--padding-3xs) var(--padding-mini);
+  gap: var(--gap-9xs);
+}
+.all-orders-frame12 {
+  background-color: var(--color-gray-400);
+  height: 160px;
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-whitesmoke-300);
+  font-family: var(--font-inter);
+}

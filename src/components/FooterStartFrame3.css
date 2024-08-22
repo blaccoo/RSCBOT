@@ -1,0 +1,93 @@
+.game-iconsrobot-golem {
+  width: 40px;
+  position: relative;
+  height: 40px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.bot-mines-for1 {
+  position: relative;
+}
+.wallet45 {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.magestar-fill-icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.wallet-parent3,
+.wallet46 {
+  display: flex;
+  justify-content: center;
+}
+.wallet46 {
+  height: 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-6xs);
+}
+.wallet-parent3 {
+  width: 182px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-8xs);
+  z-index: 1;
+}
+.teenyiconstick-circle-solid1 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.purchased {
+  width: 70px;
+  position: relative;
+  display: inline-block;
+}
+.game-iconsrobot-golem-parent,
+.wallet47 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.wallet47 {
+  width: 50px;
+  margin: 0 !important;
+  position: absolute;
+  top: -2px;
+  left: 282px;
+  height: 55px;
+  flex-direction: column;
+  z-index: 2;
+}
+.game-iconsrobot-golem-parent {
+  width: 332px;
+  flex-direction: row;
+  position: relative;
+}
+.footer-start-frame31 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-400);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-roboto);
+}

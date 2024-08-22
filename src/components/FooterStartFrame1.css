@@ -1,0 +1,58 @@
+.hugeiconsmarketing {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.special {
+  position: relative;
+}
+.wallet35 {
+  width: 50px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.wallet-parent {
+  align-self: stretch;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  z-index: 0;
+}
+.footer-start-frame-child {
+  width: 110px;
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkslateblue-500);
+  height: 65px;
+  z-index: 1;
+}
+.footer-start-frame28 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-400);
+  height: 65px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-roboto);
+}

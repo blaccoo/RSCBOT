@@ -1,0 +1,16 @@
+.current-balance-frame5 {
+  align-self: stretch;
+  background-color: var(--color-gray-500);
+  height: 233px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
+  text-align: center;
+  font-size: var(--h5-size);
+  color: var(--color-lightgray);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,57 @@
+.withdraw7 {
+  position: relative;
+  font-weight: 600;
+  color: var(--color-silver-100);
+}
+.withdraw-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.paid-by,
+.username2 {
+  position: relative;
+  font-weight: 600;
+}
+.username2 {
+  color: var(--color-lightseagreen-100);
+}
+.vector-icon30 {
+  width: 13.9px;
+  position: relative;
+  height: 13.9px;
+}
+.bitcoin-iconsverify-filled2 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs);
+}
+.frame-parent19,
+.paid-by-parent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-2xs);
+  color: var(--color-silver-100);
+}
+.frame-parent19 {
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  gap: var(--gap-8xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray-100);
+  font-family: var(--font-inter);
+}

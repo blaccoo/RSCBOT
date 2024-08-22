@@ -1,0 +1,50 @@
+.paymeny4 {
+  position: relative;
+  font-weight: 600;
+}
+.method2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.paymeny5 {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.riarrow-drop-down-line-icon6 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.payment-method54,
+.paymeny-container {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-3xs);
+}
+.paymeny-container {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-whitesmoke-100);
+}
+.payment-method54 {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-500);
+  height: 62px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-2xs);
+  color: var(--color-darkgray);
+  font-family: var(--font-inter);
+}

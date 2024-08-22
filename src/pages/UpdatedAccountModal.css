@@ -1,0 +1,199 @@
+.update-payment {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+}
+.usernmar-frame18 {
+  align-self: stretch;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs);
+  box-sizing: border-box;
+  z-index: 0;
+}
+.opay-ng {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+}
+.usernmar-frame19 {
+  align-self: stretch;
+  height: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.frame-child26 {
+  width: 54px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 46px;
+  z-index: 0;
+}
+.add-account-number {
+  flex: 1;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  font-weight: 500;
+}
+.add-account-number-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.acc {
+  width: 29px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 15px);
+  left: calc(50% - 152px);
+  font-size: var(--h5-size);
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  color: var(--color-white);
+  z-index: 2;
+}
+.rectangle-parent14 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-darkslategray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-3xs) 0 0;
+  position: relative;
+  z-index: 2;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray);
+}
+.name2 {
+  width: 43px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 15px);
+  left: calc(50% - 159px);
+  font-size: var(--h5-size);
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  color: var(--color-white);
+  z-index: 2;
+}
+.rectangle-parent15 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-darkslategray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--padding-3xs) 0 0;
+  position: relative;
+  z-index: 3;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkgray);
+}
+.confirm-button15,
+.frame14 {
+  align-self: stretch;
+  height: 74px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame14 {
+  height: 69px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+  z-index: 4;
+}
+.add-account {
+  width: 130px;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  height: 28px;
+  flex-shrink: 0;
+}
+.close11,
+.confirm-button16,
+.frame15 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.close11 {
+  width: 200px;
+  border-radius: var(--br-xs);
+  background: linear-gradient(181.41deg, #42275e, #843ad0);
+  height: 54px;
+}
+.confirm-button16,
+.frame15 {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-3xs) 0;
+}
+.frame15 {
+  height: 69px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 5;
+}
+.error-message1 {
+  width: 78px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% + 126px);
+  left: calc(50% - 158px);
+  font-size: var(--font-size-xs);
+  font-family: var(--font-roboto);
+  color: var(--color-indianred-100);
+  text-align: left;
+  display: inline-block;
+  z-index: 6;
+}
+.updated-account-modal {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-darkslateblue-200);
+  box-sizing: border-box;
+  height: 502px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-2xl) var(--padding-base);
+  gap: var(--gap-3xs);
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

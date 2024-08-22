@@ -1,0 +1,41 @@
+.wallet-icon {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.wallet-icon,
+.wallet34 {
+  position: relative;
+}
+.wallet33 {
+  width: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+  color: var(--color-whitesmoke-200);
+}
+.bottom-tabs,
+.home1,
+.wallet33 {
+  display: flex;
+  align-items: center;
+}
+.home1 {
+  width: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.bottom-tabs {
+  align-self: stretch;
+  background-color: var(--color-gray-400);
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-41xl) var(--padding-mini)
+    var(--padding-39xl);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-aliceblue);
+  font-family: var(--font-roboto);
+}

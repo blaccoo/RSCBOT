@@ -1,0 +1,278 @@
+.menu-icon3 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.notification-icon3 {
+  width: 38.1px;
+  position: relative;
+  border-radius: var(--br-7xs);
+  height: 38px;
+}
+.b1 {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  -webkit-text-stroke: 0.5px #fff;
+}
+.notification-and-count {
+  width: 84.8px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-11xs);
+}
+.connect3 {
+  width: 77.2px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 10px);
+  left: calc(50% - 39px);
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  z-index: 0;
+}
+.connect-wallet3 {
+  width: 90px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkslateblue-300);
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-13xl);
+  box-sizing: border-box;
+  position: relative;
+  color: var(--color-whitesmoke-300);
+}
+.profile-icon3 {
+  width: 38.1px;
+  position: relative;
+  height: 38px;
+}
+.header3 {
+  align-self: stretch;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  background-color: var(--color-gray-500);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-sm);
+  font-size: var(--font-size-sm);
+}
+.enter-pin,
+.pin-instruction {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enter-pin {
+  flex: 1;
+  position: relative;
+  height: 56px;
+}
+.pin-instruction {
+  align-self: stretch;
+  background-color: var(--color-gray-300);
+  height: 65px;
+  flex-direction: row;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  color: var(--color-aliceblue);
+  font-family: var(--font-roboto);
+}
+.div9,
+.pin-1 {
+  flex: 1;
+  display: flex;
+}
+.div9 {
+  align-self: stretch;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.pin-1 {
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+}
+.div10 {
+  flex: 1;
+  position: relative;
+}
+.pin-frame {
+  align-self: stretch;
+  height: 127px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  color: var(--color-black);
+  font-family: var(--font-roboto);
+}
+.wrong-pin {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  font-weight: 600;
+}
+.wrong-pin-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-indianred-100);
+}
+.continue {
+  width: 130px;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  height: 28px;
+  flex-shrink: 0;
+}
+.button-frame,
+.confirm-button4,
+.countinue-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.countinue-button {
+  width: 200px;
+  border-radius: var(--br-xs);
+  background: linear-gradient(181.41deg, #42275e, #843ad0);
+  height: 54px;
+}
+.button-frame,
+.confirm-button4 {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-3xs) 0;
+}
+.button-frame {
+  height: 93px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.rest-here {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  font-weight: 600;
+  color: var(--color-lightseagreen-100);
+}
+.forget-pin-fram,
+.pin-body-frame1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.forget-pin-fram {
+  flex-direction: row;
+  gap: var(--gap-sm);
+  font-size: var(--h5-size);
+}
+.pin-body-frame1 {
+  align-self: stretch;
+  background-color: var(--color-gray-500);
+  height: 562px;
+  flex-direction: column;
+  padding: 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-mini);
+  color: var(--color-white);
+}
+.join-our-communities {
+  position: relative;
+  font-weight: 600;
+}
+.facebook-logo-icon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 21px;
+  object-fit: cover;
+}
+.social-media {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-67xl);
+  gap: var(--gap-2xs);
+}
+.social-handle-frame {
+  flex: 1;
+  border-radius: var(--br-mini) var(--br-mini) 0 0;
+  background-color: var(--color-gray-200);
+  justify-content: center;
+  gap: var(--gap-mini);
+}
+.community,
+.social-handle-frame,
+.social-media-handle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.community {
+  height: 86px;
+  justify-content: flex-end;
+}
+.social-media-handle {
+  justify-content: center;
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-whitesmoke-300);
+}
+.pin-body-frame,
+.pin-for-fiat-deposite {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.pin-body-frame {
+  align-self: stretch;
+  height: 798px;
+  flex-shrink: 0;
+  align-items: flex-start;
+  gap: var(--gap-4xs);
+}
+.pin-for-fiat-deposite {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-500);
+  height: 800px;
+  overflow-y: auto;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-red);
+  font-family: var(--font-inter);
+}

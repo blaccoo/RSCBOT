@@ -1,0 +1,125 @@
+.receive {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+}
+.usernmar-frame8 {
+  align-self: stretch;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.withdrwal-fee {
+  flex: 1;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  color: var(--color-gray-100);
+  text-align: left;
+}
+.usernmar-frame9 {
+  align-self: stretch;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-8xs);
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
+}
+.username {
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+}
+.vector-icon2 {
+  width: 13.9px;
+  position: relative;
+  height: 13.9px;
+}
+.bitcoin-iconsverify-filled,
+.usernmar-frame11 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-8xs);
+}
+.bitcoin-iconsverify-filled {
+  overflow: hidden;
+  flex-direction: column;
+}
+.usernmar-frame11 {
+  align-self: stretch;
+  height: 42px;
+  flex-direction: row;
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
+}
+.confirm {
+  width: 130px;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  height: 28px;
+  flex-shrink: 0;
+}
+.close7,
+.confirm-button11 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.close7 {
+  width: 200px;
+  border-radius: var(--br-xs);
+  background: linear-gradient(181.41deg, #42275e, #843ad0);
+  height: 54px;
+}
+.confirm-button11 {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-3xs) 0;
+}
+.confirm-add-amount-to-deposit,
+.frame10 {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame10 {
+  align-self: stretch;
+  height: 95px;
+  overflow: hidden;
+  flex-shrink: 0;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-xl);
+}
+.confirm-add-amount-to-deposit {
+  width: 100%;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-darkslateblue-200);
+  height: 502px;
+  justify-content: flex-start;
+  padding: var(--padding-2xl) var(--padding-base);
+  gap: var(--gap-3xs);
+  text-align: right;
+  font-size: var(--h5-size);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

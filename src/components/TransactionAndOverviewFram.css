@@ -1,0 +1,29 @@
+.my-buy-order {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.my-sell-order {
+  position: relative;
+  color: var(--color-silver-100);
+}
+.riarrow-drop-down-line-icon7 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.transaction-and-overview-fram1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) var(--padding-3xs);
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

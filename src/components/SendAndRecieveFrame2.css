@@ -1,0 +1,37 @@
+.send-icon-frame {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.send-icon-frame,
+.send4 {
+  position: relative;
+}
+.send3,
+.withdraw4 {
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.withdraw4 {
+  color: var(--color-aliceblue);
+}
+.send-and-recieve-frame11 {
+  align-self: stretch;
+  background-color: var(--color-gray-400);
+  height: 93px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-mini) var(--padding-21xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-roboto);
+}

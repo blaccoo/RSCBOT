@@ -1,0 +1,308 @@
+.vector-icon4 {
+  width: 18px;
+  position: relative;
+  height: 12px;
+}
+.menu-icon16 {
+  height: 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-7xs) var(--padding-10xs);
+  box-sizing: border-box;
+}
+.notification-frame1 {
+  width: 17px;
+  position: relative;
+  height: 19px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.vector-icon5 {
+  width: 21.2px;
+  position: relative;
+  height: 21.9px;
+}
+.notification1 {
+  width: 38.1px;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-gray-500);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-6xs);
+  box-sizing: border-box;
+}
+.connect16 {
+  width: 77.2px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 10px);
+  left: calc(50% - 39px);
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  z-index: 0;
+}
+.connect-wallet16 {
+  width: 90px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkslateblue-300);
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-13xl);
+  box-sizing: border-box;
+  position: relative;
+}
+.profile-icon16 {
+  width: 38.1px;
+  position: relative;
+  height: 38px;
+}
+.header16 {
+  align-self: stretch;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  background-color: var(--color-gray-500);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-sm);
+}
+.seller-to-confirm {
+  flex: 1;
+  position: relative;
+}
+.instruction-frame12,
+.timing-for-creation4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.instruction-frame12 {
+  flex: 1;
+  height: 40px;
+  justify-content: center;
+  padding: 0 var(--padding-8xs);
+}
+.timing-for-creation4 {
+  align-self: stretch;
+  height: 16px;
+  justify-content: space-between;
+  padding: 0 var(--padding-3xs);
+  z-index: 0;
+}
+.span2 {
+  font-weight: 600;
+  color: var(--color-indianred-200);
+}
+.instruction-frame14 {
+  align-self: stretch;
+  height: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  z-index: 1;
+  color: var(--color-gray-700);
+}
+.buyer-is-making1 {
+  position: relative;
+}
+.enter-amount4,
+.price21 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.enter-amount4 {
+  width: 84px;
+  border-radius: var(--br-3xs);
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.price21 {
+  color: var(--color-whitesmoke-200);
+}
+.bank2 {
+  position: relative;
+  font-weight: 600;
+}
+.amounts-of-order15 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.payment-method39 {
+  align-self: stretch;
+  height: 13px;
+}
+.div80 {
+  position: relative;
+  font-weight: 600;
+  color: var(--color-whitesmoke-200);
+  text-align: right;
+}
+.payment-method40 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-sm);
+}
+.orders-date-and-ref24 {
+  align-self: stretch;
+  height: 17px;
+}
+.amount3,
+.div81 {
+  position: relative;
+  font-weight: 600;
+}
+.amount3 {
+  color: var(--color-whitesmoke-200);
+  text-align: left;
+}
+.div81 {
+  flex: 1;
+}
+.all-orders-frame8,
+.order-frame14,
+.orders-date-and-ref25 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.orders-date-and-ref25 {
+  flex-direction: row;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-8xs);
+  text-align: right;
+  font-size: var(--font-size-sm);
+}
+.all-orders-frame8,
+.order-frame14 {
+  flex-direction: column;
+}
+.order-frame14 {
+  overflow: hidden;
+  padding: var(--padding-3xs) var(--padding-mini);
+  gap: var(--gap-9xs);
+}
+.all-orders-frame8 {
+  background-color: var(--color-gray-400);
+  height: 184px;
+}
+.paid-button1 {
+  width: 200px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkslateblue-300);
+  height: 44px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.button-frame3,
+.coin-overvie-frame7 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.button-frame3 {
+  height: 65px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl) var(--padding-81xl);
+  color: var(--color-white);
+}
+.coin-overvie-frame7 {
+  height: 640px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0;
+  gap: var(--gap-8xs);
+  z-index: 2;
+  font-size: var(--h5-size);
+  color: var(--color-whitesmoke-300);
+}
+.raised-dispute {
+  width: 360px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% + 363.5px);
+  left: calc(50% - 180px);
+  font-size: var(--h5-size);
+  display: flex;
+  color: var(--color-indianred-100);
+  text-align: center;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 3;
+}
+.coin-overview-and-transactions12 {
+  align-self: stretch;
+  background-color: var(--color-gray-500);
+  height: 771px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 var(--padding-xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-sm);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+}
+.p2p-seller-payment-confirmatio,
+.wallet-body-frame13 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wallet-body-frame13 {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-4xs);
+}
+.p2p-seller-payment-confirmatio {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-500);
+  height: 800px;
+  overflow-y: auto;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-whitesmoke-300);
+  font-family: var(--font-inter);
+}

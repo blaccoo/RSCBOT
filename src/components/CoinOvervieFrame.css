@@ -1,0 +1,193 @@
+.make-payment2 {
+  width: 129px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.enter-amount8,
+.price25 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.enter-amount8 {
+  width: 84px;
+  border-radius: var(--br-3xs);
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.price25 {
+  color: var(--color-whitesmoke-200);
+}
+.bank5 {
+  position: relative;
+  font-weight: 600;
+}
+.amounts-of-order25 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.payment-method57 {
+  align-self: stretch;
+  height: 13px;
+}
+.account-number4,
+.div126 {
+  position: relative;
+  font-weight: 600;
+  z-index: 0;
+}
+.div126 {
+  color: var(--color-whitesmoke-200);
+  text-align: right;
+  z-index: 1;
+}
+.solarcopy-outline-icon7 {
+  width: 24px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 11.5px);
+  left: calc(50% + 122px);
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.payment-method58 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs);
+  position: relative;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-sm);
+}
+.orders-date-and-ref36 {
+  align-self: stretch;
+  height: 17px;
+}
+.amount6,
+.div127 {
+  position: relative;
+  font-weight: 600;
+}
+.amount6 {
+  color: var(--color-whitesmoke-200);
+  text-align: left;
+}
+.div127 {
+  flex: 1;
+}
+.all-orders-frame13,
+.order-frame22,
+.orders-date-and-ref37 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.orders-date-and-ref37 {
+  flex-direction: row;
+  padding: 0 var(--padding-3xs);
+  gap: var(--gap-8xs);
+  text-align: right;
+  font-size: var(--font-size-sm);
+}
+.all-orders-frame13,
+.order-frame22 {
+  flex-direction: column;
+}
+.order-frame22 {
+  overflow: hidden;
+  padding: var(--padding-3xs) var(--padding-mini);
+  gap: var(--gap-9xs);
+}
+.all-orders-frame13 {
+  background-color: var(--color-gray-400);
+  height: 190px;
+  color: var(--color-whitesmoke-300);
+}
+.olease-ensure-you,
+.sellers-comment1 {
+  width: 138px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 43.5px);
+  left: calc(50% - 168px);
+  display: inline-block;
+  z-index: 0;
+}
+.olease-ensure-you {
+  width: 324px;
+  top: calc(50% - 11.5px);
+  left: calc(50% - 153px);
+  font-size: var(--font-size-xs);
+  z-index: 1;
+}
+.sellers-comment-group {
+  align-self: stretch;
+  background-color: var(--color-gray-300);
+  height: 95px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl) var(--padding-81xl);
+  box-sizing: border-box;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.confirm-payment {
+  position: relative;
+}
+.creat-button3 {
+  width: 200px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkslateblue-300);
+  height: 44px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.coin-overvie-frame12,
+.creat-button-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.creat-button-wrapper {
+  height: 92px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-xl) var(--padding-81xl);
+}
+.coin-overvie-frame12 {
+  height: 365px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0;
+  gap: var(--gap-8xs);
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

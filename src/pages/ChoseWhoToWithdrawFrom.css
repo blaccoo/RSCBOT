@@ -1,0 +1,131 @@
+.menu-icon25 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.notification-icon23 {
+  width: 38.1px;
+  position: relative;
+  border-radius: var(--br-7xs);
+  height: 38px;
+}
+.connect25 {
+  width: 77.2px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 10px);
+  left: calc(50% - 39px);
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  z-index: 0;
+}
+.connect-wallet25 {
+  width: 90px;
+  border-radius: var(--br-xl);
+  background-color: var(--color-darkslateblue-300);
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-2xs) var(--padding-13xl);
+  box-sizing: border-box;
+  position: relative;
+}
+.profile-icon25 {
+  width: 38.1px;
+  position: relative;
+  height: 38px;
+}
+.header25 {
+  align-self: stretch;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+  background-color: var(--color-gray-500);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-3xs) var(--padding-sm);
+  text-align: center;
+}
+.trade9 {
+  flex: 1;
+  position: relative;
+}
+.p2p4,
+.send-and-recieve-frame3,
+.trade9 {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.p2p4 {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.send-and-recieve-frame3 {
+  background-color: var(--color-gray-400);
+  height: 60px;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-mini) var(--padding-xl);
+  box-sizing: border-box;
+  font-size: var(--font-size-xl);
+  color: var(--color-aliceblue);
+  font-family: var(--font-roboto);
+}
+.select-a-merchant {
+  position: relative;
+  font-weight: 600;
+}
+.frame-parent8,
+.select-a-merchant-wrapper {
+  align-self: stretch;
+  flex-shrink: 0;
+  align-items: center;
+  box-sizing: border-box;
+}
+.select-a-merchant-wrapper {
+  height: 36px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+}
+.frame-parent8 {
+  height: 461px;
+  overflow-y: auto;
+  padding: var(--padding-xl) var(--padding-3xs);
+  font-size: var(--font-size-xs);
+  color: var(--color-white);
+}
+.chose-who-to-withdraw-from,
+.frame-parent8,
+.wallet-body-frame21 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.wallet-body-frame21 {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: var(--gap-4xs);
+}
+.chose-who-to-withdraw-from {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-500);
+  height: 606px;
+  overflow-y: auto;
+  align-items: center;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-whitesmoke-300);
+  font-family: var(--font-inter);
+}

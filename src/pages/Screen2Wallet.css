@@ -1,0 +1,10 @@
+.screen-2-wallet {
+  width: 477px;
+  position: relative;
+  font-size: var(--font-size-45xl);
+  line-height: 25.5px;
+  display: inline-block;
+  font-family: var(--body2-regular);
+  color: var(--color-black);
+  text-align: center;
+}

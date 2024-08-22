@@ -1,0 +1,98 @@
+.buy-and-sell {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.title-instruction-frame9,
+.title12 {
+  align-self: stretch;
+  height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.title12 {
+  height: 48px;
+  overflow-y: auto;
+  flex-direction: column;
+  padding: 0 var(--padding-3xs);
+  color: var(--color-aliceblue);
+}
+.ouiml-create-advanced-job-icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.ads-frame6,
+.create-ad-wrapper,
+.ouiml-create-advanced-job-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.create-ad-wrapper {
+  flex: 1;
+}
+.ads-frame6 {
+  align-self: stretch;
+  background-color: var(--color-gray-400);
+  gap: var(--gap-3xs);
+}
+.manage-all-your,
+.my-ads {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.my-ads {
+  line-height: 10px;
+}
+.manage-all-your {
+  font-size: var(--font-size-2xs);
+}
+.ads-frame7,
+.current-balance-frame9,
+.my-ads-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-8xs);
+}
+.my-ads-parent {
+  flex: 1;
+  height: 40px;
+  overflow: hidden;
+  flex-direction: column;
+  padding: var(--padding-8xs) var(--padding-3xs);
+  box-sizing: border-box;
+}
+.ads-frame7,
+.current-balance-frame9 {
+  align-self: stretch;
+}
+.ads-frame7 {
+  background-color: var(--color-gray-400);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+}
+.current-balance-frame9 {
+  background-color: var(--color-gray-500);
+  height: 287px;
+  flex-direction: column;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-100);
+  font-family: var(--font-inter);
+}

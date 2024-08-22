@@ -1,0 +1,113 @@
+.enter-wallet-address {
+  flex: 1;
+  position: relative;
+  line-height: 25.5px;
+}
+.enter-address-frame {
+  flex: 1;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-8xs);
+}
+.wallet-address-update-frame,
+.withdrawal-limit-info1 {
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.wallet-address-update-frame {
+  align-self: stretch;
+  height: 106px;
+  display: flex;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  text-align: center;
+}
+.withdrawal-limit-info1 {
+  height: 17px;
+  padding: 0 var(--padding-12xs);
+}
+.withdrawal-limit-frame,
+.withdrawal-limit-info1,
+.withdrawl-limit {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.withdrawl-limit {
+  height: 18px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--font-size-sm);
+}
+.withdrawal-limit-frame {
+  height: 43px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-3xs);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+  color: var(--color-white);
+}
+.max-withdrawal-limit-,
+.usdt34 {
+  margin: 0;
+}
+.usdt34 {
+  font-size: var(--font-size-sm);
+}
+.max-withdrawal-limit-container {
+  width: 319px;
+  position: relative;
+  line-height: 25.5px;
+  display: inline-block;
+  flex-shrink: 0;
+}
+.wallet-address {
+  flex: 1;
+  height: 43px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+}
+.wallet-update,
+.withdrawal-limit-info {
+  align-self: stretch;
+  height: 62px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-darkgray);
+}
+.withdrawal-limit-info {
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 227px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-8xs) 0 0;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--h5-size);
+  color: var(--color-silver-100);
+  font-family: var(--font-inter);
+}

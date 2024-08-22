@@ -1,0 +1,139 @@
+.title-instruction-frame8,
+.title10 {
+  align-self: stretch;
+  height: 43px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-3xs) 0;
+  box-sizing: border-box;
+}
+.title10 {
+  height: 48px;
+  overflow-y: auto;
+  flex-direction: column;
+  padding: 0 var(--padding-3xs);
+  color: var(--color-aliceblue);
+}
+.div123 {
+  position: relative;
+  font-weight: 600;
+}
+.parent3 {
+  align-self: stretch;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  gap: var(--gap-3xs);
+}
+.numbers-of-orders,
+.order-completion-rate {
+  flex: 1;
+  position: relative;
+  font-weight: 600;
+}
+.order-completion-rate {
+  text-align: right;
+}
+.ads-frame5,
+.numbers-of-orders-parent {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+  gap: var(--gap-3xs);
+}
+.numbers-of-orders-parent {
+  flex-direction: row;
+  font-size: var(--font-size-xs);
+  color: var(--color-silver-100);
+}
+.ads-frame5 {
+  background-color: var(--color-gray-400);
+  flex-direction: column;
+  font-size: var(--font-size-sm);
+}
+.game-iconsswap-bag {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.game-iconsswap-bag-wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs);
+}
+.trades {
+  flex: 1;
+}
+.on,
+.trades {
+  position: relative;
+  line-height: 10px;
+  font-weight: 600;
+}
+.group-icon2 {
+  width: 24px;
+  position: relative;
+  height: 15px;
+}
+.bitoggle2-on {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-8xs) 0;
+}
+.current-balance-frame6,
+.trades-active,
+.trades-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-8xs);
+}
+.trades-parent {
+  flex: 1;
+  height: 40px;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-8xs) var(--padding-3xs);
+  box-sizing: border-box;
+}
+.current-balance-frame6,
+.trades-active {
+  align-self: stretch;
+}
+.trades-active {
+  background-color: var(--color-gray-400);
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-3xs);
+}
+.current-balance-frame6 {
+  background-color: var(--color-gray-500);
+  height: 287px;
+  flex-direction: column;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-100);
+  font-family: var(--font-inter);
+}
