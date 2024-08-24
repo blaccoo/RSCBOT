@@ -52,14 +52,16 @@
 }
 .profile-icon49 {
   width: 38.1px;
-  position: relative;
+
   height: 38px;
 }
+
+
 .header42 {
-  width: 360px;
+  width: 100%;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
   background-color: var(--color-gray-500);
-  overflow: hidden;
+
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -70,4 +72,7 @@
   font-size: var(--font-size-sm);
   color: var(--color-red);
   font-family: var(--font-inter);
+  position: fixed;
+  top: 0;
+  z-index: 6000;
 }

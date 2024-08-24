@@ -9,6 +9,7 @@ html, body {
   overflow: hidden; /* Hides both horizontal and vertical scrollbars */
   overflow-y: auto; /* Allows vertical scrolling while keeping the scrollbar hidden */
   overflow-x: hidden; /* Hides the horizontal scrollbar but allows horizontal scrolling */
+  
 }
 
 /* For specific browsers (like WebKit-based) */

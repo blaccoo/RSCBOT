@@ -6,6 +6,7 @@ import FooterStartFrame9 from "../components/FooterStartFrame9";
 import FooterStartFrame5 from "../components/FooterStartFrame5";
 import BottomTabs1 from "../components/BottomTabs1";
 import "./Home.css";
+import Header from "../components/Header";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -15,22 +16,14 @@ const Home = () => {
   }, [navigate]);
 
   return (
-    <div className="home">
-      <div className="home-body-frame2">
-        <div className="header33">
-          <div className="notification-and-count6">
-            <img
-              className="notification-icon29"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b24">12</b>
-          </div>
-          <div className="connect-wallet33">
-            <b className="connect33">Connect</b>
-          </div>
-          <img className="profile-icon33" alt="" src="/profile1.svg" />
-        </div>
+    <div className="home" >
+      
+      <div className="home-body-frame2" >
+      <Header/>
+
+      <div style={{height:"3rem", width:"100vw",}}>
+
+      </div>
         <CurrentBalanceFrame prop="104.50 " />
         <Title frameDivHeight="60px" frameDivOverflowY="auto" />
         <div className="mining-frame2">

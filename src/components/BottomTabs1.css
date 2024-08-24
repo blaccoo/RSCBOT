@@ -73,7 +73,7 @@
   flex-shrink: 0;
 }
 .bottom-tabs1 {
-  width: 360px;
+  width: 100vw;
   background-color: var(--color-gray-400);
   height: 76px;
   display: flex;

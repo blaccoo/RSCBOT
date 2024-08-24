@@ -1,6 +1,6 @@
 .current-balance1 {
   flex: 1;
-  position: relative;
+
   line-height: 33px;
   font-weight: 600;
 }
@@ -13,7 +13,7 @@
 }
 .div128 {
   flex: 1;
-  position: relative;
+
   line-height: 51px;
   font-weight: 600;
 }

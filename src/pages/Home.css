@@ -48,18 +48,7 @@
   position: relative;
   height: 38px;
 }
-.header33 {
-  width: 360px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
-  background-color: var(--color-gray-500);
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: var(--padding-3xs) var(--padding-sm);
-  box-sizing: border-box;
-}
+
 .mining-button-icon {
   width: 230px;
   height: 230px;
