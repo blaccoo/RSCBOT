@@ -52,7 +52,7 @@ const BottomTabs1 = ({
   }, [navigate]);
 
   return (
-    <div className="bottom-tabs11" style={{position:"fixed", bottom:"0"}}>
+    <div className="bottom-tabs11" style={{position:"fixed", bottom:"0", zIndex:"1000"}}>
   <div className={`bottom-tabs1 ${className}`} style={bottomTabs1Style}>
       <div className="trade18">
         <img className="carbonfriendship-icon" alt="" src="/trade-icon1.svg" />

@@ -10,6 +10,8 @@ import FooterStartFrame4 from "../components/FooterStartFrame4";
 import FooterStartFrame5 from "../components/FooterStartFrame5";
 import BottomTabs1 from "../components/BottomTabs1";
 import "./Task.css";
+import Header from "../components/Header";
+import Divider from "../components/Divider";
 
 const Task = () => {
   const navigate = useNavigate();
@@ -25,21 +27,8 @@ const Task = () => {
   return (
     <div className="task">
       <div className="home-body-frame1">
-        <div className="header30">
-          <img className="menu-icon30" alt="" src="/menu-icon.svg" />
-          <div className="notification-and-count5">
-            <img
-              className="notification-icon27"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b22">12</b>
-          </div>
-          <div className="connect-wallet30">
-            <b className="connect30">Connect</b>
-          </div>
-          <img className="profile-icon30" alt="" src="/profile1.svg" />
-        </div>
+      <Divider/>
+      <Header/>
         <CurrentBalanceFrame prop="104.50 " />
         <Title frameDivHeight="91px" frameDivOverflowY="unset" />
         <div className="mining-frame1">
@@ -122,6 +111,7 @@ const Task = () => {
           />
           <FooterStartFrame5 propAlignSelf="stretch" propWidth="unset" />
         </div>
+        <Divider/>
         <BottomTabs1
           materialSymbolsLighttaskAlt="/materialsymbolslighttaskaltrounded1.svg"
           propOverflowY="auto"

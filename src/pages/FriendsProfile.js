@@ -86,7 +86,7 @@ const FriendsProfile = () => {
           homeHeight="60px"
           iconParkdotTop="6.5px"
           onWalletContainerClick={onWalletContainerClick}
-          onWalletContainerClick={onWalletContainerClick1}
+       
         />
       </div>
     </div>

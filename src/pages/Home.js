@@ -7,6 +7,10 @@ import FooterStartFrame5 from "../components/FooterStartFrame5";
 import BottomTabs1 from "../components/BottomTabs1";
 import "./Home.css";
 import Header from "../components/Header";
+import Divider from "../components/Divider";
+
+
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -21,9 +25,7 @@ const Home = () => {
       <div className="home-body-frame2" >
       <Header/>
 
-      <div style={{height:"3rem", width:"100vw",}}>
-
-      </div>
+   <Divider/>
         <CurrentBalanceFrame prop="104.50 " />
         <Title frameDivHeight="60px" frameDivOverflowY="auto" />
         <div className="mining-frame2">

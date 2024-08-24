@@ -5,6 +5,7 @@ import CurrentBalanceFrame5 from "../components/CurrentBalanceFrame5";
 import CoinFrame from "../components/CoinFrame";
 import BottomTabs1 from "../components/BottomTabs1";
 import "./Wallet.css";
+import Divider from "../components/Divider";
 
 const Wallet = () => {
   const navigate = useNavigate();
@@ -83,6 +84,7 @@ const Wallet = () => {
             </div>
           </div>
         </div>
+<Divider/>
         <BottomTabs1
           materialSymbolsLighttaskAlt="/materialsymbolslighttaskaltrounded1.svg"
           propOverflowY="unset"
