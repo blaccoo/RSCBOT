@@ -350,166 +350,34 @@
   font-size: var(--h5-size);
   color: var(--color-white);
 }
-.change-details-frame,
-.coin-overvie-frame2 {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-}
 .change-details-frame {
+  align-self: stretch;
   overflow-x: auto;
+  display: flex;
   flex-direction: row;
+  align-items: flex-start;
   justify-content: space-between;
   position: relative;
   font-size: var(--font-size-2xs);
   color: var(--color-lightseagreen-100);
 }
-.coin-overvie-frame2 {
+.coin-overvie-frame2,
+.coin-overview-and-transactions3 {
+  align-self: stretch;
   height: 393px;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-3xs) 0;
   box-sizing: border-box;
   gap: var(--gap-8xs);
 }
-.frame-child6,
-.httpsrisingcoinxyzrefant3 {
-  position: absolute;
-  margin: 0 !important;
-  z-index: 0;
-}
-.httpsrisingcoinxyzrefant3 {
-  width: 215px;
-  top: calc(50% - 10px);
-  left: calc(50% - 125.5px);
-  display: inline-block;
-}
-.frame-child6 {
-  width: 11.9px;
-  top: calc(50% - 9px);
-  left: calc(50% - 8px);
-  background-color: var(--color-gainsboro);
-  border: 0.5px solid var(--color-black);
-  box-sizing: border-box;
-  height: 13.5px;
-}
-.frame-child7,
-.rectangle-parent4,
-.referal-link-frame3 {
-  margin: 0 !important;
-  position: absolute;
-  box-sizing: border-box;
-  z-index: 1;
-}
-.frame-child7 {
-  width: 11.9px;
-  top: calc(50% - 5.4px);
-  left: calc(50% - 6.1px);
-  background-color: var(--color-gainsboro);
-  border: 0.5px solid var(--color-black);
-  height: 13.5px;
-}
-.rectangle-parent4,
-.referal-link-frame3 {
-  width: 42px;
-  top: calc(50% - 24px);
-  left: calc(50% + 110.5px);
-  border-radius: var(--br-xs);
-  background-color: var(--color-gray-300);
-  height: 48px;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: var(--padding-mini) var(--padding-mid-1) var(--padding-mini)
-    var(--padding-smi);
-}
-.referal-link-frame3 {
-  width: 305px;
-  top: calc(50% + 0.5px);
-  left: calc(50% - 153px);
-  background-color: var(--color-darkslategray-100);
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: var(--padding-3xs);
-  gap: var(--gap-3xs);
-  z-index: 0;
-}
-.refer-friends-to3 {
-  width: 298.1px;
-  position: relative;
-  display: inline-block;
-  height: 32px;
-  flex-shrink: 0;
-}
-.referal-frame3,
-.referal-text3 {
-  display: flex;
-  flex-direction: column;
-}
-.referal-text3 {
-  margin: 0 !important;
-  position: absolute;
-  top: 34.5px;
-  left: calc(50% - 153.5px);
-  height: 40px;
-  overflow: hidden;
-  flex-shrink: 0;
-  align-items: flex-end;
-  justify-content: center;
-  padding: 0 0 var(--padding-12xs);
-  box-sizing: border-box;
-  z-index: 1;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--typography-colors-light-grey);
-}
-.referal-frame3 {
-  align-self: stretch;
-  border-radius: var(--br-xs);
-  background-color: var(--color-lightseagreen-200);
-  height: 162px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-.footer-frame3,
-.home-referral3 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.home-referral3 {
-  align-self: stretch;
-}
-.footer-frame3 {
-  flex: 1;
-}
-.coin-overview-and-transactions3,
-.footer-start-frame3 {
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.footer-start-frame3 {
-  height: 170px;
-  overflow: hidden;
-  flex-shrink: 0;
-  flex-direction: row;
-  padding: var(--padding-3xs);
-  font-size: var(--font-size-xs);
-  color: var(--color-silver-200);
-}
 .coin-overview-and-transactions3 {
   background-color: var(--color-gray-500);
   height: 556px;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 var(--padding-3xs) var(--padding-xl);
   gap: var(--gap-sm);
   color: var(--color-white);

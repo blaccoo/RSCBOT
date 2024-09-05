@@ -1,6 +1,6 @@
 .current-balance1 {
   flex: 1;
-
+  position: relative;
   line-height: 33px;
   font-weight: 600;
 }
@@ -11,23 +11,23 @@
   align-items: center;
   justify-content: center;
 }
-.div128 {
+.div154 {
   flex: 1;
-
+  position: relative;
   line-height: 51px;
   font-weight: 600;
 }
-.lvl-bronze,
-.wrapper11 {
+.lvl-bronze5,
+.wrapper24 {
   display: flex;
   align-items: center;
 }
-.wrapper11 {
+.wrapper24 {
   width: 197px;
   flex-direction: row;
   justify-content: center;
 }
-.lvl-bronze {
+.lvl-bronze5 {
   width: 132px;
   position: relative;
   line-height: 51px;
@@ -61,7 +61,7 @@
   flex-direction: row;
   text-align: right;
   font-size: var(--font-size-7xl);
-  color: var(--typography-colors-light-grey);
+  color: var(--color-gray-100);
 }
 .current-balance-bg1,
 .current-balance-frame7 {
@@ -70,7 +70,7 @@
   box-sizing: border-box;
 }
 .current-balance-bg1 {
-  box-shadow: var(--shadow-1);
+  box-shadow: 2px 0 20px rgba(24, 57, 107, 0.05);
   background-color: var(--color-gray-400);
   height: 100px;
   gap: var(--gap-8xs);

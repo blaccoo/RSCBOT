@@ -6,10 +6,10 @@ const MinOrder = ({ className = "", prop, uSDT }) => {
     <div className={`min-order ${className}`}>
       <div className="min-amount-of-order-parent">
         <div className="min-amount-of">Min Amount of order</div>
-        <div className="frame-wrapper3">
+        <div className="frame-wrapper7">
           <div className="min-parent">
             <div className="min6">Min</div>
-            <div className="div147">{prop}</div>
+            <div className="div173">{prop}</div>
             <div className="usdt36">{uSDT}</div>
           </div>
         </div>

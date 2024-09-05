@@ -1,0 +1,84 @@
+.iconoiryoutube1 {
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.iconoiryoutube1,
+.introduction-to-trading2 {
+  position: relative;
+}
+.wallet119 {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fluent-emojicoin-icon18 {
+  width: 20px;
+  position: relative;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.wallet-parent20,
+.wallet120 {
+  display: flex;
+  justify-content: center;
+}
+.wallet120 {
+  height: 20px;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-6xs);
+}
+.wallet-parent20 {
+  width: 182px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
+  z-index: 1;
+}
+.iconoiryoutube-parent,
+.wallet121 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.wallet121 {
+  width: 50px;
+  margin: 0 !important;
+  position: absolute;
+  top: -2px;
+  left: 282px;
+  height: 47px;
+  flex-direction: column;
+  z-index: 2;
+}
+.iconoiryoutube-parent {
+  width: 332px;
+  flex-direction: row;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+  position: relative;
+}
+.footer-start-frame38 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-400);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-roboto);
+}

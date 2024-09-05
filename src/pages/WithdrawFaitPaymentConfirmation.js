@@ -4,24 +4,16 @@ import BuyerSellerChat from "../components/BuyerSellerChat";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./WithdrawFaitPaymentConfirmation.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const WithdrawFaitPaymentConfirmation = () => {
   return (
     <div className="withdraw-fait-payment-confirma">
+      <Header/>
       <div className="wallet-body-frame22">
-        <div className="header26">
-          <div className="menu-icon26">
-            <img className="vector-icon9" alt="" src="/vector.svg" />
-          </div>
-          <div className="notification2">
-            <div className="notification-frame8" />
-            <img className="vector-icon10" alt="" src="/vector1.svg" />
-          </div>
-          <div className="connect-wallet26">
-            <b className="connect26">Connect</b>
-          </div>
-          <img className="profile-icon26" alt="" src="/profile.svg" />
-        </div>
+       <Divider/>
         <SendAndRecieveFrame4
           mingcuteuser4Fill="/mingcuteuser4fill1.svg"
           youArePaying="You are Receiving"
@@ -43,9 +35,9 @@ const WithdrawFaitPaymentConfirmation = () => {
                   Note:If you did not receive payment within stipulated time
                   consider Appeal or Report.
                 </span>
-                <span className="span5">{` `}</span>
+                <span className="span4">{` `}</span>
               </span>
-              <span className="span5">
+              <span className="span4">
                 <span>
                   Do not answer or perform trade outside the platform its likely
                   to be a scam
@@ -89,15 +81,7 @@ const WithdrawFaitPaymentConfirmation = () => {
           </div>
         </div>
         <SocialMediaHandle group182="/group-1821.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+   <FooterSection/>
       </div>
     </div>
   );

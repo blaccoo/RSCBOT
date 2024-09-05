@@ -1,20 +1,18 @@
 import SendAndRecieveFrame from "../components/SendAndRecieveFrame";
+import FooterStartFrame from "../components/FooterStartFrame";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PCreateBuy.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const P2PCreateBuy = () => {
   return (
     <div className="p2p-create-buy">
+      <Header/>
       <div className="wallet-body-frame">
-        <div className="header">
-          <img className="menu-icon" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon" alt="" src="/notification.svg" />
-          <div className="connect-wallet">
-            <b className="connect">Connect</b>
-          </div>
-          <img className="profile-icon" alt="" src="/profile.svg" />
-        </div>
+       <Divider/>
         <SendAndRecieveFrame
           mingcuteuser4Fill="/mingcuteuser4fill.svg"
           youArePaying="You are paying "
@@ -87,38 +85,10 @@ const P2PCreateBuy = () => {
               </div>
             </div>
           </div>
-          <div className="footer-start-frame">
-            <div className="footer-frame">
-              <div className="home-referral">
-                <div className="referal-frame">
-                  <div className="referal-link-frame">
-                    <div className="httpsrisingcoinxyzrefant">
-                      https://risingcoin.xyz?ref=anthonyeyo
-                    </div>
-                    <div className="rectangle-parent">
-                      <div className="frame-child" />
-                      <div className="frame-item" />
-                    </div>
-                  </div>
-                  <div className="referal-text">
-                    <div className="refer-friends-to">
-                      Refer friends to get 3 RSC or 5% every time they mine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FooterStartFrame />
         </div>
         <SocialMediaHandle group182="/group-182.svg" />
-        <BottomTabs
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+   <FooterSection />
       </div>
     </div>
   );

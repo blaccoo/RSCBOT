@@ -1,16 +1,16 @@
-.frame-child40,
-.httpsrisingcoinxyzrefant19 {
+.frame-child20,
+.httpsrisingcoinxyzrefant9 {
   position: absolute;
   margin: 0 !important;
   z-index: 0;
 }
-.httpsrisingcoinxyzrefant19 {
+.httpsrisingcoinxyzrefant9 {
   width: 215px;
   top: calc(50% - 10px);
   left: calc(50% - 125.5px);
   display: inline-block;
 }
-.frame-child40 {
+.frame-child20 {
   width: 11.9px;
   top: calc(50% - 9px);
   left: calc(50% - 8px);
@@ -19,15 +19,15 @@
   box-sizing: border-box;
   height: 13.5px;
 }
-.frame-child41,
-.rectangle-parent22,
-.referal-link-frame19 {
+.frame-child21,
+.rectangle-parent12,
+.referal-link-frame1 {
   margin: 0 !important;
   position: absolute;
   box-sizing: border-box;
   z-index: 1;
 }
-.frame-child41 {
+.frame-child21 {
   width: 11.9px;
   top: calc(50% - 5.4px);
   left: calc(50% - 6.1px);
@@ -35,8 +35,8 @@
   border: 0.5px solid var(--color-black);
   height: 13.5px;
 }
-.rectangle-parent22,
-.referal-link-frame19 {
+.rectangle-parent12,
+.referal-link-frame1 {
   width: 42px;
   top: calc(50% - 24px);
   left: calc(50% + 110.5px);
@@ -52,7 +52,7 @@
   padding: var(--padding-mini) var(--padding-mid-1) var(--padding-mini)
     var(--padding-smi);
 }
-.referal-link-frame19 {
+.referal-link-frame1 {
   width: 305px;
   top: calc(50% + 0.5px);
   left: calc(50% - 153px);
@@ -63,19 +63,19 @@
   gap: var(--gap-3xs);
   z-index: 0;
 }
-.refer-friends-to19 {
+.refer-friends-to9 {
   width: 298.1px;
   position: relative;
   display: inline-block;
   height: 32px;
   flex-shrink: 0;
 }
-.referal-frame19,
-.referal-text19 {
+.referal-frame11,
+.referal-text11 {
   display: flex;
   flex-direction: column;
 }
-.referal-text19 {
+.referal-text11 {
   margin: 0 !important;
   position: absolute;
   top: calc(50% - 53.5px);
@@ -90,7 +90,7 @@
   font-size: var(--font-size-sm);
   color: var(--typography-colors-light-grey);
 }
-.referal-frame19 {
+.referal-frame11 {
   align-self: stretch;
   border-radius: var(--br-xs);
   background-color: var(--color-lightseagreen-200);
@@ -100,28 +100,28 @@
   position: relative;
   gap: var(--gap-3xs);
 }
-.footer-frame19,
-.home-referral19 {
+.footer-frame11,
+.home-referral11 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.home-referral19 {
+.home-referral11 {
   align-self: stretch;
 }
-.footer-frame19 {
+.footer-frame11 {
   flex: 1;
 }
 .coin-overview-and-transactions22,
-.footer-start-frame27 {
+.footer-start-frame32 {
   align-self: stretch;
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
 }
-.footer-start-frame27 {
+.footer-start-frame32 {
   height: 193px;
   overflow: hidden;
   flex-shrink: 0;

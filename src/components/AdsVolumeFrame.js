@@ -6,7 +6,7 @@ const AdsVolumeFrame = ({ className = "", volumeToBuy }) => {
     <div className={`ads-volume-frame ${className}`}>
       <div className="volume-to-buy-parent">
         <div className="volume-to-buy">{volumeToBuy}</div>
-        <div className="frame-parent18">
+        <div className="frame-parent55">
           <div className="enter-between-2-20000-wrapper">
             <div className="enter-between-2">Enter Between 2 ~ 20000</div>
           </div>

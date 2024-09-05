@@ -42,7 +42,8 @@ html, body {
   --color-gray-200: #2c2c2d;
   --color-gray-300: #222;
   --color-gray-400: #212224;
-  --color-gray-500: #16171a;
+  --color-gray-500: #16171a; 
+  --color-gray-550: #C78814; 
   --color-gray-600: rgba(255, 255, 255, 0);
   --color-gray-700: rgba(255, 255, 255, 0.57);
   --color-aliceblue: #f5faff;

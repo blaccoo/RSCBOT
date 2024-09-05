@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: center;
 }
-.div161,
+.div188,
 .usd1 {
   position: relative;
   line-height: 51px;
@@ -47,7 +47,7 @@
 }
 .current-balance-bg2 {
   flex: 1;
-  box-shadow: var(--shadow-1);
+  box-shadow: 2px 0 20px rgba(24, 57, 107, 0.05);
   background-color: var(--color-gray-400);
 }
 .current-balance-frame10 {

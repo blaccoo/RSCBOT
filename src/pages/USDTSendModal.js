@@ -12,8 +12,8 @@ const USDTSendModal = () => {
       <div className="usernmar-frame4">
         <b className="address">Address</b>
       </div>
-      <div className="rectangle-parent2">
-        <div className="frame-child4" />
+      <div className="rectangle-group">
+        <div className="frame-item" />
         <div className="enter-recipient-address-wrapper">
           <div className="enter-recipient-address">Enter Recipient Address</div>
         </div>
@@ -24,8 +24,8 @@ const USDTSendModal = () => {
       <div className="usernmar-frame5">
         <b className="address">Amount</b>
       </div>
-      <div className="rectangle-parent3">
-        <div className="frame-child4" />
+      <div className="rectangle-container">
+        <div className="frame-item" />
         <div className="enter-recipient-address-wrapper">
           <div className="enter-recipient-address">Enter Amount</div>
         </div>

@@ -4,7 +4,7 @@
   line-height: 10px;
   font-weight: 600;
 }
-.div147,
+.div173,
 .min6,
 .usdt36 {
   position: relative;
@@ -17,7 +17,7 @@
   width: 22px;
   flex-shrink: 0;
 }
-.div147,
+.div173,
 .usdt36 {
   flex: 1;
   font-size: var(--font-size-smi);
@@ -27,7 +27,7 @@
   color: var(--color-whitesmoke-100);
   text-align: right;
 }
-.frame-wrapper3,
+.frame-wrapper7,
 .min-parent {
   display: flex;
   flex-direction: row;
@@ -39,7 +39,7 @@
   padding: var(--padding-10xs) 0;
   gap: var(--gap-3xs);
 }
-.frame-wrapper3 {
+.frame-wrapper7 {
   align-self: stretch;
   border-bottom: 1px solid var(--color-darkslategray-100);
   box-sizing: border-box;

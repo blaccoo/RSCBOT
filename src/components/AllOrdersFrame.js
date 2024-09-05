@@ -61,7 +61,7 @@ const AllOrdersFrame = ({
         <div className="payment-method55" style={paymentMethodStyle} />
         <div className="payment-method56">
           <div className="account-number3">Account Number</div>
-          <div className="div124">7038788133</div>
+          <div className="div150">7038788133</div>
           <img
             className="solarcopy-outline-icon6"
             alt=""
@@ -71,7 +71,7 @@ const AllOrdersFrame = ({
         <div className="orders-date-and-ref34" />
         <div className="orders-date-and-ref35">
           <div className="amount5">Amount</div>
-          <div className="div125">{prop}</div>
+          <div className="div151">{prop}</div>
           <div className="bank4">NGN</div>
         </div>
       </div>

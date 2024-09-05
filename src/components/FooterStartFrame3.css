@@ -9,7 +9,7 @@
 .bot-mines-for1 {
   position: relative;
 }
-.wallet45 {
+.wallet105 {
   height: 20px;
   display: flex;
   flex-direction: row;
@@ -24,44 +24,44 @@
   flex-shrink: 0;
   object-fit: cover;
 }
-.wallet-parent3,
-.wallet46 {
+.wallet-parent17,
+.wallet106 {
   display: flex;
   justify-content: center;
 }
-.wallet46 {
+.wallet106 {
   height: 20px;
   flex-direction: row;
   align-items: center;
   gap: var(--gap-6xs);
 }
-.wallet-parent3 {
+.wallet-parent17 {
   width: 182px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-8xs);
   z-index: 1;
 }
-.teenyiconstick-circle-solid1 {
-  width: 24px;
+.teenyiconstick-circle-solid3 {
+  width: 20px;
   position: relative;
-  height: 24px;
+  height: 20px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.purchased {
-  width: 70px;
+.activated {
+  width: 62px;
   position: relative;
   display: inline-block;
 }
 .game-iconsrobot-golem-parent,
-.wallet47 {
+.wallet107 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-6xs);
 }
-.wallet47 {
+.wallet107 {
   width: 50px;
   margin: 0 !important;
   position: absolute;
@@ -75,8 +75,9 @@
   width: 332px;
   flex-direction: row;
   position: relative;
+  cursor: pointer;
 }
-.footer-start-frame31 {
+.footer-start-frame36 {
   align-self: stretch;
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-400);

@@ -3,24 +3,16 @@ import BuyerSellerChat from "../components/BuyerSellerChat";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PSellerPaymentConfirmation.css";
+import FooterSection from "../components/FooterSection";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
 
 const P2PSellerPaymentConfirmation = () => {
   return (
     <div className="p2p-seller-payment-confirmatio">
+      <Header/>
       <div className="wallet-body-frame13">
-        <div className="header16">
-          <div className="menu-icon16">
-            <img className="vector-icon4" alt="" src="/vector.svg" />
-          </div>
-          <div className="notification1">
-            <div className="notification-frame1" />
-            <img className="vector-icon5" alt="" src="/vector1.svg" />
-          </div>
-          <div className="connect-wallet16">
-            <b className="connect16">Connect</b>
-          </div>
-          <img className="profile-icon16" alt="" src="/profile.svg" />
-        </div>
+       <Divider/>
         <SendAndRecieveFrame3 />
         <div className="coin-overview-and-transactions12">
           <div className="timing-for-creation4">
@@ -100,15 +92,7 @@ const P2PSellerPaymentConfirmation = () => {
           <b className="raised-dispute">Raised Dispute</b>
         </div>
         <SocialMediaHandle group182="/group-182.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+    <FooterSection/>
       </div>
     </div>
   );

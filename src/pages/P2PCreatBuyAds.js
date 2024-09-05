@@ -6,19 +6,15 @@ import CoinOverviewAndTransactions from "../components/CoinOverviewAndTransactio
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PCreatBuyAds.css";
+import Divider from "../components/Divider";
+import FooterSection from "../components/FooterSection";
 
 const P2PCreatBuyAds = () => {
   return (
     <div className="p2p-creat-buy-ads">
+      <Header/>
       <div className="wallet-body-frame17">
-        <div className="header20">
-          <img className="menu-icon20" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon18" alt="" src="/notification.svg" />
-          <div className="connect-wallet20">
-            <b className="connect20">Connect</b>
-          </div>
-          <img className="profile-icon20" alt="" src="/profile.svg" />
-        </div>
+      <Divider/>
         <CreatAdsTitleFrame />
         <div className="method-chose-to-create-ads">
           <div className="ads-frame">
@@ -62,7 +58,7 @@ const P2PCreatBuyAds = () => {
           <AdsVolumeFrame volumeToBuy="Volume to buy" />
           <div className="your-balance">
             <div className="your-balance-inner">
-              <div className="frame-parent3">
+              <div className="frame-parent5">
                 <div className="your-balance-wrapper">
                   <div className="max">Your Balance:</div>
                 </div>
@@ -95,15 +91,7 @@ const P2PCreatBuyAds = () => {
         </div>
         <CoinOverviewAndTransactions propHeight="200px" propHeight1="173px" />
         <SocialMediaHandle group182="/group-1821.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+     <FooterSection/>
       </div>
     </div>
   );

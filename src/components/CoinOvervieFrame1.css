@@ -1,15 +1,15 @@
-.enter-amount10 {
+.enter-amount11 {
   width: 129px;
   position: relative;
   display: inline-block;
   flex-shrink: 0;
 }
-.enter-amount9,
+.enter-amount10,
 .ngn39 {
   align-self: stretch;
   display: flex;
 }
-.enter-amount9 {
+.enter-amount10 {
   border-radius: var(--br-3xs);
   border: 1px solid var(--color-gray-100);
   flex-direction: row;
@@ -65,7 +65,7 @@
   font-size: var(--h5-size);
   color: var(--color-gray-100);
 }
-.div148 {
+.div174 {
   position: relative;
   font-weight: 500;
 }
@@ -81,17 +81,17 @@
   align-self: stretch;
   height: 13px;
 }
-.buy-max {
+.buy-max1 {
   position: relative;
   font-size: var(--h5-size);
   color: var(--color-lightseagreen-100);
   text-align: left;
 }
-.trade20 {
+.trade25 {
   flex: 1;
 }
-.div149,
-.trade20 {
+.div175,
+.trade25 {
   position: relative;
   font-weight: 600;
 }
@@ -106,10 +106,10 @@
   color: var(--color-aliceblue);
 }
 .payment-method62,
-.wallet56 {
+.wallet118 {
   position: relative;
 }
-.wallet56 {
+.wallet118 {
   flex: 1;
   color: var(--color-aliceblue);
   text-align: right;
@@ -128,7 +128,7 @@
   color: var(--color-darkgray);
   text-align: left;
 }
-.div150 {
+.div176 {
   flex: 1;
   position: relative;
 }

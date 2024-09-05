@@ -33,9 +33,14 @@ const ConfirmationFrame = ({
   }, [propWidth2]);
 
   return (
-    <div className={`confirmation-frame ${className}`}>
-      <div className="stake-complete" style={stakeCompleteStyle}>
-        <img className="frame-icon" alt="" src={frame} style={frameIconStyle} />
+    <div className={`confirmation-frame13 ${className}`}>
+      <div className="stake-complete13" style={stakeCompleteStyle}>
+        <img
+          className="frame-icon13"
+          alt=""
+          src={frame}
+          style={frameIconStyle}
+        />
         <b
           className="payment-confirmed-you-container"
           style={paymentConfirmedYouContainerStyle}

@@ -13,7 +13,7 @@ const CoinOverviewAndTransactions = ({
     };
   }, [propHeight]);
 
-  const footerStartFrameStyle = useMemo(() => {
+  const footerStartFrame3Style = useMemo(() => {
     return {
       height: propHeight1,
     };
@@ -24,21 +24,21 @@ const CoinOverviewAndTransactions = ({
       className={`coin-overview-and-transactions22 ${className}`}
       style={coinOverviewAndTransactionsStyle}
     >
-      <div className="footer-start-frame27" style={footerStartFrameStyle}>
-        <div className="footer-frame19">
-          <div className="home-referral19">
-            <div className="referal-frame19">
-              <div className="referal-link-frame19">
-                <div className="httpsrisingcoinxyzrefant19">
+      <div className="footer-start-frame32" style={footerStartFrame3Style}>
+        <div className="footer-frame11">
+          <div className="home-referral11">
+            <div className="referal-frame11">
+              <div className="referal-link-frame1">
+                <div className="httpsrisingcoinxyzrefant9">
                   https://risingcoin.xyz?ref=anthonyeyo
                 </div>
-                <div className="rectangle-parent22">
-                  <div className="frame-child40" />
-                  <div className="frame-child41" />
+                <div className="rectangle-parent12">
+                  <div className="frame-child20" />
+                  <div className="frame-child21" />
                 </div>
               </div>
-              <div className="referal-text19">
-                <div className="refer-friends-to19">
+              <div className="referal-text11">
+                <div className="refer-friends-to9">
                   Refer friends to get 3 RSC or 5% every time they mine
                 </div>
               </div>

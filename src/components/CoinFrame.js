@@ -25,11 +25,11 @@ const CoinFrame = ({
             </div>
           </div>
           <div className="balance-and-unit1">
-            <div className="balance-wrapper">
-              <div className="balance1">{balance}</div>
+            <div className="balance-wrapper1">
+              <div className="balance4">{balance}</div>
             </div>
             <div className="rsc-wrapper">
-              <div className="balance1">{rSC}</div>
+              <div className="balance4">{rSC}</div>
             </div>
           </div>
         </div>

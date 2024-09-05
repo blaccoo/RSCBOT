@@ -1,46 +1,68 @@
-import { useMemo } from "react";
+import { useMemo, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./FooterStartFrame1.css";
 
 const FooterStartFrame1 = ({
   className = "",
-  hugeiconsmarketing,
-  special,
+  propHeight,
   solarmoneyBagBroken,
   profitPerDay,
   streamlineinvestmentSelection,
   investment,
-  propHeight,
+  hugeiconsmarketing,
+  special,
   frameDivLeft,
+  hugeiconsfire,
+  boast,
+  walletWidth,
+  onWalletContainerClick,
+  onWalletContainerClick1,
 }) => {
-  const frameDivStyle = useMemo(() => {
+  const frameDiv3Style = useMemo(() => {
     return {
       height: propHeight,
     };
   }, [propHeight]);
 
-  const frameDiv1Style = useMemo(() => {
+  const frameDiv4Style = useMemo(() => {
     return {
       left: frameDivLeft,
     };
   }, [frameDivLeft]);
 
+  const wallet2Style = useMemo(() => {
+    return {
+      width: walletWidth,
+    };
+  }, [walletWidth]);
+
+  const navigate = useNavigate();
+
+  const onWalletContainerClick2 = useCallback(() => {
+    navigate("/boast");
+  }, [navigate]);
+
+  const onWalletContainerClick3 = useCallback(() => {
+    navigate("/coming-market-place");
+  }, [navigate]);
+
   return (
-    <div className={`footer-start-frame28 ${className}`}>
-      <div className="wallet-parent" style={frameDivStyle}>
-        <div className="wallet35">
+    <div className={`footer-start-frame33 ${className}`}>
+      <div className="wallet-parent13" style={frameDiv3Style}>
+        <div className="wallet95" onClick={onWalletContainerClick}>
           <img className="hugeiconsmarketing" alt="" src={hugeiconsmarketing} />
           <div className="special">{special}</div>
         </div>
-        <div className="wallet35">
-          <img
-            className="hugeiconsmarketing"
-            alt=""
-            src={solarmoneyBagBroken}
-          />
-          <div className="special">{profitPerDay}</div>
+        <div className="wallet96" onClick={onWalletContainerClick}>
+          <img className="hugeiconsmarketing" alt="" src={hugeiconsfire} />
+          <div className="special">{boast}</div>
         </div>
-        <div className="wallet35">
+        <div
+          className="wallet97"
+          onClick={onWalletContainerClick1}
+          style={wallet2Style}
+        >
           <img
             className="hugeiconsmarketing"
             alt=""
@@ -49,23 +71,30 @@ const FooterStartFrame1 = ({
           <div className="special">{investment}</div>
         </div>
       </div>
-      <div className="footer-start-frame-child" style={frameDiv1Style} />
+      <div className="footer-start-frame-child" style={frameDiv4Style} />
     </div>
   );
 };
 
 FooterStartFrame1.propTypes = {
   className: PropTypes.string,
-  hugeiconsmarketing: PropTypes.string,
-  special: PropTypes.string,
   solarmoneyBagBroken: PropTypes.string,
   profitPerDay: PropTypes.string,
   streamlineinvestmentSelection: PropTypes.string,
   investment: PropTypes.string,
+  hugeiconsmarketing: PropTypes.string,
+  special: PropTypes.string,
+  hugeiconsfire: PropTypes.string,
+  boast: PropTypes.string,
 
   /** Style props */
   propHeight: PropTypes.any,
   frameDivLeft: PropTypes.any,
+  walletWidth: PropTypes.any,
+
+  /** Action props */
+  onWalletContainerClick: PropTypes.func,
+  onWalletContainerClick1: PropTypes.func,
 };
 
 export default FooterStartFrame1;

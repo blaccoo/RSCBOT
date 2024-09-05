@@ -11,8 +11,8 @@ const USDTWithdrawalModal = () => {
       <div className="usernmar-frame1">
         <b className="amount">Amount</b>
       </div>
-      <div className="rectangle-group">
-        <div className="frame-inner" />
+      <div className="rectangle-parent">
+        <div className="frame-child" />
         <div className="enter-amount-wrapper">
           <div className="enter-amount1">Enter Amount</div>
         </div>

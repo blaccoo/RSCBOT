@@ -5,7 +5,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.wallet59 {
+.wallet89 {
   width: 38px;
   height: 38px;
   display: flex;
@@ -18,70 +18,71 @@
 .join-blum-bot {
   position: relative;
 }
-.wallet60 {
+.wallet90 {
   height: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.fluent-emojicoin-icon5 {
+.fluent-emojicoin-icon14 {
   width: 24px;
   position: relative;
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.wallet-parent7,
-.wallet61 {
-  display: flex;
-  justify-content: center;
-}
-.wallet61 {
+.wallet91 {
   height: 20px;
+  display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: var(--gap-6xs);
 }
-.wallet-parent7 {
+.wallet-parent12,
+.wallet92 {
   width: 182px;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: var(--gap-8xs);
   z-index: 1;
 }
-.wallet-parent6,
-.wallet62 {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-6xs);
-}
-.wallet62 {
+.wallet92 {
   width: 50px;
   margin: 0 !important;
   position: absolute;
   top: -2px;
   left: 282px;
   height: 55px;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
   z-index: 2;
 }
-.wallet-parent6 {
+.footer-start-frame29,
+.wallet-parent11 {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.wallet-parent11 {
   width: 332px;
   flex-direction: row;
-  position: relative;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
 }
-.footer-start-frame35 {
-  align-self: stretch;
+.footer-start-frame29 {
+  width: 100%;
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-400);
   overflow: hidden;
-  display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
   text-align: left;
   font-size: var(--font-size-xs);
   color: var(--color-whitesmoke-200);

@@ -10,7 +10,7 @@
   width: 38px;
   height: 38px;
 }
-.wallet48 {
+.wallet108 {
   width: 38px;
   height: 38px;
   display: flex;
@@ -23,46 +23,46 @@
 .watch-ads {
   position: relative;
 }
-.wallet49 {
+.wallet109 {
   height: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.fluent-emojicoin-icon3 {
+.fluent-emojicoin-icon17 {
   width: 24px;
   position: relative;
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.wallet-parent5,
-.wallet50 {
+.wallet-parent19,
+.wallet110 {
   display: flex;
   justify-content: center;
 }
-.wallet50 {
+.wallet110 {
   height: 20px;
   flex-direction: row;
   align-items: center;
   gap: var(--gap-6xs);
 }
-.wallet-parent5 {
+.wallet-parent19 {
   width: 182px;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-8xs);
   z-index: 1;
 }
-.wallet-parent4,
-.wallet51 {
+.wallet-parent18,
+.wallet111 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-6xs);
 }
-.wallet51 {
+.wallet111 {
   width: 50px;
   margin: 0 !important;
   position: absolute;
@@ -72,12 +72,12 @@
   flex-direction: column;
   z-index: 2;
 }
-.wallet-parent4 {
+.wallet-parent18 {
   width: 332px;
   flex-direction: row;
   position: relative;
 }
-.footer-start-frame32 {
+.footer-start-frame37 {
   align-self: stretch;
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-400);

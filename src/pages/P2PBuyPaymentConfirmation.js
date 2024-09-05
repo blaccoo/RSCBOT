@@ -3,24 +3,16 @@ import BuyerSellerChat from "../components/BuyerSellerChat";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PBuyPaymentConfirmation.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const P2PBuyPaymentConfirmation = () => {
   return (
     <div className="p2p-buy-payment-confirmation1">
+      <Header/>
       <div className="wallet-body-frame28">
-        <div className="header32">
-          <div className="menu-icon32">
-            <img className="vector-icon11" alt="" src="/vector.svg" />
-          </div>
-          <div className="notification3">
-            <div className="notification-frame9" />
-            <img className="vector-icon12" alt="" src="/vector1.svg" />
-          </div>
-          <div className="connect-wallet32">
-            <b className="connect32">Connect</b>
-          </div>
-          <img className="profile-icon32" alt="" src="/profile.svg" />
-        </div>
+       <Divider/>
         <SendAndRecieveFrame4
           mingcuteuser4Fill="/mingcuteuser4fill.svg"
           youArePaying="You are paying "
@@ -44,9 +36,9 @@ const P2PBuyPaymentConfirmation = () => {
                   Note:If Seller does not Confirm within stipulated time
                   consider Appeal or Report.
                 </span>
-                <span className="span6">{` `}</span>
+                <span className="span5">{` `}</span>
               </span>
-              <span className="span6">
+              <span className="span5">
                 <span>
                   Do not answer or perform trade outside the platform its likely
                   to be a scam
@@ -69,7 +61,7 @@ const P2PBuyPaymentConfirmation = () => {
                 <div className="payment-method52" />
                 <div className="payment-method53">
                   <div className="account-number2">Account Number</div>
-                  <div className="div117">7038788133</div>
+                  <div className="div118">7038788133</div>
                   <img
                     className="solarcopy-outline-icon4"
                     alt=""
@@ -79,7 +71,7 @@ const P2PBuyPaymentConfirmation = () => {
                 <div className="orders-date-and-ref32" />
                 <div className="orders-date-and-ref33">
                   <div className="amount4">Amount</div>
-                  <div className="div118">5000</div>
+                  <div className="div119">5000</div>
                   <div className="bank3">NGN</div>
                 </div>
               </div>
@@ -110,15 +102,7 @@ const P2PBuyPaymentConfirmation = () => {
           </div>
         </div>
         <SocialMediaHandle group182="/group-182.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+    <FooterSection/>
       </div>
     </div>
   );

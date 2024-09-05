@@ -3,9 +3,9 @@ import "./FooterStartFrame7.css";
 
 const FooterStartFrame7 = ({ className = "" }) => {
   return (
-    <div className={`footer-start-frame32 ${className}`}>
-      <div className="wallet-parent4">
-        <div className="wallet48">
+    <div className={`footer-start-frame37 ${className}`}>
+      <div className="wallet-parent18">
+        <div className="wallet108">
           <img
             className="mingcutead-rectangle-line-icon"
             alt=""
@@ -17,13 +17,13 @@ const FooterStartFrame7 = ({ className = "" }) => {
             src="/uittelegramalt.svg"
           />
         </div>
-        <div className="wallet-parent5">
-          <div className="wallet49">
+        <div className="wallet-parent19">
+          <div className="wallet109">
             <div className="watch-ads">Watch Ads</div>
           </div>
-          <div className="wallet50">
+          <div className="wallet110">
             <img
-              className="fluent-emojicoin-icon3"
+              className="fluent-emojicoin-icon17"
               alt=""
               src="/fluentemojicoin.svg"
             />
@@ -31,9 +31,9 @@ const FooterStartFrame7 = ({ className = "" }) => {
             <div className="watch-ads">(Each Ads watch)</div>
           </div>
         </div>
-        <div className="wallet51">
+        <div className="wallet111">
           <img
-            className="fluent-emojicoin-icon3"
+            className="fluent-emojicoin-icon17"
             alt=""
             src="/teenyiconstickcirclesolid.svg"
           />

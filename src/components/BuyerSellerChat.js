@@ -51,7 +51,7 @@ const BuyerSellerChat = ({
     >
       <div className="chat-main-frame" style={chatMainFrameStyle}>
         <div className="seller-chat">
-          <img className="profile-icon42" alt="" src="/profile2.svg" />
+          <img className="profile-icon51" alt="" src="/profile2.svg" />
           <b className="seller">Seller</b>
         </div>
         <div className="m">
@@ -78,16 +78,16 @@ const BuyerSellerChat = ({
           <div className="hi">Hi</div>
         </div>
         <div className="buyer-frame">
-          <img className="profile-icon43" alt="" src="/profile3.svg" />
+          <img className="profile-icon52" alt="" src="/profile3.svg" />
           <b className="you">You</b>
         </div>
         <div className="buyer-frame1">
-          <img className="profile-icon43" alt="" src="/profile3.svg" />
+          <img className="profile-icon52" alt="" src="/profile3.svg" />
           <b className="you">You</b>
         </div>
         <img className="file-frame-icon" alt="" src="/file-frame@2x.png" />
         <div className="admin-feame">
-          <img className="profile-icon45" alt="" src="/profile4.svg" />
+          <img className="profile-icon54" alt="" src="/profile4.svg" />
           <b className="admin">Admin</b>
         </div>
       </div>
@@ -95,15 +95,15 @@ const BuyerSellerChat = ({
         <b className="chat">Chat</b>
         <div className="online-dispute" style={onlineDisputeStyle}>
           <div className="seller-frame">
-            <img className="profile-icon46" alt="" src={profile} />
+            <img className="profile-icon55" alt="" src={profile} />
             <b className="seller1">Seller</b>
           </div>
           <div className="admin-feame1">
-            <img className="profile-icon47" alt="" src={profile1} />
+            <img className="profile-icon56" alt="" src={profile1} />
             <b className="admin1">Admin</b>
           </div>
           <div className="buyer-frame2">
-            <img className="profile-icon48" alt="" src="/profile3.svg" />
+            <img className="profile-icon57" alt="" src="/profile3.svg" />
             <b className="you">You</b>
           </div>
         </div>

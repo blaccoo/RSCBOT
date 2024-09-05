@@ -1,9 +1,9 @@
-.vector-icon11 {
+.vector-icon10 {
   width: 18px;
   position: relative;
   height: 12px;
 }
-.menu-icon32 {
+.menu-icon28 {
   height: 24px;
   overflow: hidden;
   display: flex;
@@ -20,7 +20,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.vector-icon12 {
+.vector-icon11 {
   width: 21.2px;
   position: relative;
   height: 21.9px;
@@ -36,7 +36,7 @@
   padding: var(--padding-6xs);
   box-sizing: border-box;
 }
-.connect32 {
+.connect28 {
   width: 77.2px;
   position: absolute;
   margin: 0 !important;
@@ -47,7 +47,7 @@
   display: inline-block;
   z-index: 0;
 }
-.connect-wallet32 {
+.connect-wallet38 {
   width: 90px;
   border-radius: var(--br-xl);
   background-color: var(--color-darkslateblue-300);
@@ -60,12 +60,12 @@
   box-sizing: border-box;
   position: relative;
 }
-.profile-icon32 {
+.profile-icon33 {
   width: 38.1px;
   position: relative;
   height: 38px;
 }
-.header32 {
+.header33 {
   align-self: stretch;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
   background-color: var(--color-gray-500);
@@ -96,7 +96,7 @@
   padding: 0 var(--padding-3xs);
   z-index: 0;
 }
-.span6 {
+.span5 {
   font-weight: 600;
   color: var(--color-indianred-200);
 }
@@ -157,12 +157,12 @@
   height: 13px;
 }
 .account-number2,
-.div117 {
+.div118 {
   position: relative;
   font-weight: 600;
   z-index: 0;
 }
-.div117 {
+.div118 {
   color: var(--color-whitesmoke-200);
   text-align: right;
   z-index: 1;
@@ -194,7 +194,7 @@
   height: 17px;
 }
 .amount4,
-.div118 {
+.div119 {
   position: relative;
   font-weight: 600;
 }
@@ -202,7 +202,7 @@
   color: var(--color-whitesmoke-200);
   text-align: left;
 }
-.div118 {
+.div119 {
   flex: 1;
 }
 .all-orders-frame11,

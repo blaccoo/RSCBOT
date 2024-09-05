@@ -22,7 +22,7 @@
   padding: var(--padding-10xs) 0;
   box-sizing: border-box;
 }
-.div146 {
+.div172 {
   flex: 1;
   position: relative;
   font-size: var(--font-size-xs);
@@ -31,13 +31,13 @@
   text-align: right;
 }
 .ads-frame8,
-.frame-parent17,
+.frame-parent54,
 .set-ads-percentage {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.frame-parent17 {
+.frame-parent54 {
   align-self: stretch;
   border-bottom: 1px solid var(--color-darkslategray-100);
   box-sizing: border-box;

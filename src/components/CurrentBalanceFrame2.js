@@ -11,10 +11,10 @@ const CurrentBalanceFrame2 = ({ className = "" }) => {
         </div>
       </div>
       <div className="ads-frame5">
-        <div className="parent3">
+        <div className="parent1">
           <div className="numbers-of-orders">23</div>
           <div className="order-completion-rate">100</div>
-          <div className="div123">%</div>
+          <div className="div149">%</div>
         </div>
         <div className="numbers-of-orders-parent">
           <div className="numbers-of-orders">Numbers of orders</div>

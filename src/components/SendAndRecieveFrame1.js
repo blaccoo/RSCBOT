@@ -25,7 +25,7 @@ const SendAndRecieveFrame1 = ({
           alt=""
           src={mingcuteuser4Fill}
         />
-        <div className="trade16">{trade}</div>
+        <div className="trade20">{trade}</div>
       </div>
     </div>
   );

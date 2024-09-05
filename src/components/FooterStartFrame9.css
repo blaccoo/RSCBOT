@@ -5,34 +5,34 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.div162 {
+.div189 {
   position: relative;
 }
-.wallet63 {
+.wallet125 {
   width: 50px;
   height: 55px;
   flex-direction: column;
   gap: var(--gap-6xs);
 }
-.wallet-parent8,
-.wallet63,
-.wallet64 {
+.wallet-parent22,
+.wallet125,
+.wallet126 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-.wallet64 {
+.wallet126 {
   width: 50px;
   height: 55px;
   flex-direction: column;
   gap: var(--gap-6xs);
   cursor: pointer;
 }
-.wallet-parent8 {
+.wallet-parent22 {
   flex-direction: row;
   gap: var(--gap-181xl);
 }
-.energy-limit {
+.energy-limit3 {
   width: 316px;
   border-radius: var(--br-81xl);
   background-color: var(--color-darkgoldenrod);
@@ -40,7 +40,7 @@
   box-sizing: border-box;
   height: 18px;
 }
-.footer-start-frame36 {
+.footer-start-frame41 {
   align-self: stretch;
   overflow: hidden;
   display: flex;

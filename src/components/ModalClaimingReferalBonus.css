@@ -1,0 +1,48 @@
+.claim-all {
+  width: 130px;
+  position: relative;
+  letter-spacing: -1px;
+  line-height: 145%;
+  display: inline-block;
+  height: 28px;
+  flex-shrink: 0;
+}
+.close18 {
+  width: 200px;
+  border-radius: var(--br-xs);
+  background: linear-gradient(181.41deg, #42275e, #843ad0);
+  height: 54px;
+  justify-content: center;
+}
+.close18,
+.frame22,
+.modal-claiming-referal-bonus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frame22 {
+  align-self: stretch;
+  overflow: hidden;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+}
+.modal-claiming-referal-bonus {
+  width: 362px;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--color-black);
+  border: 1px solid var(--color-darkslateblue-200);
+  box-sizing: border-box;
+  height: 549px;
+  justify-content: flex-start;
+  padding: var(--padding-2xl) var(--padding-base);
+  gap: var(--gap-xl);
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

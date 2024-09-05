@@ -17,15 +17,15 @@ const UpdatedAccountModal = () => {
       <div className="usernmar-frame19">
         <b className="opay-ng">Opay NG</b>
       </div>
-      <div className="rectangle-parent14">
-        <div className="frame-child26" />
+      <div className="rectangle-parent3">
+        <div className="frame-child4" />
         <div className="add-account-number-wrapper">
           <div className="add-account-number">Add Account Number</div>
         </div>
         <b className="acc">Acc</b>
       </div>
-      <div className="rectangle-parent15">
-        <div className="frame-child26" />
+      <div className="rectangle-parent4">
+        <div className="frame-child4" />
         <div className="add-account-number-wrapper">
           <div className="add-account-number">Account Name</div>
         </div>

@@ -2,41 +2,51 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import CurrentBalanceFrame from "../components/CurrentBalanceFrame";
 import Title from "../components/Title";
-import FooterStartFrame5 from "../components/FooterStartFrame5";
-import BottomTabs1 from "../components/BottomTabs1";
+import Footer from "../components/Footer";
 import "./ComingSonWallet.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const ComingSonWallet = () => {
   const navigate = useNavigate();
 
-  const onHomeContainerClick = useCallback(() => {
-    navigate("/task");
+  const onProfileIconClick = useCallback(() => {
+    navigate("/friends-profile");
   }, [navigate]);
 
   return (
     <div className="coming-son-wallet">
+      <Header/>
       <div className="home-body-frame3">
-        <div className="header36">
-          <div className="notification-and-count7">
-            <img
-              className="notification-icon32"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b25">12</b>
-          </div>
-          <div className="connect-wallet36">
-            <b className="connect36">Connect</b>
-          </div>
-          <img className="profile-icon36" alt="" src="/profile1.svg" />
-        </div>
-        <CurrentBalanceFrame prop="104.50 " />
-        <Title frameDivHeight="60px" frameDivOverflowY="auto" />
+      <Divider/>
+        <CurrentBalanceFrame
+          prop="104.50 "
+          divColor="#e4e4f0"
+          lvlBronzeColor="#e4e4f0"
+        />
+        <Title
+          frameDivHeight="60px"
+          frameDivOverflowY="auto"
+          vector="/vector3.svg"
+          vector1="/vector4.svg"
+          vector2="/vector5.svg"
+          vector3="/vector8.svg"
+          vector4="/vector9.svg"
+          vector5="/vector3.svg"
+          vector6="/vector4.svg"
+          vector7="/vector5.svg"
+          vector8="/vector9.svg"
+          referralCountColor="#fff"
+          fRIENDSColor="#fff"
+          taskKeyColor="#fff"
+          kEYSColor="#fff"
+        />
         <div className="mining-frame4">
           <div className="mining-frame5">
             <div className="mining-info-frame1">
               <div className="wallet-wrapper">
-                <div className="wallet18">
+                <div className="wallet25">
                   <div className="risingcoin-wallet-comes-container">
                     <p className="risingcoin-wallet-comes-with-a">
                       <span className="risingcoin">{`RisingCoin `}</span>
@@ -59,27 +69,41 @@ const ComingSonWallet = () => {
               />
             </div>
           </div>
-          <div className="footer-start-frame19">
+          <div className="footer-start-frame5">
             <div className="wallet-wrapper">
-              <div className="wallet18">
+              <div className="wallet25">
                 <div className="risingcoin-wallet-comes-container">
                   Coming Soon
                 </div>
               </div>
             </div>
           </div>
-          <FooterStartFrame5 propAlignSelf="unset" propWidth="340px" />
+          <div className="footer-start-frame6">
+            <div className="footer-frame4">
+              <div className="home-referral4">
+                <div className="referal-frame4">
+                  <div className="referal-text4">
+                    <div className="refer-friends-to4">
+                      Refer friends to get referral bonus now
+                    </div>
+                  </div>
+                  <div className="frame-parent18">
+                    <div className="httpsrisingcoinxyzrefant-wrapper2">
+                      <div className="httpsrisingcoinxyzrefant4">
+                        https://risingcoin.xyz?ref=anthonyeyo
+                      </div>
+                    </div>
+                    <div className="rectangle-parent7">
+                      <div className="frame-child10" />
+                      <div className="frame-child11" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <BottomTabs1
-          materialSymbolsLighttaskAlt="/materialsymbolslighttaskaltrounded1.svg"
-          propOverflowY="unset"
-          propBorder="1px solid #8e5ce0"
-          homeBorderRadius="unset"
-          homeBorder="unset"
-          homeHeight="unset"
-          iconParkdotTop="0.5px"
-          onHomeContainerClick={onHomeContainerClick}
-        />
+        <FooterSection />
       </div>
     </div>
   );

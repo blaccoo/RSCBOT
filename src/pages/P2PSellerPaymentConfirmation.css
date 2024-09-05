@@ -3,7 +3,7 @@
   position: relative;
   height: 12px;
 }
-.menu-icon16 {
+.menu-icon14 {
   height: 24px;
   overflow: hidden;
   display: flex;
@@ -36,7 +36,7 @@
   padding: var(--padding-6xs);
   box-sizing: border-box;
 }
-.connect16 {
+.connect14 {
   width: 77.2px;
   position: absolute;
   margin: 0 !important;
@@ -47,7 +47,7 @@
   display: inline-block;
   z-index: 0;
 }
-.connect-wallet16 {
+.connect-wallet18 {
   width: 90px;
   border-radius: var(--br-xl);
   background-color: var(--color-darkslateblue-300);

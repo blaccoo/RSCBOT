@@ -1,21 +1,19 @@
 import SendAndRecieveFrame1 from "../components/SendAndRecieveFrame1";
 import PaymentMethod from "../components/PaymentMethod";
+import FooterStartFrame from "../components/FooterStartFrame";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PSellList.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const P2PSellList = () => {
   return (
     <div className="p2p-sell-list">
+      <Header/>
       <div className="wallet-body-frame12">
-        <div className="header15">
-          <img className="menu-icon15" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon14" alt="" src="/notification.svg" />
-          <div className="connect-wallet15">
-            <b className="connect15">Connect</b>
-          </div>
-          <img className="profile-icon15" alt="" src="/profile.svg" />
-        </div>
+    <Divider/>
         <SendAndRecieveFrame1
           sendAndRecieveFrameHeight="66px"
           mingcuteuser4Fill="/tablerarrowdown.svg"
@@ -41,7 +39,7 @@ const P2PSellList = () => {
               <div className="paymeny-group">
                 <div className="select-from-the1">All</div>
                 <img
-                  className="menu-icon15"
+                  className="menu-icon13"
                   alt=""
                   src="/riarrowdropdownline.svg"
                 />
@@ -55,7 +53,7 @@ const P2PSellList = () => {
             <div className="all-orders-frame6">
               <div className="order-frame12">
                 <div className="price19">
-                  <b className="b16">1,380</b>
+                  <b className="b17">1,380</b>
                   <b className="ngn21">NGN</b>
                   <div className="sell-wrapper">
                     <b className="sell4">Sell</b>
@@ -103,7 +101,7 @@ const P2PSellList = () => {
             <div className="all-orders-frame6">
               <div className="order-frame12">
                 <div className="price19">
-                  <b className="b16">1,380</b>
+                  <b className="b17">1,380</b>
                   <b className="ngn21">NGN</b>
                   <div className="sell-container">
                     <b className="sell5">Sell</b>
@@ -149,39 +147,16 @@ const P2PSellList = () => {
               </div>
             </div>
           </div>
-          <div className="footer-start-frame10">
-            <div className="footer-frame10">
-              <div className="home-referral10">
-                <div className="referal-frame10">
-                  <div className="referal-link-frame10">
-                    <div className="httpsrisingcoinxyzrefant10">
-                      https://risingcoin.xyz?ref=anthonyeyo
-                    </div>
-                    <div className="rectangle-parent11">
-                      <div className="frame-child20" />
-                      <div className="frame-child21" />
-                    </div>
-                  </div>
-                  <div className="referal-text10">
-                    <div className="refer-friends-to10">
-                      Refer friends to get 3 RSC or 5% every time they mine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FooterStartFrame
+            propHeight="193px"
+            propTop="calc(50% - 53.5px)"
+            propHeight1="40px"
+            propLeft="calc(50% - 149px)"
+            propPadding="unset"
+          />
         </div>
         <SocialMediaHandle group182="/group-182.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+    <FooterSection/>
       </div>
     </div>
   );

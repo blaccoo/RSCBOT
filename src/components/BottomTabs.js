@@ -12,25 +12,29 @@ const BottomTabs = ({
   tradeIcon,
   trade,
 }) => {
-  const bottomTabsStyle = useMemo(() => {
+  const bottomTabs1Style = useMemo(() => {
     return {
       height: propHeight,
     };
   }, [propHeight]);
 
   return (
-    <div className={`bottom-tabs ${className}`} style={bottomTabsStyle}>
-      <div className="wallet33">
-        <img className="wallet-icon" alt="" src={walletIcon} />
-        <div className="wallet34">{wallet}</div>
+    <div className={`bottom-tabs2 ${className}`} style={bottomTabs1Style}>
+      <div className="wallet93">
+        <img className="fluenthome-48-filled-icon" alt="" src={walletIcon} />
+        <div className="wallet94">{wallet}</div>
       </div>
-      <div className="home1">
-        <img className="wallet-icon" alt="" src={fluenthome48Filled} />
-        <div className="wallet34">{home}</div>
+      <div className="home2">
+        <img
+          className="fluenthome-48-filled-icon"
+          alt=""
+          src={fluenthome48Filled}
+        />
+        <div className="wallet94">{home}</div>
       </div>
-      <div className="home1">
-        <img className="wallet-icon" alt="" src={tradeIcon} />
-        <div className="wallet34">{trade}</div>
+      <div className="home2">
+        <img className="fluenthome-48-filled-icon" alt="" src={tradeIcon} />
+        <div className="wallet94">{trade}</div>
       </div>
     </div>
   );

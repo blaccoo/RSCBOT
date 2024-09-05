@@ -1,5 +1,7 @@
 import { useCallback } from "react";
 import "./PinForFiatDeposite1.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
 
 const PinForFiatDeposite1 = () => {
   const onButtonFrameContainerClick = useCallback(() => {
@@ -13,22 +15,9 @@ const PinForFiatDeposite1 = () => {
 
   return (
     <div className="pin-for-fiat-deposite">
+      <Header/>
       <div className="pin-body-frame">
-        <div className="header3">
-          <img className="menu-icon3" alt="" src="/menu-icon.svg" />
-          <div className="notification-and-count">
-            <img
-              className="notification-icon3"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b1">12</b>
-          </div>
-          <div className="connect-wallet3">
-            <b className="connect3">Connect</b>
-          </div>
-          <img className="profile-icon3" alt="" src="/profile1.svg" />
-        </div>
+      <Divider/>
         <div className="pin-instruction">
           <div className="enter-pin">Enter your Rising Coin Pin</div>
         </div>

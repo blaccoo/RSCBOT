@@ -3,17 +3,17 @@ import "./BanksUpdate.css";
 const BanksUpdate = () => {
   return (
     <div className="banks-update">
-      <div className="frame-parent13">
+      <div className="frame-parent17">
         <div className="riarrow-drop-down-line-parent">
           <img
-            className="riarrow-drop-down-line-icon5"
+            className="riarrow-drop-down-line-icon4"
             alt=""
             src="/riarrowdropdownline1.svg"
           />
           <div className="select-banks">Select Banks</div>
           <div className="ngn35">NGN</div>
           <div className="riarrow-drop-down-line">
-            <img className="vector-icon13" alt="" src="/vector14.svg" />
+            <img className="vector-icon12" alt="" src="/vector14.svg" />
           </div>
         </div>
         <div className="first-bank-of-nigeria-wrapper">

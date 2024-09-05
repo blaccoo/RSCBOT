@@ -1,12 +1,11 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import CurrentBalanceFrame from "../components/CurrentBalanceFrame";
-import Title from "../components/Title";
-import FooterStartFrame1 from "../components/FooterStartFrame1";
-import FooterStartFrame5 from "../components/FooterStartFrame5";
 import FooterStartFrame10 from "../components/FooterStartFrame10";
-import BottomTabs1 from "../components/BottomTabs1";
+
 import "./FriendsProfile.css";
+import FooterSection from "../components/FooterSection";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
 
 const FriendsProfile = () => {
   const navigate = useNavigate();
@@ -16,79 +15,49 @@ const FriendsProfile = () => {
   }, [navigate]);
 
   const onWalletContainerClick1 = useCallback(() => {
-    navigate("/home");
+    navigate("/trade");
+  }, [navigate]);
+
+  const onWalletContainerClick2 = useCallback(() => {
+    navigate("/friends-profile");
   }, [navigate]);
 
   return (
-    <div className="friends-profile">
+    <div className="start-task">
+      <Header/>
       <div className="home-body-frame5">
-        <div className="header38">
-          <img className="menu-icon35" alt="" src="/menu-icon.svg" />
-          <div className="notification-and-count9">
-            <img
-              className="notification-icon34"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b27">12</b>
-          </div>
-          <div className="connect-wallet38">
-            <b className="connect38">Connect</b>
-          </div>
-          <img className="profile-icon38" alt="" src="/profile1.svg" />
-        </div>
-        <CurrentBalanceFrame prop="104.50 " />
-        <Title frameDivHeight="91px" frameDivOverflowY="unset" />
+      <Divider/>
         <div className="mining-frame8">
-          <FooterStartFrame1
-            hugeiconsmarketing="/carbonfriendship.svg"
-            special="Friends"
-            solarmoneyBagBroken="/f7status.svg"
-            profitPerDay="Stats"
-            streamlineinvestmentSelection="/materialsymbolssocialleaderboardoutlinerounded.svg"
-            investment="Leaders Board"
-            propHeight="55px"
-            frameDivLeft="-1px"
-          />
-          <div className="wallet23">
-            <b className="my-referal-link">My Referal Link</b>
+          <div className="wallet30">
+            <b className="introduction-to-trading">
+              Introduction to Trading Part 1
+            </b>
           </div>
-          <FooterStartFrame5 propAlignSelf="stretch" propWidth="unset" />
-          <b className="my-referals-network">My Referals Network</b>
-          <FooterStartFrame10
-            profile="/profile8.svg"
-            herbetPere="Herbet Pere"
-            fluentEmojicoin="/fluentemojicoin.svg"
-            prop="23,456,000"
-            lvlGold="Lvl - Gold"
-          />
-          <FooterStartFrame10
-            profile="/profile9.svg"
-            herbetPere="Nsisong Eyo"
-            fluentEmojicoin="/fluentemojicoin1.svg"
-            prop="500,456,000"
-            lvlGold="Lvl - Elite"
-          />
-          <FooterStartFrame10
-            profile="/profile10.svg"
-            herbetPere="Anthony A"
-            fluentEmojicoin="/fluentemojicoin1.svg"
-            prop="1000,000"
-            lvlGold="Lvl - Bronze"
-          />
+          <div className="footer-start-frame9">
+            <div className="footer-frame6">
+              <div className="home-referral6">
+                <div className="referal-frame6">
+                  <div className="referal-text6">
+                    <div className="perform-this-task">{`Perform this task correctly for your reward. Task verification is manually checked `}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <b className="complete-task-and">Complete task and claim reward</b>
+          <FooterStartFrame10 fluentEmojicoin="/fluentemojicoin2.svg" />
+          <div className="footer-start-frame10">
+            <div className="watch-video-complete">
+              Watch video complete come back and answer the question according
+              to the video
+            </div>
+          </div>
+          <div className="footer-start-frame11">
+            <div className="div120">5:00</div>
+          </div>
         </div>
-        <BottomTabs1
-          materialSymbolsLighttaskAlt="/materialsymbolslighttaskaltrounded.svg"
-          propOverflowY="auto"
-          propBorder="unset"
-          homeBorderRadius="10px"
-          homeBorder="1px solid #48486f"
-          homeHeight="60px"
-          iconParkdotTop="6.5px"
-          onWalletContainerClick={onWalletContainerClick}
-       
-        />
       </div>
+      <FooterSection/>
     </div>
   );
 };

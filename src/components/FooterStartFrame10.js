@@ -1,46 +1,31 @@
 import PropTypes from "prop-types";
 import "./FooterStartFrame10.css";
 
-const FooterStartFrame10 = ({
-  className = "",
-  profile,
-  herbetPere,
-  fluentEmojicoin,
-  prop,
-  lvlGold,
-}) => {
+const FooterStartFrame10 = ({ className = "", fluentEmojicoin }) => {
   return (
-    <div className={`footer-start-frame37 ${className}`}>
-      <div className="profile-parent">
-        <img className="profile-icon50" alt="" src={profile} />
-        <div className="wallet-parent9">
-          <div className="wallet65">
-            <b className="herbet-pere">{herbetPere}</b>
+    <div className={`footer-start-frame43 ${className}`}>
+      <div className="footer-start-frame-inner1">
+        <div className="wallet-parent25">
+          <div className="wallet138">
+            <b className="reward">Reward</b>
           </div>
-          <div className="wallet-parent10">
-            <div className="wallet66">
+          <div className="wallet-parent26">
+            <div className="wallet139">
               <img
-                className="fluent-emojicoin-icon6"
+                className="fluent-emojicoin-icon23"
                 alt=""
                 src={fluentEmojicoin}
               />
-              <div className="herbet-pere">{prop}</div>
+              <div className="div192">400,000</div>
             </div>
-            <div className="wallet67">
-              <img
-                className="fluent-emojicoin-icon6"
-                alt=""
-                src="/fluentemojicoin.svg"
-              />
-              <div className="herbet-pere">5000</div>
+            <div className="wallet140">
+              <img className="notokey-icon8" alt="" src="/notokey.svg" />
+              <div className="reward">1</div>
             </div>
-            <div className="wallet68">
-              <div className="herbet-pere">Claim</div>
+            <div className="wallet141">
+              <div className="reward">Start task</div>
             </div>
           </div>
-        </div>
-        <div className="wallet69">
-          <div className="lvl-gold">{lvlGold}</div>
         </div>
       </div>
     </div>
@@ -49,11 +34,7 @@ const FooterStartFrame10 = ({
 
 FooterStartFrame10.propTypes = {
   className: PropTypes.string,
-  profile: PropTypes.string,
-  herbetPere: PropTypes.string,
   fluentEmojicoin: PropTypes.string,
-  prop: PropTypes.string,
-  lvlGold: PropTypes.string,
 };
 
 export default FooterStartFrame10;

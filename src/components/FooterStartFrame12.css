@@ -1,0 +1,115 @@
+.profile-icon58 {
+  width: 38.1px;
+  height: 38px;
+  z-index: 0;
+}
+.herbet-pere1,
+.profile-icon58 {
+  position: relative;
+}
+.wallet133 {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fluent-emojicoin-icon21 {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.wallet134,
+.wallet135,
+.wallet136 {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.wallet134 {
+  width: 98px;
+  gap: var(--gap-6xs);
+}
+.wallet135,
+.wallet136 {
+  width: 58px;
+}
+.wallet135 {
+  gap: var(--gap-6xs);
+}
+.wallet136 {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-darkslateblue-300);
+  cursor: pointer;
+}
+.wallet-parent23,
+.wallet-parent24 {
+  display: flex;
+  align-items: flex-start;
+}
+.wallet-parent24 {
+  width: 238px;
+  height: 22px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: var(--font-size-xs);
+}
+.wallet-parent23 {
+  width: 182px;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-8xs);
+  z-index: 1;
+}
+.lvl-gold {
+  width: 68px;
+  position: relative;
+  display: inline-block;
+}
+.profile-parent3,
+.wallet137 {
+  display: flex;
+  align-items: center;
+}
+.wallet137 {
+  width: 50px;
+  margin: 0 !important;
+  position: absolute;
+  top: -2px;
+  left: 282px;
+  height: 28px;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  font-size: var(--font-size-xs);
+}
+.profile-parent3 {
+  width: 332px;
+  height: 68px;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-6xs);
+}
+.footer-start-frame42 {
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gray-400);
+  height: 92px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-roboto);
+}

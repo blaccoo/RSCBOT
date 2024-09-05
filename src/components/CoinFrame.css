@@ -44,16 +44,16 @@
   align-items: flex-start;
   justify-content: space-between;
 }
-.balance1 {
+.balance4 {
   position: relative;
   font-weight: 500;
 }
-.balance-wrapper {
+.balance-wrapper1 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.balance-wrapper,
+.balance-wrapper1,
 .rsc-wrapper {
   flex-direction: row;
 }

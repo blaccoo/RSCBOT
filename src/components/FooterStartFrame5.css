@@ -1,32 +1,32 @@
-.refer-friends-to20,
-.referal-text20 {
+.refer-friends-to7,
+.referal-text9 {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.refer-friends-to20 {
+.refer-friends-to7 {
   width: 298.1px;
   position: relative;
   height: 32px;
   flex-shrink: 0;
 }
-.referal-text20 {
+.referal-text9 {
   align-self: stretch;
   overflow: hidden;
   flex-direction: column;
 }
-.httpsrisingcoinxyzrefant20 {
+.httpsrisingcoinxyzrefant7 {
   position: relative;
 }
-.httpsrisingcoinxyzrefant-wrapper {
+.httpsrisingcoinxyzrefant-wrapper5 {
   width: 237px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.frame-child42,
-.frame-child43 {
+.frame-child16,
+.frame-child17 {
   width: 11.9px;
   position: absolute;
   margin: 0 !important;
@@ -38,18 +38,18 @@
   height: 13.5px;
   z-index: 0;
 }
-.frame-child43 {
+.frame-child17 {
   top: calc(50% - 5.4px);
   left: calc(50% - 6.1px);
   z-index: 1;
 }
-.frame-parent16,
-.rectangle-parent23 {
+.frame-parent51,
+.rectangle-parent10 {
   display: flex;
   justify-content: center;
   box-sizing: border-box;
 }
-.rectangle-parent23 {
+.rectangle-parent10 {
   width: 64px;
   border-radius: var(--br-xs);
   background-color: var(--color-gray-300);
@@ -62,7 +62,7 @@
   position: relative;
   gap: var(--gap-4xs);
 }
-.frame-parent16 {
+.frame-parent51 {
   width: 316px;
   background-color: var(--color-darkslategray-200);
   flex-direction: row;
@@ -73,32 +73,33 @@
   font-size: var(--font-size-xs);
   color: var(--color-silver-200);
 }
-.referal-frame20 {
+.referal-frame9 {
   width: 353px;
   border-radius: var(--br-xs);
   background-color: var(--color-lightseagreen-200);
   height: 162px;
   gap: var(--gap-3xs);
 }
-.footer-frame20,
-.footer-start-frame33,
-.home-referral20,
-.referal-frame20 {
+.footer-frame9,
+.footer-start-frame30,
+.home-referral9,
+.referal-frame9 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.home-referral20 {
+.home-referral9 {
   align-self: stretch;
   height: 112px;
 }
-.footer-frame20,
-.footer-start-frame33 {
+.footer-frame9,
+.footer-start-frame30 {
   height: 137px;
 }
-.footer-start-frame33 {
-  align-self: stretch;
+.footer-start-frame30 {
+  width: 100%;
+  position: relative;
   height: 111px;
   overflow: hidden;
   flex-shrink: 0;

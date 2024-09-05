@@ -1,21 +1,19 @@
 import SendAndRecieveFrame from "../components/SendAndRecieveFrame";
 import CoinOvervieFrame3 from "../components/CoinOvervieFrame3";
+import FooterStartFrame from "../components/FooterStartFrame";
 import SocialMediaHandle from "../components/SocialMediaHandle";
-import BottomTabs from "../components/BottomTabs";
+
 import "./WithdrawalFiatConfirmPay.css";
+import Divider from "../components/Divider";
+import FooterSection from "../components/FooterSection";
+import Header from "../components/Header";
 
 const WithdrawalFiatConfirmPay = () => {
   return (
     <div className="withdrawal-fiat-confirm-pay">
+      <Header/>
       <div className="wallet-body-frame24">
-        <div className="header28">
-          <img className="menu-icon28" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon25" alt="" src="/notification.svg" />
-          <div className="connect-wallet28">
-            <b className="connect28">Connect</b>
-          </div>
-          <img className="profile-icon28" alt="" src="/profile.svg" />
-        </div>
+        <Divider/>
         <SendAndRecieveFrame
           mingcuteuser4Fill="/mingcuteuser4fill1.svg"
           youArePaying="You are Receiving "
@@ -52,39 +50,16 @@ const WithdrawalFiatConfirmPay = () => {
           <div className="cancel-order7">
             <b className="chat-merchant">Chat Merchant</b>
           </div>
-          <div className="footer-start-frame14">
-            <div className="footer-frame14">
-              <div className="home-referral14">
-                <div className="referal-frame14">
-                  <div className="referal-link-frame14">
-                    <div className="httpsrisingcoinxyzrefant14">
-                      https://risingcoin.xyz?ref=anthonyeyo
-                    </div>
-                    <div className="rectangle-parent17">
-                      <div className="frame-child30" />
-                      <div className="frame-child31" />
-                    </div>
-                  </div>
-                  <div className="referal-text14">
-                    <div className="refer-friends-to14">
-                      Refer friends to get 3 RSC or 5% every time they mine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FooterStartFrame
+            propHeight="193px"
+            propTop="calc(50% - 53.5px)"
+            propHeight1="40px"
+            propLeft="calc(50% - 149px)"
+            propPadding="unset"
+          />
         </div>
         <SocialMediaHandle group182="/group-1821.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+     <FooterSection/>
       </div>
     </div>
   );

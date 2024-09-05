@@ -6,6 +6,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import LeaderBoardProfile from "./pages/LeaderBoardProfile";
 import P2PCreateBuy from "./pages/P2PCreateBuy";
 import CurrencyUpdate from "./pages/CurrencyUpdate";
 import Screen1Trade from "./pages/Screen1Trade";
@@ -64,8 +65,12 @@ import ComingSonWallet from "./pages/ComingSonWallet";
 import ComingMarketPlace from "./pages/ComingMarketPlace";
 import FriendsProfile from "./pages/FriendsProfile";
 import StatsProfile from "./pages/StatsProfile";
-import LeaderBoardProfile from "./pages/LeaderBoardProfile";
 import ComingSonTrade from "./pages/ComingSonTrade";
+import ModalClaimingTaskForFailedTask from "./components/ModalClaimingTaskForFailedTask";
+import FriendsProfile1 from "./pages/FriendsProfile1";
+import TaskQuiz from "./pages/TaskQuiz";
+import ModalStarPayForMultitap from "./components/ModalStarPayForMultitap";
+import ModalStarPayForEnergyLimit from "./components/ModalStarPayForEnergyLimit";
 
 function App() {
   const action = useNavigationType();
@@ -88,6 +93,10 @@ function App() {
         metaDescription = "";
         break;
       case "/":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/p2p-create-buy":
         title = "";
         metaDescription = "";
         break;
@@ -311,7 +320,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/friends-profile":
+      case "/start-task":
         title = "";
         metaDescription = "";
         break;
@@ -319,11 +328,27 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/leader-board-profile":
+      case "/coming-son-trade":
         title = "";
         metaDescription = "";
         break;
-      case "/coming-son-trade":
+      case "/modal-claiming-task-for-failed-task":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/friends-profile":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/task-quiz":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/modal-star-pay-for-multitap":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/modal-star-pay-for-energy-limit":
         title = "";
         metaDescription = "";
         break;
@@ -345,10 +370,10 @@ function App() {
 
   return (
     <Routes>
-    <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/p2p-create-buy-ads" element={<P2PCreatBuyAds />} />
-      <Route path="/" element={<P2PCreateBuy />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/Home" element={<Home />} />
+      <Route path="/" element={<LeaderBoardProfile />} />
+      <Route path="/p2p-create-buy" element={<P2PCreateBuy />} />
       <Route path="/currency-update" element={<CurrencyUpdate />} />
       <Route path="/screen-1-trade" element={<Screen1Trade />} />
       <Route path="/chose-account-add-cash" element={<ChoseAccountAddCash />} />
@@ -458,10 +483,23 @@ function App() {
       <Route path="/carbonfriendship" element={<Carbonfriendship />} />
       <Route path="/coming-son-wallet" element={<ComingSonWallet />} />
       <Route path="/coming-market-place" element={<ComingMarketPlace />} />
-      <Route path="/friends-profile" element={<FriendsProfile />} />
+      <Route path="/start-task" element={<FriendsProfile />} />
       <Route path="/stats-profile" element={<StatsProfile />} />
-      <Route path="/leader-board-profile" element={<LeaderBoardProfile />} />
       <Route path="/coming-son-trade" element={<ComingSonTrade />} />
+      <Route
+        path="/modal-claiming-task-for-failed-task"
+        element={<ModalClaimingTaskForFailedTask />}
+      />
+      <Route path="/friends-profile" element={<FriendsProfile1 />} />
+      <Route path="/task-quiz" element={<TaskQuiz />} />
+      <Route
+        path="/modal-star-pay-for-multitap"
+        element={<ModalStarPayForMultitap />}
+      />
+      <Route
+        path="/modal-star-pay-for-energy-limit"
+        element={<ModalStarPayForEnergyLimit />}
+      />
     </Routes>
   );
 }

@@ -3,30 +3,33 @@ import "./FooterStartFrame8.css";
 
 const FooterStartFrame8 = ({ className = "" }) => {
   return (
-    <div className={`footer-start-frame34 ${className}`}>
+    <div className={`footer-start-frame39 ${className}`}>
       <div className="hugeiconsadvertisiment-parent">
         <img
           className="hugeiconsadvertisiment"
           alt=""
           src="/hugeiconsadvertisiment.svg"
         />
-        <div className="wallet-wrapper5">
-          <div className="wallet57">
+        <div className="wallet-parent21">
+          <div className="wallet122">
+            <div className="watch-ads-for">Watch Ads for Coins</div>
+          </div>
+          <div className="wallet123">
             <img
-              className="fluent-emojicoin-icon4"
+              className="fluent-emojicoin-icon19"
               alt=""
-              src="/fluentemojicoin.svg"
+              src="/fluentemojicoin1.svg"
             />
-            <div className="div158">200,000</div>
+            <div className="watch-ads-for">20,000</div>
           </div>
         </div>
-        <div className="wallet58">
+        <div className="wallet124">
           <img
-            className="fluent-emojicoin-icon4"
+            className="fluent-emojicoin-icon19"
             alt=""
             src="/teenyiconstickcirclesolid.svg"
           />
-          <div className="div158">0/20</div>
+          <div className="watch-ads-for">0/20</div>
         </div>
       </div>
     </div>

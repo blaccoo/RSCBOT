@@ -40,12 +40,12 @@
   height: 4px;
 }
 .account-number3,
-.div124 {
+.div150 {
   position: relative;
   font-weight: 600;
   z-index: 0;
 }
-.div124 {
+.div150 {
   color: var(--color-whitesmoke-200);
   text-align: right;
   z-index: 1;
@@ -77,7 +77,7 @@
   height: 17px;
 }
 .amount5,
-.div125 {
+.div151 {
   position: relative;
   font-weight: 600;
 }
@@ -85,7 +85,7 @@
   color: var(--color-whitesmoke-200);
   text-align: left;
 }
-.div125 {
+.div151 {
   flex: 1;
 }
 .all-orders-frame12,

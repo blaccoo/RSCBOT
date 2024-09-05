@@ -7,49 +7,55 @@ import FooterStartFrame2 from "../components/FooterStartFrame2";
 import FooterStartFrame4 from "../components/FooterStartFrame4";
 import FooterStartFrame3 from "../components/FooterStartFrame3";
 import FooterStartFrame7 from "../components/FooterStartFrame7";
-import FooterStartFrame5 from "../components/FooterStartFrame5";
-import BottomTabs1 from "../components/BottomTabs1";
+
 import "./Boast.css";
+import FooterSection from "../components/FooterSection";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import Divider2 from "../components/Divider2";
 
 const Boast = () => {
   const navigate = useNavigate();
 
   const onWalletContainerClick = useCallback(() => {
-    navigate("/wallet");
+    navigate("/boast");
   }, [navigate]);
 
   const onWalletContainerClick1 = useCallback(() => {
-    navigate("/home");
+    navigate("/coming-market-place");
+  }, [navigate]);
+
+  const onProfileIconClick = useCallback(() => {
+    navigate("/friends-profile");
   }, [navigate]);
 
   return (
     <div className="boast">
+      <Header/>
       <div className="home-body-frame">
-        <div className="header13">
-          <img className="menu-icon13" alt="" src="/menu-icon.svg" />
-          <div className="notification-and-count2">
-            <img
-              className="notification-icon12"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b15">12</b>
-          </div>
-          <div className="connect-wallet13">
-            <b className="connect13">Connect</b>
-          </div>
-          <img className="profile-icon13" alt="" src="/profile1.svg" />
-        </div>
+        <Divider/>
         <CurrentBalanceFrame prop="104.50 " />
-        <Title />
+        <Title
+          vector="/vector3.svg"
+          vector1="/vector4.svg"
+          vector2="/vector5.svg"
+          vector3="/vector4.svg"
+          vector4="/vector5.svg"
+          vector5="/vector3.svg"
+          vector6="/vector4.svg"
+          vector7="/vector5.svg"
+          vector8="/vector5.svg"
+        />
         <div className="mining-frame">
           <FooterStartFrame1
+            streamlineinvestmentSelection="/streamlineinvestmentselection.svg"
+            investment="RSC Market "
             hugeiconsmarketing="/hugeiconsmarketing.svg"
             special="Special"
-            solarmoneyBagBroken="/solarmoneybagbroken.svg"
-            profitPerDay="Asset"
-            streamlineinvestmentSelection="/streamlineinvestmentselection.svg"
-            investment="Market Place"
+            hugeiconsfire="/hugeiconsfire.svg"
+            boast="Boast"
+            onWalletContainerClick={onWalletContainerClick}
+            onWalletContainerClick1={onWalletContainerClick1}
           />
           <div className="wallet10">
             <b className="boosters">Boosters</b>
@@ -89,17 +95,17 @@ const Boast = () => {
             bOTMinesFor1Hour="BOT Mines for 12 Hours "
             fluentEmojicoin="/magestarfill@2x.png"
             prop="100"
-            teenyiconstickCircleSolid="/teenyiconstickcirclesolid.svg"
-            pending="Pending"
-          />
-          <FooterStartFrame3
-            gameIconsrobotGolem="/gameiconsrobotgolem.svg"
-            bOTMinesFor24Hours="BOT Mines for 24 Hours"
-            magestarFill="/magestarfill1@2x.png"
-            prop="200"
             teenyiconstickCircleSolid="/teenyiconstickcirclesolid1.svg"
-            purchased="Purchased"
+            pending="Pending"
+            frameDivPadding="unset"
+            frameDivWidth="182px"
+            frameDivPadding1="unset"
+            fluentEmojicoinIconWidth="24px"
+            fluentEmojicoinIconHeight="24px"
+            teenyiconstickCircleSolidWidth="24px"
+            teenyiconstickCircleSolidHeight="24px"
           />
+          <FooterStartFrame3 />
           <b className="auto-miner">Daily Boast</b>
           <FooterStartFrame7 />
           <FooterStartFrame4
@@ -110,20 +116,41 @@ const Boast = () => {
             prop="10,000"
             teenyiconstickCircleSolid="/teenyiconstickcirclesolid1.svg"
             pending="Done"
+            frameDivPadding="unset"
+            frameDivWidth="182px"
+            frameDivPadding1="unset"
+            fluentEmojicoinIconWidth="24px"
+            fluentEmojicoinIconHeight="24px"
+            teenyiconstickCircleSolidWidth="24px"
+            teenyiconstickCircleSolidHeight="24px"
           />
-          <FooterStartFrame5 />
+          <div className="footer-start-frame">
+            <div className="footer-frame">
+              <div className="home-referral">
+                <div className="referal-frame">
+                  <div className="referal-text">
+                    <div className="refer-friends-to">
+                      Refer friends to get referral bonus now
+                    </div>
+                  </div>
+                  <div className="frame-parent3">
+                    <div className="httpsrisingcoinxyzrefant-wrapper">
+                      <div className="boosters">
+                        https://risingcoin.xyz?ref=anthonyeyo
+                      </div>
+                    </div>
+                    <div className="rectangle-parent1">
+                      <div className="rectangle-div" />
+                      <div className="frame-child1" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <BottomTabs1
-          materialSymbolsLighttaskAlt="/materialsymbolslighttaskaltrounded.svg"
-          propOverflowY="auto"
-          propBorder="unset"
-          homeBorderRadius="10px"
-          homeBorder="1px solid #48486f"
-          homeHeight="60px"
-          iconParkdotTop="6.5px"
-          onWalletContainerClick={onWalletContainerClick}
-          onWalletContainerClick={onWalletContainerClick1}
-        />
+        <Divider2/>
+        <FooterSection/>
       </div>
     </div>
   );

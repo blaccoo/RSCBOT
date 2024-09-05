@@ -8,7 +8,9 @@
 .special {
   position: relative;
 }
-.wallet35 {
+.wallet95,
+.wallet96,
+.wallet97 {
   width: 50px;
   height: 55px;
   display: flex;
@@ -17,7 +19,14 @@
   justify-content: flex-start;
   gap: var(--gap-6xs);
 }
-.wallet-parent {
+.wallet96,
+.wallet97 {
+  cursor: pointer;
+}
+.wallet97 {
+  width: 57px;
+}
+.wallet-parent13 {
   align-self: stretch;
   height: 55px;
   display: flex;
@@ -33,13 +42,13 @@
   margin: 0 !important;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 115px;
   border-radius: var(--br-3xs);
   background-color: var(--color-darkslateblue-500);
   height: 65px;
   z-index: 1;
 }
-.footer-start-frame28 {
+.footer-start-frame33 {
   align-self: stretch;
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-400);

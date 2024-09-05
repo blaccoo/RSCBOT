@@ -16,13 +16,13 @@ const CurrentBalanceBG = ({ className = "", prop, nGN, propLeft, balance }) => {
       </div>
       <div className="balace-frame">
         <div className="description">
-          <div className="div120">{prop}</div>
+          <div className="div146">{prop}</div>
           <div className="ngn36">{nGN}</div>
         </div>
       </div>
       <div className="balance-and-unit" style={balanceAndUnitStyle}>
         <div className="balance-convertion">
-          <div className="balance">{balance}</div>
+          <div className="balance3">{balance}</div>
         </div>
       </div>
     </div>

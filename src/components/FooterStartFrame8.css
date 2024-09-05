@@ -1,61 +1,73 @@
 .hugeiconsadvertisiment {
-  width: 38px;
+  width: 30px;
   position: relative;
-  height: 38px;
+  height: 30px;
   overflow: hidden;
   flex-shrink: 0;
   z-index: 0;
 }
-.fluent-emojicoin-icon4 {
-  width: 24px;
+.watch-ads-for {
   position: relative;
-  height: 24px;
+}
+.wallet122 {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fluent-emojicoin-icon19 {
+  width: 20px;
+  position: relative;
+  height: 20px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.div158 {
-  position: relative;
-}
-.wallet-wrapper5,
-.wallet57 {
+.wallet-parent21,
+.wallet123 {
   display: flex;
   justify-content: center;
 }
-.wallet57 {
+.wallet123 {
   height: 20px;
   flex-direction: row;
   align-items: center;
   gap: var(--gap-6xs);
 }
-.wallet-wrapper5 {
+.wallet-parent21 {
   width: 182px;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
+  gap: var(--gap-8xs);
   z-index: 1;
 }
 .hugeiconsadvertisiment-parent,
-.wallet58 {
+.wallet124 {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-6xs);
 }
-.wallet58 {
+.wallet124 {
   width: 50px;
   margin: 0 !important;
   position: absolute;
   top: -2px;
   left: 282px;
-  height: 55px;
+  height: 41px;
   flex-direction: column;
   z-index: 2;
 }
 .hugeiconsadvertisiment-parent {
   width: 332px;
   flex-direction: row;
+  padding: 0 var(--padding-8xs);
+  box-sizing: border-box;
   position: relative;
 }
-.footer-start-frame34 {
+.footer-start-frame39 {
   align-self: stretch;
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-400);

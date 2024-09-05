@@ -257,23 +257,33 @@
 .limits-to-buy {
   position: relative;
 }
-.limit-unit,
-.orders-date-and-ref3 {
+.limit-unit {
+  flex: 1;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  gap: var(--gap-8xs);
-}
-.limit-unit {
-  flex: 1;
   justify-content: flex-end;
+  gap: var(--gap-8xs);
   text-align: right;
   color: var(--color-whitesmoke-300);
 }
+.all-orders-frame1,
+.order-frame1,
 .orders-date-and-ref3 {
   align-self: stretch;
+  display: flex;
+  align-items: flex-start;
   justify-content: flex-start;
+}
+.orders-date-and-ref3 {
+  flex-direction: row;
+  gap: var(--gap-8xs);
   color: var(--color-darkgray);
+}
+.all-orders-frame1,
+.order-frame1 {
+  flex-shrink: 0;
+  flex-direction: column;
 }
 .order-frame1 {
   height: 179px;
@@ -282,163 +292,31 @@
   box-sizing: border-box;
   gap: var(--gap-9xs);
 }
-.all-orders-frame1,
-.coin-overvie-frame1,
-.order-frame1 {
-  align-self: stretch;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
 .all-orders-frame1 {
   background-color: var(--color-gray-400);
   height: 180px;
 }
+.coin-overvie-frame1,
+.coin-overview-and-transactions2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 .coin-overvie-frame1 {
   height: 450px;
   overflow-y: auto;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: var(--padding-3xs) 0;
-  box-sizing: border-box;
   gap: var(--gap-8xs);
-}
-.frame-child2,
-.httpsrisingcoinxyzrefant2 {
-  position: absolute;
-  margin: 0 !important;
-  z-index: 0;
-}
-.httpsrisingcoinxyzrefant2 {
-  width: 215px;
-  top: calc(50% - 10px);
-  left: calc(50% - 125.5px);
-  display: inline-block;
-}
-.frame-child2 {
-  width: 11.9px;
-  top: calc(50% - 9px);
-  left: calc(50% - 8px);
-  background-color: var(--color-gainsboro);
-  border: 0.5px solid var(--color-black);
-  box-sizing: border-box;
-  height: 13.5px;
-}
-.frame-child3,
-.rectangle-parent1,
-.referal-link-frame2 {
-  margin: 0 !important;
-  position: absolute;
-  box-sizing: border-box;
-  z-index: 1;
-}
-.frame-child3 {
-  width: 11.9px;
-  top: calc(50% - 5.4px);
-  left: calc(50% - 6.1px);
-  background-color: var(--color-gainsboro);
-  border: 0.5px solid var(--color-black);
-  height: 13.5px;
-}
-.rectangle-parent1,
-.referal-link-frame2 {
-  width: 42px;
-  top: calc(50% - 24px);
-  left: calc(50% + 110.5px);
-  border-radius: var(--br-xs);
-  background-color: var(--color-gray-300);
-  height: 48px;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: var(--padding-mini) var(--padding-mid-1) var(--padding-mini)
-    var(--padding-smi);
-}
-.referal-link-frame2 {
-  width: 305px;
-  top: calc(50% + 0.5px);
-  left: calc(50% - 153px);
-  background-color: var(--color-darkslategray-100);
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: var(--padding-3xs);
-  gap: var(--gap-3xs);
-  z-index: 0;
-}
-.refer-friends-to2 {
-  width: 298.1px;
-  position: relative;
-  display: inline-block;
-  height: 32px;
-  flex-shrink: 0;
-}
-.referal-frame2,
-.referal-text2 {
-  display: flex;
-  flex-direction: column;
-}
-.referal-text2 {
-  margin: 0 !important;
-  position: absolute;
-  top: calc(50% - 53.5px);
-  left: calc(50% - 149px);
-  height: 40px;
-  overflow: hidden;
-  flex-shrink: 0;
-  align-items: flex-end;
-  justify-content: center;
-  z-index: 1;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--typography-colors-light-grey);
-}
-.referal-frame2 {
-  align-self: stretch;
-  border-radius: var(--br-xs);
-  background-color: var(--color-lightseagreen-200);
-  height: 162px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-.footer-frame2,
-.home-referral2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.home-referral2 {
-  align-self: stretch;
-}
-.footer-frame2 {
-  flex: 1;
-}
-.coin-overview-and-transactions2,
-.footer-start-frame2 {
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.footer-start-frame2 {
-  height: 193px;
-  overflow: hidden;
-  flex-shrink: 0;
-  flex-direction: row;
-  padding: var(--padding-3xs);
-  font-size: var(--font-size-xs);
-  color: var(--color-silver-200);
 }
 .coin-overview-and-transactions2 {
   background-color: var(--color-gray-500);
   height: 698px;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 0 var(--padding-xl);
   gap: var(--gap-sm);
 }

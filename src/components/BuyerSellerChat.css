@@ -1,4 +1,4 @@
-.profile-icon42 {
+.profile-icon51 {
   width: 31px;
   position: absolute;
   margin: 0 !important;
@@ -172,12 +172,12 @@
   color: var(--color-black);
 }
 .messsage-frame2,
-.profile-icon43,
+.profile-icon52,
 .you {
   position: absolute;
   margin: 0 !important;
 }
-.profile-icon43 {
+.profile-icon52 {
   width: 31.2px;
   top: calc(50% - 23.5px);
   left: calc(50% - 15.5px);
@@ -230,7 +230,7 @@
   object-fit: cover;
   z-index: 9;
 }
-.profile-icon45 {
+.profile-icon54 {
   position: absolute;
   top: calc(50% - 26px);
   left: calc(50% - 15.5px);
@@ -279,12 +279,12 @@
   z-index: 0;
 }
 .chat,
-.profile-icon46,
+.profile-icon55,
 .seller1 {
   position: absolute;
   margin: 0 !important;
 }
-.profile-icon46 {
+.profile-icon55 {
   width: 31px;
   top: calc(50% - 24.5px);
   left: calc(50% - 75.6px);
@@ -298,7 +298,7 @@
   display: inline-block;
   z-index: 1;
 }
-.profile-icon47,
+.profile-icon56,
 .seller-frame {
   position: absolute;
   margin: 0 !important;
@@ -317,7 +317,7 @@
   box-sizing: border-box;
   gap: var(--gap-11xs);
 }
-.profile-icon47 {
+.profile-icon56 {
   width: 31px;
   top: calc(50% - 25.5px);
   left: calc(50% - 15.5px);
@@ -332,7 +332,7 @@
 }
 .admin-feame1,
 .admin1,
-.profile-icon48 {
+.profile-icon57 {
   position: absolute;
   margin: 0 !important;
 }
@@ -348,7 +348,7 @@
   gap: var(--gap-10xs);
   z-index: 1;
 }
-.profile-icon48 {
+.profile-icon57 {
   width: 31.2px;
   top: calc(50% - 24px);
   left: calc(50% - 15.6px);

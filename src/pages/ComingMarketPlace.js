@@ -2,41 +2,51 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import CurrentBalanceFrame from "../components/CurrentBalanceFrame";
 import Title from "../components/Title";
-import FooterStartFrame5 from "../components/FooterStartFrame5";
-import BottomTabs1 from "../components/BottomTabs1";
+import Footer from "../components/Footer";
 import "./ComingMarketPlace.css";
+import Header from "../components/Header";
+import Divider from "../components/Divider";
+import FooterSection from "../components/FooterSection";
 
 const ComingMarketPlace = () => {
   const navigate = useNavigate();
 
-  const onHomeContainerClick = useCallback(() => {
-    navigate("/task");
+  const onProfileIconClick = useCallback(() => {
+    navigate("/friends-profile");
   }, [navigate]);
 
   return (
     <div className="coming-market-place">
+       <Header/>
       <div className="home-body-frame4">
-        <div className="header37">
-          <div className="notification-and-count8">
-            <img
-              className="notification-icon33"
-              alt=""
-              src="/notification1.svg"
-            />
-            <b className="b26">12</b>
-          </div>
-          <div className="connect-wallet37">
-            <b className="connect37">Connect</b>
-          </div>
-          <img className="profile-icon37" alt="" src="/profile1.svg" />
-        </div>
-        <CurrentBalanceFrame prop="104.50 " />
-        <Title frameDivHeight="60px" frameDivOverflowY="auto" />
+      <Divider/>
+        <CurrentBalanceFrame
+          prop="104.50 "
+          divColor="#e4e4f0"
+          lvlBronzeColor="#e4e4f0"
+        />
+        <Title
+          frameDivHeight="60px"
+          frameDivOverflowY="auto"
+          vector="/vector3.svg"
+          vector1="/vector4.svg"
+          vector2="/vector5.svg"
+          vector3="/vector8.svg"
+          vector4="/vector9.svg"
+          vector5="/vector3.svg"
+          vector6="/vector4.svg"
+          vector7="/vector5.svg"
+          vector8="/vector9.svg"
+          referralCountColor="#fff"
+          fRIENDSColor="#fff"
+          taskKeyColor="#fff"
+          kEYSColor="#fff"
+        />
         <div className="mining-frame6">
           <div className="mining-frame7">
             <div className="mining-info-frame2">
               <div className="wallet-frame">
-                <div className="wallet21">
+                <div className="wallet28">
                   <b className="market-place-is">
                     Market Place is where anyone, from any location can buy and
                     sell any item comfortably.
@@ -50,25 +60,39 @@ const ComingMarketPlace = () => {
               />
             </div>
           </div>
-          <div className="footer-start-frame20">
+          <div className="footer-start-frame7">
             <div className="wallet-frame">
-              <div className="wallet21">
+              <div className="wallet28">
                 <div className="market-place-is">Coming Soon</div>
               </div>
             </div>
           </div>
-          <FooterStartFrame5 propAlignSelf="unset" propWidth="340px" />
+          <div className="footer-start-frame8">
+            <div className="footer-frame5">
+              <div className="home-referral5">
+                <div className="referal-frame5">
+                  <div className="referal-text5">
+                    <div className="refer-friends-to5">
+                      Refer friends to get referral bonus now
+                    </div>
+                  </div>
+                  <div className="frame-parent19">
+                    <div className="httpsrisingcoinxyzrefant-wrapper3">
+                      <div className="httpsrisingcoinxyzrefant5">
+                        https://risingcoin.xyz?ref=anthonyeyo
+                      </div>
+                    </div>
+                    <div className="rectangle-parent8">
+                      <div className="frame-child12" />
+                      <div className="frame-child13" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <BottomTabs1
-          materialSymbolsLighttaskAlt="/materialsymbolslighttaskaltrounded1.svg"
-          propOverflowY="unset"
-          propBorder="1px solid #8e5ce0"
-          homeBorderRadius="unset"
-          homeBorder="unset"
-          homeHeight="unset"
-          iconParkdotTop="0.5px"
-          onHomeContainerClick={onHomeContainerClick}
-        />
+        <FooterSection />
       </div>
     </div>
   );

@@ -6,19 +6,16 @@ import CoinOverviewAndTransactions from "../components/CoinOverviewAndTransactio
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PCreatSellAds.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const P2PCreatSellAds = () => {
   return (
     <div className="p2p-creat-sell-ads">
+      <Header/>
       <div className="wallet-body-frame19">
-        <div className="header22">
-          <img className="menu-icon22" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon20" alt="" src="/notification.svg" />
-          <div className="connect-wallet22">
-            <b className="connect22">Connect</b>
-          </div>
-          <img className="profile-icon22" alt="" src="/profile.svg" />
-        </div>
+    <Divider/>
         <CreatAdsTitleFrame />
         <div className="method-chose-to-create-ads1">
           <div className="ads-frame2">
@@ -62,7 +59,7 @@ const P2PCreatSellAds = () => {
           <AdsVolumeFrame volumeToBuy="Volume to sell" />
           <div className="your-balance2">
             <div className="your-balance-child">
-              <div className="frame-parent7">
+              <div className="frame-parent9">
                 <div className="your-balance-container">
                   <div className="your-balance3">Your Balance:</div>
                 </div>
@@ -95,15 +92,7 @@ const P2PCreatSellAds = () => {
         </div>
         <CoinOverviewAndTransactions propHeight="200px" propHeight1="173px" />
         <SocialMediaHandle group182="/group-1821.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+     <FooterSection/>
       </div>
     </div>
   );

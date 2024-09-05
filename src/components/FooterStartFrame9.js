@@ -11,26 +11,26 @@ const FooterStartFrame9 = ({ className = "" }) => {
   }, [navigate]);
 
   return (
-    <div className={`footer-start-frame36 ${className}`}>
-      <div className="wallet-parent8">
-        <div className="wallet63">
+    <div className={`footer-start-frame41 ${className}`}>
+      <div className="wallet-parent22">
+        <div className="wallet125">
           <img
             className="simple-line-iconsenergy"
             alt=""
             src="/simplelineiconsenergy1.svg"
           />
-          <div className="div162">500/500</div>
+          <div className="div189">500/500</div>
         </div>
-        <div className="wallet64" onClick={onWalletContainerClick}>
+        <div className="wallet126" onClick={onWalletContainerClick}>
           <img
             className="simple-line-iconsenergy"
             alt=""
             src="/hugeiconsfire.svg"
           />
-          <div className="div162">Boast</div>
+          <div className="div189">Boast</div>
         </div>
       </div>
-      <div className="energy-limit" />
+      <div className="energy-limit3" />
     </div>
   );
 };

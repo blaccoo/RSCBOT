@@ -1,9 +1,9 @@
-.vector-icon9 {
+.vector-icon8 {
   width: 18px;
   position: relative;
   height: 12px;
 }
-.menu-icon26 {
+.menu-icon23 {
   height: 24px;
   overflow: hidden;
   display: flex;
@@ -20,7 +20,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
-.vector-icon10 {
+.vector-icon9 {
   width: 21.2px;
   position: relative;
   height: 21.9px;
@@ -36,7 +36,7 @@
   padding: var(--padding-6xs);
   box-sizing: border-box;
 }
-.connect26 {
+.connect23 {
   width: 77.2px;
   position: absolute;
   margin: 0 !important;
@@ -47,7 +47,7 @@
   display: inline-block;
   z-index: 0;
 }
-.connect-wallet26 {
+.connect-wallet29 {
   width: 90px;
   border-radius: var(--br-xl);
   background-color: var(--color-darkslateblue-300);
@@ -97,7 +97,7 @@
   gap: var(--gap-8xs);
   z-index: 0;
 }
-.span5 {
+.span4 {
   font-weight: 600;
   color: var(--color-indianred-200);
 }

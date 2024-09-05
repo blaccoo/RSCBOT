@@ -3,19 +3,16 @@ import CoinOverviewAndTransactions from "../components/CoinOverviewAndTransactio
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PAddPaymentMethod.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const P2PAddPaymentMethod = () => {
   return (
     <div className="p2p-add-payment-method">
+      <Header/>
       <div className="wallet-body-frame18">
-        <div className="header21">
-          <img className="menu-icon21" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon19" alt="" src="/notification.svg" />
-          <div className="connect-wallet21">
-            <b className="connect21">Connect</b>
-          </div>
-          <img className="profile-icon21" alt="" src="/profile.svg" />
-        </div>
+        <Divider/>
         <SendAndRecieveFrame1
           sendAndRecieveFrameHeight="93px"
           mingcuteuser4Fill="/mingcuteuser4fill.svg"
@@ -31,7 +28,7 @@ const P2PAddPaymentMethod = () => {
             <div className="added-payment-methods-wrapper">
               <div className="added-payment-methods">Added Payment Methods</div>
             </div>
-            <div className="frame-parent4">
+            <div className="frame-parent6">
               <div className="first-bank-of-nigeria-group">
                 <div className="added-payment-methods">
                   First Bank of Nigeria
@@ -45,7 +42,7 @@ const P2PAddPaymentMethod = () => {
                 <div className="added-payment-methods">User NAme</div>
               </div>
             </div>
-            <div className="frame-parent4">
+            <div className="frame-parent6">
               <div className="first-bank-of-nigeria-group">
                 <div className="added-payment-methods">Opy</div>
                 <div className="remove4">REMOVE</div>
@@ -57,7 +54,7 @@ const P2PAddPaymentMethod = () => {
                 <div className="added-payment-methods">User NAme</div>
               </div>
             </div>
-            <div className="frame-parent4">
+            <div className="frame-parent6">
               <div className="first-bank-of-nigeria-group">
                 <div className="added-payment-methods">GTBank</div>
                 <div className="remove4">REMOVE</div>
@@ -73,15 +70,7 @@ const P2PAddPaymentMethod = () => {
         </div>
         <CoinOverviewAndTransactions propHeight="211px" propHeight1="193px" />
         <SocialMediaHandle group182="/group-182.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+   <FooterSection/>
       </div>
     </div>
   );

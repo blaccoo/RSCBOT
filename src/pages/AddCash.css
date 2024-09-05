@@ -1,17 +1,17 @@
-.menu-icon33 {
+.menu-icon29 {
   width: 24px;
   position: relative;
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.notification-icon30 {
+.notification-icon31 {
   width: 38.1px;
   position: relative;
   border-radius: var(--br-7xs);
   height: 38px;
 }
-.connect34 {
+.connect29 {
   width: 77.2px;
   position: absolute;
   margin: 0 !important;
@@ -22,7 +22,7 @@
   display: inline-block;
   z-index: 0;
 }
-.connect-wallet34 {
+.connect-wallet41 {
   width: 90px;
   border-radius: var(--br-xl);
   background-color: var(--color-darkslateblue-300);
@@ -35,12 +35,12 @@
   box-sizing: border-box;
   position: relative;
 }
-.profile-icon34 {
+.profile-icon35 {
   width: 38.1px;
   position: relative;
   height: 38px;
 }
-.header34 {
+.header35 {
   align-self: stretch;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
   background-color: var(--color-gray-500);
@@ -52,13 +52,13 @@
   padding: var(--padding-3xs) var(--padding-sm);
   text-align: center;
 }
-.trade12 {
+.trade14 {
   flex: 1;
   position: relative;
 }
 .p2p7,
 .send-and-recieve-frame7,
-.trade12 {
+.trade14 {
   align-self: stretch;
   display: flex;
   align-items: center;
@@ -83,7 +83,7 @@
   position: relative;
   font-weight: 600;
 }
-.frame-parent12,
+.frame-parent16,
 .select-a-merchant-container {
   align-self: stretch;
   flex-shrink: 0;
@@ -98,7 +98,7 @@
   justify-content: flex-start;
   padding: var(--padding-3xs);
 }
-.frame-parent12 {
+.frame-parent16 {
   height: 461px;
   overflow-y: auto;
   padding: var(--padding-xl) var(--padding-3xs);
@@ -106,7 +106,7 @@
   color: var(--color-white);
 }
 .add-cash,
-.frame-parent12,
+.frame-parent16,
 .wallet-body-frame29 {
   display: flex;
   flex-direction: column;

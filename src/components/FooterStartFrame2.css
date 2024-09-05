@@ -9,43 +9,41 @@
 .multitap {
   position: relative;
 }
-.wallet38 {
+.wallet98 {
   height: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.fluent-emojicoin-icon1 {
+.fluent-emojicoin-icon15 {
   width: 24px;
   position: relative;
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
 }
-.wallet-group,
-.wallet39,
-.wallet40 {
-  display: flex;
-  justify-content: center;
-}
-.wallet39 {
+.wallet99 {
   height: 20px;
+  display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: var(--gap-6xs);
 }
-.wallet-group,
-.wallet40 {
+.wallet-parent14,
+.wallet100 {
+  display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-.wallet-group {
+.wallet-parent14 {
   width: 182px;
   align-items: flex-start;
   gap: var(--gap-8xs);
   z-index: 1;
 }
-.wallet40 {
+.wallet100 {
   width: 50px;
   margin: 0 !important;
   position: absolute;
@@ -63,8 +61,9 @@
   justify-content: flex-start;
   position: relative;
   gap: var(--gap-6xs);
+  cursor: pointer;
 }
-.footer-start-frame29 {
+.footer-start-frame34 {
   align-self: stretch;
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-400);

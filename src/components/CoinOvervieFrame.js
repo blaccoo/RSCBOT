@@ -22,7 +22,7 @@ const CoinOvervieFrame = ({ className = "", oleaseEnsureYouPayFastIAppro }) => {
           <div className="payment-method57" />
           <div className="payment-method58">
             <div className="account-number4">Account Number</div>
-            <div className="div126">7038788133</div>
+            <div className="div152">7038788133</div>
             <img
               className="solarcopy-outline-icon7"
               alt=""
@@ -32,7 +32,7 @@ const CoinOvervieFrame = ({ className = "", oleaseEnsureYouPayFastIAppro }) => {
           <div className="orders-date-and-ref36" />
           <div className="orders-date-and-ref37">
             <div className="amount6">Amount</div>
-            <div className="div127">5000</div>
+            <div className="div153">5000</div>
             <div className="bank5">NGN</div>
           </div>
         </div>

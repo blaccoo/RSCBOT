@@ -1,20 +1,18 @@
 import CurrentBalanceFrame1 from "../components/CurrentBalanceFrame1";
+import FooterStartFrame from "../components/FooterStartFrame";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./CoinOverview.css";
+import FooterSection from "../components/FooterSection";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
 
 const CoinOverview = () => {
   return (
     <div className="coin-overview">
+      <Header/>
       <div className="wallet-body-frame4">
-        <div className="header6">
-          <img className="menu-icon6" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon6" alt="" src="/notification.svg" />
-          <div className="connect-wallet6">
-            <b className="connect6">Connect</b>
-          </div>
-          <img className="profile-icon6" alt="" src="/profile.svg" />
-        </div>
+     <Divider/>
         <CurrentBalanceFrame1 />
         <div className="title2">
           <div className="title-instruction-frame2">
@@ -307,39 +305,16 @@ const CoinOverview = () => {
               </div>
             </div>
           </div>
-          <div className="footer-start-frame3">
-            <div className="footer-frame3">
-              <div className="home-referral3">
-                <div className="referal-frame3">
-                  <div className="referal-link-frame3">
-                    <div className="httpsrisingcoinxyzrefant3">
-                      https://risingcoin.xyz?ref=anthonyeyo
-                    </div>
-                    <div className="rectangle-parent4">
-                      <div className="frame-child6" />
-                      <div className="frame-child7" />
-                    </div>
-                  </div>
-                  <div className="referal-text3">
-                    <div className="refer-friends-to3">
-                      Refer friends to get 3 RSC or 5% every time they mine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FooterStartFrame
+            propHeight="170px"
+            propTop="34.5px"
+            propHeight1="40px"
+            propLeft="calc(50% - 153.5px)"
+            propPadding="0px 0px 1px"
+          />
         </div>
         <SocialMediaHandle group182="/group-1821.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+<FooterSection />
       </div>
     </div>
   );

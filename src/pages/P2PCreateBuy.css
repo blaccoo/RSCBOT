@@ -249,9 +249,9 @@
   position: relative;
 }
 .cancel-order,
-.creat-button {
+.creat-button,
+.creat-button-parent {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -262,28 +262,30 @@
   height: 44px;
   overflow: hidden;
   flex-shrink: 0;
+  flex-direction: row;
   padding: var(--padding-3xs);
   box-sizing: border-box;
 }
-.cancel-order {
-  align-self: stretch;
-  color: var(--color-indianred-100);
-}
-.coin-overvie-frame,
+.cancel-order,
 .creat-button-parent {
   align-self: stretch;
-  display: flex;
-  flex-direction: column;
+}
+.cancel-order {
+  flex-direction: row;
+  color: var(--color-indianred-100);
 }
 .creat-button-parent {
   overflow: hidden;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   padding: var(--padding-xl) var(--padding-81xl);
   gap: var(--gap-3xs);
 }
-.coin-overvie-frame {
+.coin-overvie-frame,
+.coin-overview-and-transactions {
+  align-self: stretch;
   height: 373px;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-3xs) 0;
@@ -291,141 +293,11 @@
   gap: var(--gap-8xs);
   font-size: var(--h5-size);
 }
-.frame-child,
-.httpsrisingcoinxyzrefant {
-  position: absolute;
-  margin: 0 !important;
-  z-index: 0;
-}
-.httpsrisingcoinxyzrefant {
-  width: 215px;
-  top: calc(50% - 10px);
-  left: calc(50% - 125.5px);
-  display: inline-block;
-}
-.frame-child {
-  width: 11.9px;
-  top: calc(50% - 9px);
-  left: calc(50% - 8px);
-  background-color: var(--color-gainsboro);
-  border: 0.5px solid var(--color-black);
-  box-sizing: border-box;
-  height: 13.5px;
-}
-.frame-item,
-.rectangle-parent,
-.referal-link-frame {
-  margin: 0 !important;
-  position: absolute;
-  box-sizing: border-box;
-  z-index: 1;
-}
-.frame-item {
-  width: 11.9px;
-  top: calc(50% - 5.4px);
-  left: calc(50% - 6.1px);
-  background-color: var(--color-gainsboro);
-  border: 0.5px solid var(--color-black);
-  height: 13.5px;
-}
-.rectangle-parent,
-.referal-link-frame {
-  width: 42px;
-  top: calc(50% - 24px);
-  left: calc(50% + 110.5px);
-  border-radius: var(--br-xs);
-  background-color: var(--color-gray-300);
-  height: 48px;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  padding: var(--padding-mini) var(--padding-mid-1) var(--padding-mini)
-    var(--padding-smi);
-}
-.referal-link-frame {
-  width: 305px;
-  top: calc(50% + 0.5px);
-  left: calc(50% - 153px);
-  background-color: var(--color-darkslategray-100);
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: var(--padding-3xs);
-  gap: var(--gap-3xs);
-  z-index: 0;
-}
-.refer-friends-to {
-  width: 298.1px;
-  position: relative;
-  display: inline-block;
-  height: 32px;
-  flex-shrink: 0;
-}
-.referal-frame,
-.referal-text {
-  display: flex;
-  flex-direction: column;
-}
-.referal-text {
-  margin: 0 !important;
-  position: absolute;
-  top: calc(50% - 53.5px);
-  left: calc(50% - 149px);
-  height: 40px;
-  overflow: hidden;
-  flex-shrink: 0;
-  align-items: flex-end;
-  justify-content: center;
-  z-index: 1;
-  text-align: center;
-  font-size: var(--font-size-sm);
-  color: var(--typography-colors-light-grey);
-}
-.referal-frame {
-  align-self: stretch;
-  border-radius: var(--br-xs);
-  background-color: var(--color-lightseagreen-200);
-  height: 162px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-.footer-frame,
-.home-referral {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.home-referral {
-  align-self: stretch;
-}
-.footer-frame {
-  flex: 1;
-}
-.coin-overview-and-transactions,
-.footer-start-frame {
-  align-self: stretch;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
-.footer-start-frame {
-  height: 193px;
-  overflow: hidden;
-  flex-shrink: 0;
-  flex-direction: row;
-  padding: var(--padding-3xs);
-  color: var(--color-silver-200);
-}
 .coin-overview-and-transactions {
   background-color: var(--color-gray-500);
   height: 696px;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding: 0 0 var(--padding-xl);
   gap: var(--gap-sm);
   text-align: left;

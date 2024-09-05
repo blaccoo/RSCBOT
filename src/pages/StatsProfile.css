@@ -1,43 +1,36 @@
-.menu-icon36 {
-  width: 24px;
-  position: relative;
-  height: 24px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.notification-icon35 {
+.notification-icon36 {
   width: 38.1px;
   position: relative;
   border-radius: var(--br-7xs);
   height: 38px;
 }
-.b28 {
+.b31 {
   position: relative;
   letter-spacing: -1px;
   line-height: 145%;
   -webkit-text-stroke: 0.5px #fff;
 }
-.notification-and-count10 {
-  width: 84.8px;
+.notification-and-count12 {
+  width: 55px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
-.connect39 {
-  width: 77.2px;
+.connect-wallet50 {
+  width: 100px;
   position: absolute;
   margin: 0 !important;
   top: calc(50% - 10px);
-  left: calc(50% - 39px);
+  left: calc(50% - 50.3px);
   letter-spacing: -1px;
   line-height: 145%;
   display: inline-block;
   z-index: 0;
 }
-.connect-wallet39 {
-  width: 90px;
+.connect-wallet49 {
+  width: 114px;
   border-radius: var(--br-xl);
   background-color: var(--color-darkslateblue-300);
   height: 30px;
@@ -50,12 +43,13 @@
   position: relative;
   color: var(--color-whitesmoke-300);
 }
-.profile-icon39 {
+.profile-icon40 {
   width: 38.1px;
   position: relative;
   height: 38px;
+  cursor: pointer;
 }
-.header39 {
+.header40 {
   width: 360px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
   background-color: var(--color-gray-500);
@@ -71,7 +65,7 @@
   flex: 1;
   position: relative;
 }
-.wallet24 {
+.wallet31 {
   align-self: stretch;
   height: 29px;
   display: flex;
@@ -79,17 +73,10 @@
   align-items: center;
   justify-content: flex-start;
 }
-.fluent-emojicoin-icon {
-  width: 35px;
-  position: relative;
-  height: 35px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.div119 {
+.div121 {
   position: relative;
 }
-.wallet25 {
+.wallet32 {
   flex: 1;
   height: 20px;
   display: flex;
@@ -121,13 +108,13 @@
   align-items: center;
   justify-content: flex-start;
 }
-.footer-start-frame21,
-.wallet26 {
+.footer-start-frame12,
+.wallet33 {
   align-self: stretch;
   display: flex;
   align-items: center;
 }
-.footer-start-frame21 {
+.footer-start-frame12 {
   border-radius: var(--br-3xs);
   background-color: var(--color-gray-500);
   height: 52px;
@@ -140,32 +127,52 @@
   text-align: left;
   font-size: var(--font-size-xl);
 }
-.wallet26 {
+.wallet33 {
   height: 35px;
   flex-direction: row;
   justify-content: flex-start;
 }
-.footer-start-frame22,
-.mining-frame9 {
-  align-self: stretch;
-  align-items: center;
-  box-sizing: border-box;
-}
-.footer-start-frame22 {
-  border-radius: var(--br-3xs);
-  background-color: var(--color-gray-500);
-  height: 52px;
-  overflow: hidden;
-  flex-shrink: 0;
+.frame-wrapper1 {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  padding: var(--padding-3xs) 0;
+  z-index: 0;
+}
+.wallet35 {
+  width: 50px;
+  margin: 0 !important;
+  position: absolute;
+  top: -2px;
+  left: 282px;
+  height: 28px;
+  z-index: 1;
+}
+.frame-parent20 {
+  width: 332px;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  gap: var(--gap-6xs);
+}
+.flowbiteusers-outline-icon {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .mining-frame9 {
+  align-self: stretch;
   background-color: var(--color-black);
   height: 688px;
+  align-items: center;
   padding: 0 var(--padding-3xs) var(--padding-xl);
+  box-sizing: border-box;
   gap: var(--gap-base);
   font-size: var(--h5-size);
   color: var(--color-whitesmoke-200);

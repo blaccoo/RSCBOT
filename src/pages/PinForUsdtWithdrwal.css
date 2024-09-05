@@ -1,4 +1,4 @@
-.menu-icon24 {
+.menu-icon21 {
   width: 24px;
   position: relative;
   height: 24px;
@@ -11,13 +11,13 @@
   border-radius: var(--br-7xs);
   height: 38px;
 }
-.b21 {
+.b23 {
   position: relative;
   letter-spacing: -1px;
   line-height: 145%;
   -webkit-text-stroke: 0.5px #fff;
 }
-.notification-and-count4 {
+.notification-and-count5 {
   width: 84.8px;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
-.connect24 {
+.connect21 {
   width: 77.2px;
   position: absolute;
   margin: 0 !important;
@@ -36,7 +36,7 @@
   display: inline-block;
   z-index: 0;
 }
-.connect-wallet24 {
+.connect-wallet27 {
   width: 90px;
   border-radius: var(--br-xl);
   background-color: var(--color-darkslateblue-300);

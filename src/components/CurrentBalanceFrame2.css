@@ -17,11 +17,11 @@
   padding: 0 var(--padding-3xs);
   color: var(--color-aliceblue);
 }
-.div123 {
+.div149 {
   position: relative;
   font-weight: 600;
 }
-.parent3 {
+.parent1 {
   align-self: stretch;
   height: 20px;
   overflow: hidden;

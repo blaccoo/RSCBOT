@@ -10,7 +10,7 @@ const FrameComponent = ({ className = "", withdraw, prop, propColor }) => {
   }, [propColor]);
 
   return (
-    <div className={`frame-parent19 ${className}`}>
+    <div className={`frame-parent56 ${className}`}>
       <div className="withdraw-parent">
         <div className="withdraw7">{withdraw}</div>
         <div className="withdraw7">NGN</div>
@@ -26,7 +26,7 @@ const FrameComponent = ({ className = "", withdraw, prop, propColor }) => {
           @username
         </div>
         <div className="bitcoin-iconsverify-filled2">
-          <img className="vector-icon30" alt="" src="/vector2.svg" />
+          <img className="vector-icon29" alt="" src="/vector2.svg" />
         </div>
       </div>
     </div>

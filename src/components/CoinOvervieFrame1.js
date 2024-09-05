@@ -7,8 +7,8 @@ const CoinOvervieFrame1 = ({ className = "", buyMax, buy, cancelBuyOrder }) => {
       <div className="all-orders-frame14">
         <div className="order-frame23">
           <div className="price42">
-            <div className="enter-amount9">
-              <b className="enter-amount10">Enter Amount</b>
+            <div className="enter-amount10">
+              <b className="enter-amount11">Enter Amount</b>
             </div>
             <b className="ngn39">NGN</b>
             <div className="lucidearrow-down-up-wrapper">
@@ -20,22 +20,22 @@ const CoinOvervieFrame1 = ({ className = "", buyMax, buy, cancelBuyOrder }) => {
             </div>
           </div>
           <div className="amounts-of-order27">
-            <div className="div148">0.00</div>
-            <div className="div148">USDT</div>
+            <div className="div174">0.00</div>
+            <div className="div174">USDT</div>
           </div>
           <div className="payment-method59" />
           <div className="payment-method60">
-            <div className="buy-max">{buyMax}</div>
-            <div className="trade20">23 Trade</div>
-            <div className="div149">97%</div>
+            <div className="buy-max1">{buyMax}</div>
+            <div className="trade25">23 Trade</div>
+            <div className="div175">97%</div>
           </div>
           <div className="payment-method61">
             <div className="payment-method62">Payment Method</div>
-            <div className="wallet56">Wallet</div>
+            <div className="wallet118">Wallet</div>
           </div>
           <div className="orders-date-and-ref38">
             <div className="available-coin4">Available Coin</div>
-            <div className="div150">109.89</div>
+            <div className="div176">109.89</div>
             <div className="payment-method62">USDT</div>
           </div>
           <div className="orders-date-and-ref39">
@@ -49,7 +49,7 @@ const CoinOvervieFrame1 = ({ className = "", buyMax, buy, cancelBuyOrder }) => {
           </div>
           <div className="orders-date-and-ref38">
             <div className="available-coin4">Payment Time</div>
-            <div className="div150">15</div>
+            <div className="div176">15</div>
             <div className="payment-method62">Min</div>
           </div>
         </div>

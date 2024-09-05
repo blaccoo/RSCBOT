@@ -1,21 +1,19 @@
 import SendAndRecieveFrame from "../components/SendAndRecieveFrame";
 import CoinOvervieFrame1 from "../components/CoinOvervieFrame1";
+import FooterStartFrame from "../components/FooterStartFrame";
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./P2PEnterBuy.css";
+import Divider from "../components/Divider";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const P2PEnterBuy = () => {
   return (
     <div className="p2p-enter-buy">
+      <Header/>
       <div className="wallet-body-frame20">
-        <div className="header23">
-          <img className="menu-icon23" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon21" alt="" src="/notification.svg" />
-          <div className="connect-wallet23">
-            <b className="connect23">Connect</b>
-          </div>
-          <img className="profile-icon23" alt="" src="/profile.svg" />
-        </div>
+     <Divider/>
         <SendAndRecieveFrame
           mingcuteuser4Fill="/mingcuteuser4fill.svg"
           youArePaying="You are paying "
@@ -38,39 +36,16 @@ const P2PEnterBuy = () => {
             buy="Buy"
             cancelBuyOrder="Cancel Buy Order"
           />
-          <div className="footer-start-frame13">
-            <div className="footer-frame13">
-              <div className="home-referral13">
-                <div className="referal-frame13">
-                  <div className="referal-link-frame13">
-                    <div className="httpsrisingcoinxyzrefant13">
-                      https://risingcoin.xyz?ref=anthonyeyo
-                    </div>
-                    <div className="rectangle-parent16">
-                      <div className="frame-child28" />
-                      <div className="frame-child29" />
-                    </div>
-                  </div>
-                  <div className="referal-text13">
-                    <div className="refer-friends-to13">
-                      Refer friends to get 3 RSC or 5% every time they mine
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FooterStartFrame
+            propHeight="193px"
+            propTop="calc(50% - 53.5px)"
+            propHeight1="40px"
+            propLeft="calc(50% - 149px)"
+            propPadding="unset"
+          />
         </div>
         <SocialMediaHandle group182="/group-182.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+   <FooterSection/>
       </div>
     </div>
   );

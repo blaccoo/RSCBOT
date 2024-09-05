@@ -2,19 +2,15 @@ import CoinOverviewAndTransactions from "../components/CoinOverviewAndTransactio
 import SocialMediaHandle from "../components/SocialMediaHandle";
 import BottomTabs from "../components/BottomTabs";
 import "./ChoseAccountAddCash.css";
+import Header from "../components/Header";
+import FooterSection from "../components/FooterSection";
 
 const ChoseAccountAddCash = () => {
   return (
     <div className="chose-account-add-cash">
+      <Header/>
       <div className="wallet-body-frame1">
-        <div className="header1">
-          <img className="menu-icon1" alt="" src="/menu-icon.svg" />
-          <img className="notification-icon1" alt="" src="/notification.svg" />
-          <div className="connect-wallet1">
-            <b className="connect1">Connect</b>
-          </div>
-          <img className="profile-icon1" alt="" src="/profile.svg" />
-        </div>
+      <Divider/>
         <div className="send-and-recieve-frame">
           <div className="p2p">
             <div className="trade">
@@ -80,15 +76,7 @@ const ChoseAccountAddCash = () => {
         </div>
         <CoinOverviewAndTransactions />
         <SocialMediaHandle group182="/group-1821.svg" />
-        <BottomTabs
-          propHeight="unset"
-          walletIcon="/wallet-icon.svg"
-          wallet="Wallet"
-          fluenthome48Filled="/fluenthome48filled.svg"
-          home="Home"
-          tradeIcon="/trade-icon.svg"
-          trade="Trade"
-        />
+     <FooterSection/>
       </div>
     </div>
   );
