@@ -5,7 +5,6 @@ import "./Trade.css";
 import FooterSection from "../components/FooterSection";
 import Divider from "../components/Divider";
 import Header from "../components/Header";
-import Divider2 from "../components/Divider2";
 
 const Trade = () => {
   const navigate = useNavigate();
@@ -158,7 +157,6 @@ const Trade = () => {
                 />
               </div>
             </div>
-            <Divider2/>
             <FooterSection/>
           </div>
         </div>

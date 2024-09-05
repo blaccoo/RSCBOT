@@ -546,7 +546,7 @@
   width: 100%;
   position: relative;
   background-color: var(--color-black);
-  height: 826px;
+  height: 100vh;
   overflow-y: auto;
   align-items: center;
   text-align: center;

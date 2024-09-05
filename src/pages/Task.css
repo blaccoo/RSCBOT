@@ -309,7 +309,7 @@
   width: 100%;
   position: relative;
   background-color: var(--color-black);
-  height: 830px;
+  height: 100%;
   overflow-y: auto;
   align-items: center;
   text-align: center;
