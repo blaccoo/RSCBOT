@@ -2,10 +2,11 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import CurrentBalanceFrame from "../components/CurrentBalanceFrame";
 import Title from "../components/Title";
-import Footer from "../components/Footer";
+
 import "./ComingSonTrade.css";
 import Divider from "../components/Divider";
 import FooterSection from "../components/FooterSection";
+import Header from "../components/Header";
 
 const ComingSonTrade = () => {
   const navigate = useNavigate();
