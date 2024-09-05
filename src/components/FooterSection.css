@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 .bottom-tabs5 {
-  width: 360px;
+  width: 100%;
   background-color: var(--color-gray-400);
   height: 76px;
   flex-direction: row;
