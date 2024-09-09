@@ -19,10 +19,20 @@
     "styled-components": "^6.1.13",
     "framer-motion": "^11.2.10",
     "tailwindcss": "^3.4.3",
+
+    "@firebase/firestore": "^4.6.3",
+   
+    "dotenv": "^16.4.5",
+   
+    "react-icons": "^5.2.1",
+  
+    "safer-buffer": "^2.1.2",
+    
     "telegraf": "^4.8.1",
     "uuid": "^9.0.1",
- 
     "web-vitals": "^2.1.4"
+ 
+   
   },
   "scripts": {
     "start": "react-scripts start",

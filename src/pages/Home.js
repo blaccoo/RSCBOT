@@ -153,53 +153,53 @@ const Home = () => {
 
 
   
-  // useEffect(() => {
-  //   // Fetch username and user ID from Telegram Web App context
-  //   const telegramName =
-  //     window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
-  //   const telegramLastName =
-  //     window.Telegram.WebApp.initDataUnsafe?.user?.last_name;
-  //   const telegramUsername =
-  //     window.Telegram.WebApp.initDataUnsafe?.user?.username;
-  //   const telegramUserid = window.Telegram.WebApp.initDataUnsafe?.user?.id;
+  useEffect(() => {
+    // Fetch username and user ID from Telegram Web App context
+    const telegramName =
+      window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
+    const telegramLastName =
+      window.Telegram.WebApp.initDataUnsafe?.user?.last_name;
+    const telegramUsername =
+      window.Telegram.WebApp.initDataUnsafe?.user?.username;
+    const telegramUserid = window.Telegram.WebApp.initDataUnsafe?.user?.id;
 
-  //   if (telegramName) {
-  //     setName(telegramName + " " + telegramLastName);
-  //   }
+    if (telegramName) {
+      setName(telegramName + " " + telegramLastName);
+    }
 
-  //   if (telegramUsername) {
-  //     setUsername(telegramUsername);
-  //   }
-  //   if (telegramUserid) {
-  //     setIdme(telegramUserid);
-  //   }
+    if (telegramUsername) {
+      setUsername(telegramUsername);
+    }
+    if (telegramUserid) {
+      setIdme(telegramUserid);
+    }
 
-  //   if (telegramUsername && telegramUserid) {
-  //     saveRefereeIdToFirestore();
-  //   }
+    if (telegramUsername && telegramUserid) {
+      saveRefereeIdToFirestore();
+    }
 
-  //   // Fetch count and energy from Firestore when component mounts
-  //   if (telegramUserid) {
-  //     fetchUserStatsFromFirestore(telegramUserid)
-  //       .then((userStats) => {
-  //         if (isNaN(userStats.count)) {
-  //           setCount(0);
-  //           updateUserStatsInFirestore(telegramUserid, 0, 500);
-  //         } else {
-  //           setCount(userStats.count);
-  //           setEnergy(userStats.energy);
-  //           setDisplayEnergy(userStats.energy); // Update display energy
-  //         }
-  //         setLoading(false); // Set loading to false after fetching count
-  //       })
-  //       .catch(() => {
-  //         setCount(0); // Set count to 0 if fetching fails
-  //         setEnergy(500); // Set energy to 500 if fetching fails
-  //         setLoading(false);
-  //       });
-  //   }
-  //   // eslint-disable-next-line
-  // }, []);
+    // Fetch count and energy from Firestore when component mounts
+    if (telegramUserid) {
+      fetchUserStatsFromFirestore(telegramUserid)
+        .then((userStats) => {
+          if (isNaN(userStats.count)) {
+            setCount(0);
+            updateUserStatsInFirestore(telegramUserid, 0, 500);
+          } else {
+            setCount(userStats.count);
+            setEnergy(userStats.energy);
+            setDisplayEnergy(userStats.energy); // Update display energy
+          }
+          setLoading(false); // Set loading to false after fetching count
+        })
+        .catch(() => {
+          setCount(0); // Set count to 0 if fetching fails
+          setEnergy(500); // Set energy to 500 if fetching fails
+          setLoading(false);
+        });
+    }
+    // eslint-disable-next-line
+  }, []);
 
   const saveRefereeIdToFirestore = async () => {
     // Fetch username and user ID from Telegram Web App context
