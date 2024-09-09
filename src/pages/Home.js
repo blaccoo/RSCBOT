@@ -1,5 +1,6 @@
 
 import React, { useState,useCallback , useEffect, useRef, useContext } from "react";
+import { collection, addDoc, getDocs, updateDoc } from "firebase/firestore";
 import styled, { keyframes } from "styled-components";
 import ModalForBOTClaim from "../components/ModalForBOTClaim";
 import PortalPopup from "../components/PortalPopup";
@@ -150,6 +151,151 @@ const Home = () => {
     }
   };
 
+
+  
+  useEffect(() => {
+    // Fetch username and user ID from Telegram Web App context
+    const telegramName =
+      window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
+    const telegramLastName =
+      window.Telegram.WebApp.initDataUnsafe?.user?.last_name;
+    const telegramUsername =
+      window.Telegram.WebApp.initDataUnsafe?.user?.username;
+    const telegramUserid = window.Telegram.WebApp.initDataUnsafe?.user?.id;
+
+    if (telegramName) {
+      setName(telegramName + " " + telegramLastName);
+    }
+
+    if (telegramUsername) {
+      setUsername(telegramUsername);
+    }
+    if (telegramUserid) {
+      setIdme(telegramUserid);
+    }
+
+    if (telegramUsername && telegramUserid) {
+      saveRefereeIdToFirestore();
+    }
+
+    // Fetch count and energy from Firestore when component mounts
+    if (telegramUserid) {
+      fetchUserStatsFromFirestore(telegramUserid)
+        .then((userStats) => {
+          if (isNaN(userStats.count)) {
+            setCount(0);
+            updateUserStatsInFirestore(telegramUserid, 0, 500);
+          } else {
+            setCount(userStats.count);
+            setEnergy(userStats.energy);
+            setDisplayEnergy(userStats.energy); // Update display energy
+          }
+          setLoading(false); // Set loading to false after fetching count
+        })
+        .catch(() => {
+          setCount(0); // Set count to 0 if fetching fails
+          setEnergy(500); // Set energy to 500 if fetching fails
+          setLoading(false);
+        });
+    }
+    // eslint-disable-next-line
+  }, []);
+
+  const saveRefereeIdToFirestore = async () => {
+    // Fetch username and user ID from Telegram Web App context
+    const telegramUsername =
+      window.Telegram.WebApp.initDataUnsafe?.user?.username;
+    const telegramUserid = window.Telegram.WebApp.initDataUnsafe?.user?.id;
+    const telegramName =
+      window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
+    const telegramLastName =
+      window.Telegram.WebApp.initDataUnsafe?.user?.last_name;
+
+    const fullName = telegramName + " " + telegramLastName;
+
+    const queryParams = new URLSearchParams(window.location.search);
+    let refereeId = queryParams.get("ref");
+    if (refereeId) {
+      // Remove all non-numeric characters
+      refereeId = refereeId.replace(/\D/g, "");
+    }
+
+    if (telegramUsername && telegramUserid) {
+      await storeUserData(
+        fullName,
+        telegramUsername,
+        telegramUserid,
+        refereeId
+      );
+    }
+  };
+
+  const storeUserData = async (fullname, username, userid, refereeId) => {
+    try {
+      const userRef = collection(db, "telegramUsers");
+      const querySnapshot = await getDocs(userRef);
+      let userExists = false;
+
+      querySnapshot.forEach((doc) => {
+        if (doc.data().userId === userid) {
+          userExists = true;
+        }
+      });
+
+      if (!userExists) {
+        await addDoc(userRef, {
+          fullname: fullname,
+          username: username,
+          userId: userid,
+          count: 0, // Initialize count
+          energy: 500, // Initialize energy
+          refereeId: refereeId || null, // Store refereeId if present
+          timestamp: new Date(),
+        });
+        // console.log("User data stored:", { username, userid, refereeId });
+      } else {
+        // console.log("User already exists:", { username, userid });
+      }
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+  };
+
+  const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
+    try {
+      const userRef = collection(db, "telegramUsers");
+      const querySnapshot = await getDocs(userRef);
+      querySnapshot.forEach((doc) => {
+        if (doc.data().userId === userid) {
+          updateDoc(doc.ref, { count: newCount, energy: newEnergy });
+        }
+      });
+      // console.log("User stats updated:", { newCount, newEnergy });
+    } catch (e) {
+      console.error("Error updating document: ", e);
+    }
+  };
+
+  const fetchUserStatsFromFirestore = async (userid) => {
+    try {
+      const userRef = collection(db, "telegramUsers");
+      const querySnapshot = await getDocs(userRef);
+      let userStats = { count: 0, energy: 500 };
+      querySnapshot.forEach((doc) => {
+        if (doc.data().userId === userid) {
+          userStats = { count: doc.data().count, energy: doc.data().energy };
+        }
+      });
+      return userStats;
+    } catch (e) {
+      console.error("Error fetching document: ", e);
+      return { count: 0, energy: 500 };
+    }
+  };
+
+  const formattedCount = new Intl.NumberFormat()
+    .format(count)
+    .replace(/,/g, " ");
 
   return (
     <>
