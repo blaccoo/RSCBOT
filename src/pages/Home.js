@@ -66,6 +66,7 @@ const Home = () => {
   const [clicks, setClicks] = useState([]);
   const [loading, setLoading] = useState(true);
   const [showLevels, setShowLevels] = useState(false);
+    const [error, setError] = useState("");
 
 
 
@@ -152,9 +153,7 @@ const Home = () => {
   };
 
 
-  
   useEffect(() => {
-    // Fetch username and user ID from Telegram Web App context
     const telegramName =
       window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
     const telegramLastName =
@@ -170,6 +169,7 @@ const Home = () => {
     if (telegramUsername) {
       setUsername(telegramUsername);
     }
+
     if (telegramUserid) {
       setIdme(telegramUserid);
     }
@@ -192,10 +192,11 @@ const Home = () => {
           }
           setLoading(false); // Set loading to false after fetching count
         })
-        .catch(() => {
+        .catch((err) => {
           setCount(0); // Set count to 0 if fetching fails
           setEnergy(500); // Set energy to 500 if fetching fails
           setLoading(false);
+          setError("Failed to fetch user stats. Please try again later."); // Set error message
         });
     }
     // eslint-disable-next-line
@@ -299,6 +300,7 @@ const Home = () => {
 
   return (
     <>
+     {error && <div className="error-message">{error}</div>} {/* Display error message */}
       <div className="home">
       <Header/>
         <div className="home-body-frame2">
