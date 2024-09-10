@@ -325,3 +325,61 @@
 .wobble-right {
   animation: wobble-right .2s ease;
 }
+
+
+.simple-line-iconsenergy {
+  width: 24px;
+  position: relative;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div189 {
+  position: relative;
+}
+.wallet125 {
+  width: 50px;
+  height: 55px;
+  flex-direction: column;
+  gap: var(--gap-6xs);
+}
+.wallet-parent22,
+.wallet125,
+.wallet126 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.wallet126 {
+  width: 50px;
+  height: 55px;
+  flex-direction: column;
+  gap: var(--gap-6xs);
+  cursor: pointer;
+}
+.wallet-parent22 {
+  flex-direction: row;
+  gap: var(--gap-181xl);
+}
+.energy-limit3 {
+  width: 316px;
+  border-radius: var(--br-81xl);
+  background-color: var(--color-darkgoldenrod);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+  height: 18px;
+}
+.footer-start-frame41 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-3xs) 0;
+  gap: var(--gap-3xs);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-whitesmoke-200);
+  font-family: var(--font-roboto);
+}

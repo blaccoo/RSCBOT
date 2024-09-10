@@ -28,7 +28,8 @@
   justify-content: center;
 }
 .lvl-bronze5 {
-  width: 132px;
+  width: 100%;
+  padding-left: 0.5rem;
   position: relative;
   line-height: 51px;
   font-weight: 600;

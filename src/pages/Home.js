@@ -7,7 +7,7 @@ import PortalPopup from "../components/PortalPopup";
 import { useNavigate } from "react-router-dom";
 import CurrentBalanceFrame from "../components/CurrentBalanceFrame";
 import Title from "../components/Title";
-import FooterStartFrame9 from "../components/FooterStartFrame9";
+import "../components/FooterStartFrame9.css";
 import FooterSection from "../components/FooterSection";
 import "./Home.css";
 import Header from "../components/Header";
@@ -90,6 +90,11 @@ const Home = () => {
     navigate("/task");
   }, [navigate]);
 
+  const onWalletContainerClick = useCallback(() => {
+    navigate("/boast");
+  }, [navigate]);
+
+
 
   
   const handleClick = (e) => {
@@ -153,54 +158,57 @@ const Home = () => {
   };
 
 
-  useEffect(() => {
-    const telegramName =
-      window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
-    const telegramLastName =
-      window.Telegram.WebApp.initDataUnsafe?.user?.last_name;
-    const telegramUsername =
-      window.Telegram.WebApp.initDataUnsafe?.user?.username;
-    const telegramUserid = window.Telegram.WebApp.initDataUnsafe?.user?.id;
+  // useEffect(() => {
+  //   const telegramName =
+  //     window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
+  //   const telegramLastName =
+  //     window.Telegram.WebApp.initDataUnsafe?.user?.last_name;
+  //   const telegramUsername =
+  //     window.Telegram.WebApp.initDataUnsafe?.user?.username;
+  //   const telegramUserid = window.Telegram.WebApp.initDataUnsafe?.user?.id;
 
-    if (telegramName) {
-      setName(telegramName + " " + telegramLastName);
-    }
+  //   if (telegramName) {
+  //     setName(telegramName + " " + telegramLastName);
+  //   }
 
-    if (telegramUsername) {
-      setUsername(telegramUsername);
-    }
+  //   if (telegramUsername) {
+  //     setUsername(telegramUsername);
+  //   }
 
-    if (telegramUserid) {
-      setIdme(telegramUserid);
-    }
+  //   if (telegramUserid) {
+  //     setIdme(telegramUserid);
+  //   }
 
-    if (telegramUsername && telegramUserid) {
-      saveRefereeIdToFirestore();
-    }
+  //   if (telegramUsername && telegramUserid) {
+  //     saveRefereeIdToFirestore();
+  //   }
 
-    // Fetch count and energy from Firestore when component mounts
-    if (telegramUserid) {
-      fetchUserStatsFromFirestore(telegramUserid)
-        .then((userStats) => {
-          if (isNaN(userStats.count)) {
-            setCount(0);
-            updateUserStatsInFirestore(telegramUserid, 0, 500);
-          } else {
-            setCount(userStats.count);
-            setEnergy(userStats.energy);
-            setDisplayEnergy(userStats.energy); // Update display energy
-          }
-          setLoading(false); // Set loading to false after fetching count
-        })
-        .catch((err) => {
-          setCount(0); // Set count to 0 if fetching fails
-          setEnergy(500); // Set energy to 500 if fetching fails
-          setLoading(false);
-          setError("Failed to fetch user stats. Please try again later."); // Set error message
-        });
-    }
-    // eslint-disable-next-line
-  }, []);
+  //   // Fetch count and energy from Firestore when component mounts
+
+  //   if (telegramUserid) {
+  //     fetchUserStatsFromFirestore(telegramUserid)
+  //       .then((userStats) => {
+  //         if (isNaN(userStats.count)) {
+  //           setCount(0);
+  //           updateUserStatsInFirestore(telegramUserid, 0, 500);
+  //         } else {
+  //           setCount(userStats.count);
+  //           setEnergy(userStats.energy);
+  //           setDisplayEnergy(userStats.energy); // Update display energy
+  //         }
+  //         setLoading(false); // Set loading to false after fetching count
+  //       })
+  //       .catch((err) => {
+  //         setCount(0); // Set count to 0 if fetching fails
+  //         setEnergy(500); // Set energy to 500 if fetching fails
+  //         setLoading(false);
+  //         setError("Failed to fetch user stats. Please try again later."); // Set error message
+  //       });
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
+
+
 
   const saveRefereeIdToFirestore = async () => {
     // Fetch username and user ID from Telegram Web App context
@@ -308,7 +316,7 @@ const Home = () => {
          
           <Divider/>
           <CurrentBalanceFrame
-            prop="104.50 "
+            prop={formattedCount}
             divColor="#e4e4f0"
             lvlBronzeColor="#e4e4f0"
           />
@@ -376,7 +384,35 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <FooterStartFrame9 />
+            <div className="footer-start-frame41">
+      <div className="wallet-parent22">
+        <div className="wallet125">
+          <img
+            className="simple-line-iconsenergy"
+            alt=""
+            src="/simplelineiconsenergy1.svg"
+          />
+          <div className="div189">{displayEnergy}/500</div>
+        </div>
+        <div className="wallet126" onClick={onWalletContainerClick}>
+          <img
+            className="simple-line-iconsenergy"
+            alt=""
+            src="/hugeiconsfire.svg"
+          />
+          <div className="div189">Boast</div>
+        </div>
+      </div>
+    
+    </div>  
+    
+    <div style={{ width:"100%", padding:"0.3rem", marginInline:"0.3rem",backgroundColor:"red", borderRadius:"0.8rem" }}>
+    <EnergyFill percentage={(energy / 500) * 100} />   
+              </div>
+
+
+
+    
             <div className="footer-start-frame4">
               <div className="footer-frame3">
                 <div className="home-referral3">
