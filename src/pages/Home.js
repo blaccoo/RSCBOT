@@ -94,9 +94,6 @@ const Home = () => {
     navigate("/boast");
   }, [navigate]);
 
-
-
-  
   const handleClick = (e) => {
     if (energy > 0) {
       const { offsetX, offsetY, target } = e.nativeEvent;
@@ -157,8 +154,8 @@ const Home = () => {
     }
   };
 
-
   useEffect(() => {
+    // Fetch username and user ID from Telegram Web App context
     const telegramName =
       window.Telegram.WebApp.initDataUnsafe?.user?.first_name;
     const telegramLastName =
@@ -174,7 +171,6 @@ const Home = () => {
     if (telegramUsername) {
       setUsername(telegramUsername);
     }
-
     if (telegramUserid) {
       setIdme(telegramUserid);
     }
@@ -184,7 +180,6 @@ const Home = () => {
     }
 
     // Fetch count and energy from Firestore when component mounts
-
     if (telegramUserid) {
       fetchUserStatsFromFirestore(telegramUserid)
         .then((userStats) => {
@@ -198,17 +193,14 @@ const Home = () => {
           }
           setLoading(false); // Set loading to false after fetching count
         })
-        .catch((err) => {
+        .catch(() => {
           setCount(0); // Set count to 0 if fetching fails
           setEnergy(500); // Set energy to 500 if fetching fails
           setLoading(false);
-          setError("Failed to fetch user stats. Please try again later."); // Set error message
         });
     }
     // eslint-disable-next-line
   }, []);
-
-
 
   const saveRefereeIdToFirestore = async () => {
     // Fetch username and user ID from Telegram Web App context
@@ -234,7 +226,7 @@ const Home = () => {
         fullName,
         telegramUsername,
         telegramUserid,
-        refereeId  
+        refereeId
       );
     }
   };
@@ -305,6 +297,9 @@ const Home = () => {
   const formattedCount = new Intl.NumberFormat()
     .format(count)
     .replace(/,/g, " ");
+
+
+  
 
   return (
     <>
