@@ -1,5 +1,6 @@
 
 import React, { useState,useCallback , useEffect, useRef, useContext } from "react";
+import { db } from "./firebase";
 import { collection, addDoc, getDocs, updateDoc } from "firebase/firestore";
 import styled, { keyframes } from "styled-components";
 import ModalForBOTClaim from "../components/ModalForBOTClaim";
