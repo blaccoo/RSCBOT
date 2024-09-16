@@ -71,6 +71,8 @@ import FriendsProfile1 from "./pages/FriendsProfile1";
 import TaskQuiz from "./pages/TaskQuiz";
 import ModalStarPayForMultitap from "./components/ModalStarPayForMultitap";
 import ModalStarPayForEnergyLimit from "./components/ModalStarPayForEnergyLimit";
+import { EnergyProvider } from "./context/EnergyContext";
+
 
 function App() {
   const action = useNavigationType();
@@ -369,6 +371,7 @@ function App() {
   }, [pathname]);
 
   return (
+ 
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Home" element={<Home />} />
@@ -501,6 +504,7 @@ function App() {
         element={<ModalStarPayForEnergyLimit />}
       />
     </Routes>
+
   );
 }
 export default App;

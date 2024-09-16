@@ -13,7 +13,7 @@ import "./Home.css";
 import Header from "../components/Header";
 import Divider from "../components/Divider";
 import Divider2 from "../components/Divider2";
-import { EnergyContext } from "../contexts/EnergyContext";
+import { EnergyContext } from "../context/EnergyContext";
 
 
 const slideUp = keyframes`
