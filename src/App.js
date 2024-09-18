@@ -371,7 +371,7 @@ function App() {
   }, [pathname]);
 
   return (
- 
+    <EnergyProvider>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Home" element={<Home />} />
@@ -504,7 +504,7 @@ function App() {
         element={<ModalStarPayForEnergyLimit />}
       />
     </Routes>
-
+    </EnergyProvider>
   );
 }
 export default App;
