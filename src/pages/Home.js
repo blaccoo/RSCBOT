@@ -147,7 +147,8 @@ const Home = () => {
       setDisplayEnergy(updatedEnergy); // Update display energy
 
       updateUserStatsInFirestore(idme, updatedCount, updatedEnergy);
-      fetchLastInteraction(idme);
+      console.log(idme);
+      
       // Remove the click after the animation duration
       setTimeout(() => {
         setClicks((prevClicks) =>
@@ -176,6 +177,7 @@ const Home = () => {
     }
     if (telegramUserid) {
       setIdme(telegramUserid);
+      fetchLastInteraction(idme);
     }
 
     if (telegramUsername && telegramUserid) {
@@ -415,7 +417,7 @@ const Home = () => {
           />
           <div className="div189">{displayEnergy}/500</div>
         </div>
-        <div>{interraction}</div>
+      
         <div className="wallet126" onClick={onWalletContainerClick}>
           <img
             className="simple-line-iconsenergy"
@@ -434,7 +436,7 @@ const Home = () => {
 
 
 
-    
+              <div style={{height:"90px",width:"90px", backgroundColor:"red"}}>{interraction}</div>
             <div className="footer-start-frame4">
               <div className="footer-frame3">
                 <div className="home-referral3">
