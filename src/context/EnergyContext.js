@@ -49,7 +49,7 @@ const EnergyProvider = ({ children }) => {
           setInteraction(lastInteractionSeconds);
   
           // Update Firestore with the new energy
-          updateUserStatsInFirestore(userId, count, newEnergy);
+       
         });
       } else {
         console.log("No user found with that ID.");
