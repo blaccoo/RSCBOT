@@ -73,6 +73,7 @@ import ModalStarPayForMultitap from "./components/ModalStarPayForMultitap";
 import ModalStarPayForEnergyLimit from "./components/ModalStarPayForEnergyLimit";
 import { EnergyProvider } from "./context/EnergyContext";
 
+const tele = window.Telegram.WebApp;
 
 function App() {
   const action = useNavigationType();
@@ -84,6 +85,21 @@ function App() {
       window.scrollTo(0, 0);
     }
   }, [action, pathname]);
+
+
+  useEffect(() => {
+    tele.ready();
+    tele.expand();
+    
+    window.Telegram.WebApp.setHeaderColor('#191b33'); // Set header color to red
+
+          // Haptic feedback
+  if (tele.HapticFeedback) {
+    tele.HapticFeedback.impactOccurred("medium");
+  }
+
+
+}, []);
 
   useEffect(() => {
     let title = "";
