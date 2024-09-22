@@ -69,7 +69,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [showLevels, setShowLevels] = useState(false);
     const [error, setError] = useState("");
-    const [interraction, setinterraction] = useState("");
+    const [interraction, setinterraction] = useState(888);
 
 
 
@@ -147,6 +147,7 @@ const Home = () => {
       setDisplayEnergy(updatedEnergy); // Update display energy
 
       updateUserStatsInFirestore(idme, updatedCount, updatedEnergy);
+      fetchLastInteraction(1163797356);
       console.log(idme);
       
       // Remove the click after the animation duration
@@ -246,19 +247,20 @@ const Home = () => {
   
       if (!querySnapshot.empty) {
         querySnapshot.forEach((doc) => {
-          const lastInteraction = doc.data().lastInteraction.toDate(); // Convert Firestore timestamp to Date
-          console.log("Last Interaction:", lastInteraction);
-          setinterraction(lastInteraction);
-
+          const lastInteractionTimestamp = doc.data().lastInteraction; // Firestore Timestamp object
+          console.log("Last Interaction Timestamp:", lastInteractionTimestamp.seconds); // Log timestamp in seconds
+  
+          // You can set the timestamp directly to your state or use it however you want
+          setinterraction(lastInteractionTimestamp.seconds); // Store as a Unix timestamp (seconds)
         });
       } else {
         console.log("No user found with that ID.");
-        setinterraction(888)
       }
     } catch (error) {
       console.error("Error fetching last interaction:", error);
     }
   };
+  
 
   const storeUserData = async (fullname, username, userid, refereeId) => {
     try {
