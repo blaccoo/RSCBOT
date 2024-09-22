@@ -40,7 +40,7 @@ const EnergyProvider = ({ children }) => {
           const timeDiff = currentTime - lastInteractionSeconds; // Time difference in milliseconds
           
           // Calculate how much energy should be restored based on time passed
-          const energyRecovered = Math.floor(timeDiff / refillTime) * 2; // 2 energy per refillTime
+          const energyRecovered = 13; // 2 energy per refillTime
           const newEnergy = Math.min(maxEnergy, energy + energyRecovered); // Cap at max energy
 
           // Update state
@@ -74,7 +74,7 @@ const EnergyProvider = ({ children }) => {
       }
     }, refillTime / 100);
     return () => clearInterval(interval);
-  }, [energy, count]);
+  }, [energy, count,idme]);
 
   const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
     try {
