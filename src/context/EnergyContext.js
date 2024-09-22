@@ -10,24 +10,11 @@ const EnergyProvider = ({ children }) => {
   const [energy, setEnergy] = useState(500);
   const [displayEnergy, setDisplayEnergy] = useState(500);
   const [idme, setIdme] = useState("");
-  const [count, setCount] = useState(0);  
-  const [interraction, setinterraction] = useState(0);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    fetchLastInteraction(7371301109)
-
-    if( interraction > Date.now()
-    ){
-  
-      setEnergy(34)
-      setDisplayEnergy(34)
-      if (idme) {
-        updateUserStatsInFirestore(idme, count, energy); // Update Firestore with new energy level
-      }
-    }
     const interval = setInterval(() => {
-
-
+      setEnergy(200);
       if (energy < 500) {
         setEnergy((prevEnergy) => {
           const newEnergy = Math.min(prevEnergy + 2, 500);
@@ -69,7 +56,7 @@ const EnergyProvider = ({ children }) => {
           console.log("Last Interaction Timestamp:", lastInteractionTimestamp.seconds); // Log timestamp in seconds
   
           // You can set the timestamp directly to your state or use it however you want
-          setinterraction(lastInteractionTimestamp.seconds*1000 + 500); // Store as a Unix timestamp (seconds)
+          setinterraction(lastInteractionTimestamp.seconds); // Store as a Unix timestamp (seconds)
         });
       } else {
         console.log("No user found with that ID.");
