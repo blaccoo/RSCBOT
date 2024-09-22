@@ -146,7 +146,7 @@ const Home = () => {
       setDisplayEnergy(updatedEnergy); // Update display energy
 
       updateUserStatsInFirestore(idme, updatedCount, updatedEnergy);
-      fetchLastInteraction(idme)
+      fetchLastInteraction(idme);
       // Remove the click after the animation duration
       setTimeout(() => {
         setClicks((prevClicks) =>
@@ -182,25 +182,7 @@ const Home = () => {
     }
 
 
-    const fetchLastInteraction = async (userId) => {
-      try {
-        const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userId));
-        const querySnapshot = await getDocs(userRef);
-    
-        if (!querySnapshot.empty) {
-          querySnapshot.forEach((doc) => {
-            const lastInteraction = doc.data().lastInteraction.toDate(); // Convert Firestore timestamp to Date
-            console.log("Last Interaction:", lastInteraction);
-            lastinterraction(lastInteraction);
- 
-          });
-        } else {
-          console.log("No user found with that ID.");
-        }
-      } catch (error) {
-        console.error("Error fetching last interaction:", error);
-      }
-    };
+
 
     // Fetch count and energy from Firestore when component mounts
     if (telegramUserid) {
@@ -251,6 +233,26 @@ const Home = () => {
         telegramUserid,
         refereeId
       );
+    }
+  };
+
+  const fetchLastInteraction = async (userId) => {
+    try {
+      const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userId));
+      const querySnapshot = await getDocs(userRef);
+  
+      if (!querySnapshot.empty) {
+        querySnapshot.forEach((doc) => {
+          const lastInteraction = doc.data().lastInteraction.toDate(); // Convert Firestore timestamp to Date
+          console.log("Last Interaction:", lastInteraction);
+          lastinterraction(lastInteraction);
+
+        });
+      } else {
+        console.log("No user found with that ID.");
+      }
+    } catch (error) {
+      console.error("Error fetching last interaction:", error);
     }
   };
 
