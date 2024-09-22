@@ -147,7 +147,7 @@ const Home = () => {
       setDisplayEnergy(updatedEnergy); // Update display energy
 
       updateUserStatsInFirestore(idme, updatedCount, updatedEnergy);
-    
+      fetchLastInteraction(idme);
       console.log(idme);
       
       // Remove the click after the animation duration
@@ -240,7 +240,26 @@ const Home = () => {
     }
   };
 
-
+  const fetchLastInteraction = async (userId) => {
+    try {
+      const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userId));
+      const querySnapshot = await getDocs(userRef);
+  
+      if (!querySnapshot.empty) {
+        querySnapshot.forEach((doc) => {
+          const lastInteractionTimestamp = doc.data().lastInteraction; // Firestore Timestamp object
+          console.log("Last Interaction Timestamp:", lastInteractionTimestamp.seconds); // Log timestamp in seconds
+  
+          // You can set the timestamp directly to your state or use it however you want
+          setinterraction(lastInteractionTimestamp.seconds); // Store as a Unix timestamp (seconds)
+        });
+      } else {
+        console.log("No user found with that ID.");
+      }
+    } catch (error) {
+      console.error("Error fetching last interaction:", error);
+    }
+  };
   
 
   const storeUserData = async (fullname, username, userid, refereeId) => {
@@ -274,23 +293,20 @@ const Home = () => {
     }
   };
 
- const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
+  const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
     try {
-      const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userid));
+      const userRef = collection(db, "telegramUsers");
       const querySnapshot = await getDocs(userRef);
-      if (!querySnapshot.empty) {
-        querySnapshot.forEach((doc) => {
-          updateDoc(doc.ref, { count: newCount, energy: newEnergy, lastInteraction: new Date() });
-        });
-        console.log("User stats updated:", { newCount, newEnergy });
-      } else {
-        console.log("No user found with that ID.");
-      }
+      querySnapshot.forEach((doc) => {
+        if (doc.data().userId === userid) {
+          updateDoc(doc.ref, { count: newCount, energy: newEnergy });
+        }
+      });
+      // console.log("User stats updated:", { newCount, newEnergy });
     } catch (e) {
       console.error("Error updating document: ", e);
     }
   };
-
 
   const fetchUserStatsFromFirestore = async (userid) => {
     try {
