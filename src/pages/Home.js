@@ -147,7 +147,7 @@ const Home = () => {
       setDisplayEnergy(updatedEnergy); // Update display energy
 
       updateUserStatsInFirestore(idme, updatedCount, updatedEnergy);
-      fetchLastInteraction(1163797356);
+      fetchLastInteraction(idme);
       console.log(idme);
       
       // Remove the click after the animation duration
@@ -178,7 +178,7 @@ const Home = () => {
     }
     if (telegramUserid) {
       setIdme(telegramUserid);
-      fetchLastInteraction(telegramUserid);
+   
     }
 
     if (telegramUsername && telegramUserid) {
