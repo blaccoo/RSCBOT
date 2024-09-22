@@ -414,7 +414,7 @@ const Home = () => {
           />
           <div className="div189">{displayEnergy}/500</div>
         </div>
-        <div>{{interraction}}</div>
+        <div>{interraction}</div>
         <div className="wallet126" onClick={onWalletContainerClick}>
           <img
             className="simple-line-iconsenergy"
