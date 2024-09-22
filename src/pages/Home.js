@@ -177,7 +177,7 @@ const Home = () => {
     }
     if (telegramUserid) {
       setIdme(telegramUserid);
-      fetchLastInteraction(idme);
+      fetchLastInteraction(telegramUserid);
     }
 
     if (telegramUsername && telegramUserid) {
@@ -436,7 +436,7 @@ const Home = () => {
 
 
 
-              <div style={{height:"90px",width:"90px", backgroundColor:"red"}}>{interraction}</div>
+              <div style={{height:"90px",width:"90px", backgroundColor:"red"}}>{idme}{interraction}</div>
             <div className="footer-start-frame4">
               <div className="footer-frame3">
                 <div className="home-referral3">
