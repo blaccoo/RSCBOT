@@ -12,52 +12,52 @@ const EnergyProvider = ({ children }) => {
   const [displayEnergy, setDisplayEnergy] = useState(maxEnergy);
   const [idme, setIdme] = useState("");
   const [count, setCount] = useState(0);
-  // const [interaction, setInteraction] = useState(null); // Store last interaction timestamp
+  const [interaction, setInteraction] = useState(null); // Store last interaction timestamp
 
-  // // Fetch and calculate energy on login
-  // useEffect(() => {
-  //   if (idme) {
-  //     fetchLastInteraction(idme); // Fetch last interaction on login
-  //   }
-  // }, [idme]);
+  // Fetch and calculate energy on login
+  useEffect(() => {
+    if (idme) {
+      fetchLastInteraction(idme); // Fetch last interaction on login
+    }
+  }, [idme]);
 
-  // // Compare LastInteraction with current time and calculate energy on login
-  // const fetchLastInteraction = async (userId) => {
-  //   try {
-  //     const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userId));
-  //     const querySnapshot = await getDocs(userRef);
+  // Compare LastInteraction with current time and calculate energy on login
+  const fetchLastInteraction = async (userId) => {
+    try {
+      const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userId));
+      const querySnapshot = await getDocs(userRef);
   
-  //     if (!querySnapshot.empty) {
-  //       querySnapshot.forEach((doc) => {
-  //         const lastInteractionTimestamp = doc.data().lastInteraction; // Firestore Timestamp object
-  //         const lastInteractionSeconds = lastInteractionTimestamp.seconds * 1000; // Convert to milliseconds
+      if (!querySnapshot.empty) {
+        querySnapshot.forEach((doc) => {
+          const lastInteractionTimestamp = doc.data().lastInteraction; // Firestore Timestamp object
+          const lastInteractionSeconds = lastInteractionTimestamp.seconds * 1000; // Convert to milliseconds
   
-  //         // Compare with current time
-  //         const currentTime = Date.now();
-  //         console.log(currentTime);
-  //         console.log(lastInteractionSeconds);
+          // Compare with current time
+          const currentTime = Date.now();
+          console.log(currentTime);
+          console.log(lastInteractionSeconds);
 
-  //         const timeDiff = currentTime - lastInteractionSeconds; // Time difference in milliseconds
+          const timeDiff = currentTime - lastInteractionSeconds; // Time difference in milliseconds
           
-  //         // Calculate how much energy should be restored based on time passed
-  //         const energyRecovered = 13; // 2 energy per refillTime
-  //         const newEnergy = Math.min(maxEnergy, energy + energyRecovered); // Cap at max energy
+          // Calculate how much energy should be restored based on time passed
+          const energyRecovered = 13; // 2 energy per refillTime
+          const newEnergy = Math.min(maxEnergy,  energyRecovered); // Cap at max energy
 
-  //         // Update state
-  //         setEnergy(newEnergy);
-  //         setDisplayEnergy(newEnergy);
-  //         setInteraction(lastInteractionSeconds);
+          // Update state
+          setEnergy(newEnergy);
+          setDisplayEnergy(newEnergy);
+          setInteraction(lastInteractionSeconds);
   
-  //         // Update Firestore with the new energy
-  //         updateUserStatsInFirestore(userId, count, newEnergy);
-  //       });
-  //     } else {
-  //       console.log("No user found with that ID.");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error fetching last interaction:", error);
-  //   }
-  // };
+          // Update Firestore with the new energy
+          updateUserStatsInFirestore(userId, count, newEnergy);
+        });
+      } else {
+        console.log("No user found with that ID.");
+      }
+    } catch (error) {
+      console.error("Error fetching last interaction:", error);
+    }
+  };
 
   // Refill energy every interval
   useEffect(() => {
