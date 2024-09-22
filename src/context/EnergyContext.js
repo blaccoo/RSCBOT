@@ -42,25 +42,9 @@ const EnergyProvider = ({ children }) => {
     };
 
     fetchUserDataAndCalculateEnergy();
-  }, [idme]);
+  }, []);
 
-  useEffect(() => {
-    // Start the energy refill timer
-    const interval = setInterval(() => {
-      if (energy < maxEnergy) {
-        setEnergy((prevEnergy) => {
-          const newEnergy = Math.min(prevEnergy + refillRate, maxEnergy);
-          setDisplayEnergy(newEnergy); // Update display energy when refilling
-          if (idme) {
-            updateUserStatsInFirestore(idme, count, newEnergy); // Update Firestore with new energy level
-          }
-          return newEnergy;
-        });
-      }
-    }, refillTime / 100); // Refill happens every 1/100th of the refill time
 
-    return () => clearInterval(interval); // Clean up the interval on unmount
-  }, [energy, count, idme]);
 
   const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
     try {
