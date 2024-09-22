@@ -42,7 +42,7 @@ const EnergyProvider = ({ children }) => {
     };
 
     fetchUserDataAndCalculateEnergy();
-  }, []);
+  }, [idme]);
 
   useEffect(() => {
     // Start the energy refill timer
