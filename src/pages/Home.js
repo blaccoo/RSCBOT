@@ -253,6 +253,7 @@ const Home = () => {
         });
       } else {
         console.log("No user found with that ID.");
+        setinterraction(888)
       }
     } catch (error) {
       console.error("Error fetching last interaction:", error);
@@ -436,7 +437,7 @@ const Home = () => {
 
 
 
-              <div style={{height:"90px",width:"90px", backgroundColor:"red"}}>{idme}{interraction}</div>
+              <div style={{height:"90px",width:"90px", backgroundColor:"red"}}>{interraction}</div>
             <div className="footer-start-frame4">
               <div className="footer-frame3">
                 <div className="home-referral3">
