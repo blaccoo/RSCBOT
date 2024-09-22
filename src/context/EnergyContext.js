@@ -26,7 +26,7 @@ const EnergyProvider = ({ children }) => {
 
           // Calculate energy based on the time elapsed since the last interaction
           const refillsSinceLastInteraction = Math.floor(timeElapsed / refillTime);
-          const newEnergy = Math.min(energy + refillsSinceLastInteraction * refillRate, maxEnergy);
+          const newEnergy = Math.min(refillsSinceLastInteraction * refillRate, maxEnergy);
 
           setEnergy(newEnergy);
           setDisplayEnergy(newEnergy);
