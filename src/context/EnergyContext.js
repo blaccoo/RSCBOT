@@ -14,10 +14,11 @@ const EnergyProvider = ({ children }) => {
   const [interraction, setinterraction] = useState(0);
 
   useEffect(() => {
-    fetchLastInteraction(idme)
+    fetchLastInteraction(7371301109)
 
-    if( interraction > 2
+    if( interraction > Date.now()
     ){
+  
       setEnergy(34)
       setDisplayEnergy(34)
       if (idme) {
