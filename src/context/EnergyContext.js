@@ -4,47 +4,29 @@ import { db } from "../firebase";
 
 const EnergyContext = createContext();
 
-const refillRate = 2; // 2 energy points
 const refillTime = 2 * 60 * 1000; // 2 minutes in milliseconds
-const maxEnergy = 500;
 
 const EnergyProvider = ({ children }) => {
-  const [energy, setEnergy] = useState(maxEnergy);
-  const [displayEnergy, setDisplayEnergy] = useState(maxEnergy);
+  const [energy, setEnergy] = useState(500);
+  const [displayEnergy, setDisplayEnergy] = useState(500);
   const [idme, setIdme] = useState("");
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    // On app load, fetch user data and calculate current energy
-    const fetchUserDataAndCalculateEnergy = async () => {
-      if (idme) {
-        const userRef = collection(db, "telegramUsers");
-        const querySnapshot = await getDocs(userRef);
-        querySnapshot.forEach((doc) => {
-          if (doc.data().userId === idme) {
-            const lastInteraction = doc.data().lastInteraction.toDate(); // Convert Firestore timestamp to Date
-            const currentTime = new Date();
-            const elapsedTime = currentTime - lastInteraction; // Elapsed time in milliseconds
-
-            // Calculate how much energy has been restored since the last interaction
-            const energyRestored = Math.floor(elapsedTime / refillTime) * refillRate;
-            const newEnergy = Math.min(doc.data().energy + energyRestored, maxEnergy);
-
-            // Update the energy and displayEnergy states
-            setEnergy(newEnergy);
-            setDisplayEnergy(newEnergy);
-
-            // Optionally update Firestore with the new energy
-            updateUserStatsInFirestore(idme, count, newEnergy);
+    const interval = setInterval(() => {
+      if (energy < 500) {
+        setEnergy((prevEnergy) => {
+          const newEnergy = Math.min(prevEnergy + 2, 500);
+          setDisplayEnergy(newEnergy); // Update display energy when refilling
+          if (idme) {
+            updateUserStatsInFirestore(idme, count, newEnergy); // Update Firestore with new energy level
           }
+          return newEnergy;
         });
       }
-    };
-
-    fetchUserDataAndCalculateEnergy();
-  }, [idme]);
-
-
+    }, refillTime / 100);
+    return () => clearInterval(interval);
+  }, [energy, count, idme]);
 
   const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
     try {
@@ -52,11 +34,7 @@ const EnergyProvider = ({ children }) => {
       const querySnapshot = await getDocs(userRef);
       querySnapshot.forEach((doc) => {
         if (doc.data().userId === userid) {
-          updateDoc(doc.ref, {
-            count: newCount,
-            energy: newEnergy,
-            lastInteraction: new Date(),
-          });
+          updateDoc(doc.ref, { count: newCount, energy: newEnergy, lastInteraction: new Date() });
         }
       });
       console.log("User stats updated:", { newCount, newEnergy });
@@ -64,6 +42,9 @@ const EnergyProvider = ({ children }) => {
       console.error("Error updating document: ", e);
     }
   };
+  
+
+  
 
   return (
     <EnergyContext.Provider
