@@ -295,18 +295,21 @@ const Home = () => {
 
   const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
     try {
-      const userRef = collection(db, "telegramUsers");
+      const userRef = query(collection(db, "telegramUsers"), where("userId", "==", userid));
       const querySnapshot = await getDocs(userRef);
-      querySnapshot.forEach((doc) => {
-        if (doc.data().userId === userid) {
-          updateDoc(doc.ref, { count: newCount, energy: newEnergy });
-        }
-      });
-      // console.log("User stats updated:", { newCount, newEnergy });
+      if (!querySnapshot.empty) {
+        querySnapshot.forEach((doc) => {
+          updateDoc(doc.ref, { count: newCount, energy: newEnergy, lastInteraction: new Date() });
+        });
+        console.log("User stats updated:", { newCount, newEnergy });
+      } else {
+        console.log("No user found with that ID.");
+      }
     } catch (e) {
       console.error("Error updating document: ", e);
     }
   };
+
 
   const fetchUserStatsFromFirestore = async (userid) => {
     try {

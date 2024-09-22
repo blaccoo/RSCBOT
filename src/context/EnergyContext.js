@@ -34,6 +34,9 @@ const EnergyProvider = ({ children }) => {
   
           // Compare with current time
           const currentTime = Date.now();
+          console.log(currentTime);
+          console.log(lastInteractionSeconds);
+
           const timeDiff = currentTime - lastInteractionSeconds; // Time difference in milliseconds
           
           // Calculate how much energy should be restored based on time passed
