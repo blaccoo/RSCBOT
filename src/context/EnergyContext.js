@@ -52,7 +52,7 @@ const EnergyProvider = ({ children }) => {
       }
     }, refillTime / 100); // Adjust as needed for smaller increments
     return () => clearInterval(interval);
-  }, [energy, count, idme]);
+  }, [energy, count]);
 
   // Update user stats in Firestore
   const updateUserStatsInFirestore = async (userid, newCount, newEnergy) => {
