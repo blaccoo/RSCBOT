@@ -69,7 +69,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [showLevels, setShowLevels] = useState(false);
     const [error, setError] = useState("");
-    const [interraction, setinterraction] = useState(888);
+
 
 
 
@@ -290,7 +290,7 @@ const Home = () => {
   };
 
 
-  
+
   const fetchUserStatsFromFirestore = async (userid) => {
     try {
       const userRef = collection(db, "telegramUsers");
@@ -422,7 +422,6 @@ const Home = () => {
 
 
 
-              <div style={{height:"90px",width:"90px", backgroundColor:"red"}}>{interraction}</div>
             <div className="footer-start-frame4">
               <div className="footer-frame3">
                 <div className="home-referral3">
